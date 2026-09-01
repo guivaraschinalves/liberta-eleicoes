@@ -25,6 +25,14 @@
     return ids;
   }
 
+  // Seleção atual do diálogo de candidatos (ver "Seletor de candidatos" mais
+  // abaixo) — sempre um subconjunto de orderedCandidateIds(), na mesma
+  // ordem. Começa vazia: nada em Visão Geral/Temas/Comparar 1×1 existe até o
+  // primeiro `applySelection()`. `sourcesRendered` garante que Fontes (que
+  // sempre lista os 13, independente do filtro) só é montada uma vez.
+  var visibleIds = [];
+  var sourcesRendered = false;
+
   // Idade calculada a partir de `basics.birthDate` ("AAAA-MM-DD"), sempre em
   // relação à data de hoje — não é um número fixo gravado nos dados, então
   // continua correto em qualquer visita, não só na data de publicação.
@@ -101,7 +109,8 @@
   function buildCandidateGrid() {
     var host = document.getElementById("candidate-grid");
     if (!host) return;
-    orderedCandidateIds().forEach(function (id) {
+    host.innerHTML = "";
+    visibleIds.forEach(function (id) {
       host.appendChild(buildCandidateCard(id));
     });
   }
@@ -187,17 +196,38 @@
     return block;
   }
 
+  // Bloco usado no lugar de Diagnóstico/Propostas para um candidato que
+  // registrou candidatura sem entregar Proposta de Governo ao TSE
+  // (`SOURCES_DATA[id].planFiled === false`) — mensagem bem diferente de
+  // "Não abordado explicitamente...", que pressupõe um plano real que
+  // simplesmente não fala daquele tema.
+  function noPlanBlock(kind) {
+    var block = el("div", "compare-block");
+    var lbl = el("p", "compare-block-label");
+    lbl.textContent = kind === "diagnosis" ? "Diagnóstico" : "Propostas";
+    block.appendChild(lbl);
+    var empty = el("p", "compare-empty compare-empty-noplan");
+    empty.textContent = "Esta candidatura não registrou Proposta de Governo no TSE — não há trecho para citar.";
+    block.appendChild(empty);
+    return block;
+  }
+
   // Card de Economia: lê de `c.economy[subthemeId]`.
   function buildEconomyCard(id, subthemeId, kind) {
     var c = window.CANDIDATES_DATA[id];
-    var entry = (c.economy || {})[subthemeId] || { diagnosis: [], proposals: [] };
+    var src = (window.SOURCES_DATA || {})[id];
     var card = el("div", "compare-card");
     card.dataset.candidate = id;
     card.appendChild(compareCardHead(c.basics));
-    if (kind === "diagnosis") {
-      card.appendChild(quoteListBlock("Diagnóstico", entry.diagnosis, id));
+    if (src && src.planFiled === false) {
+      card.appendChild(noPlanBlock(kind));
     } else {
-      card.appendChild(proposalListBlock(entry.proposals, id));
+      var entry = (c.economy || {})[subthemeId] || { diagnosis: [], proposals: [] };
+      if (kind === "diagnosis") {
+        card.appendChild(quoteListBlock("Diagnóstico", entry.diagnosis, id));
+      } else {
+        card.appendChild(proposalListBlock(entry.proposals, id));
+      }
     }
     return card;
   }
@@ -207,14 +237,19 @@
   // Economia (Diagnóstico + Propostas), só que sem nível de subtema.
   function buildThemeCard(id, themeId, kind) {
     var c = window.CANDIDATES_DATA[id];
-    var entry = (c.themes || {})[themeId] || { diagnosis: [], proposals: [] };
+    var src = (window.SOURCES_DATA || {})[id];
     var card = el("div", "compare-card");
     card.dataset.candidate = id;
     card.appendChild(compareCardHead(c.basics));
-    if (kind === "diagnosis") {
-      card.appendChild(quoteListBlock("Diagnóstico", entry.diagnosis, id));
+    if (src && src.planFiled === false) {
+      card.appendChild(noPlanBlock(kind));
     } else {
-      card.appendChild(proposalListBlock(entry.proposals, id));
+      var entry = (c.themes || {})[themeId] || { diagnosis: [], proposals: [] };
+      if (kind === "diagnosis") {
+        card.appendChild(quoteListBlock("Diagnóstico", entry.diagnosis, id));
+      } else {
+        card.appendChild(proposalListBlock(entry.proposals, id));
+      }
     }
     return card;
   }
@@ -346,53 +381,190 @@
     });
   }
 
-  /* ============================== Filtro de candidatos ============================== */
-  var hiddenCandidates = {};
-  var filterChipsByCandidate = {};
+  /* ============================== Seletor de candidatos ============================== */
+  // Diálogo nativo <dialog>: bloqueia o resto da página (backdrop) sem
+  // precisar escondê-la. Abre sozinho ao carregar (visibleIds começa vazio,
+  // então applySelection() ainda não rodou) e reabre a pedido pelo botão
+  // fixo do topbar, sempre pré-marcado com a seleção atual.
+  function describeSelection(ids) {
+    var top5 = (window.POLL_DATA && window.POLL_DATA.presetTop5Ids) || [];
+    var all = orderedCandidateIds();
+    if (ids.length === top5.length && top5.every(function (id) { return ids.indexOf(id) !== -1; })) {
+      return "Top 5";
+    }
+    if (ids.length === all.length) return "Todos os 13";
+    return ids.length + " selecionados";
+  }
 
-  function setCandidateHidden(id, hide) {
-    hiddenCandidates[id] = hide;
-    document.querySelectorAll(
-      '#temas .compare-card[data-candidate="' + id + '"]'
-    ).forEach(function (card) { card.hidden = hide; });
-    (filterChipsByCandidate[id] || []).forEach(function (chip) {
-      chip.setAttribute("aria-pressed", hide ? "false" : "true");
+  function updatePickerConfirmState() {
+    var grid = document.getElementById("candidate-picker-grid");
+    var confirmBtn = document.getElementById("candidate-picker-confirm");
+    var countEl = document.getElementById("candidate-picker-count");
+    if (!grid || !confirmBtn) return;
+    var n = grid.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (countEl) countEl.textContent = n;
+    confirmBtn.disabled = n === 0;
+  }
+
+  // (Re)constrói a grade de checkboxes do diálogo — chamada toda vez que o
+  // diálogo abre, pré-marcando `preselected` (a seleção atual, ou nenhuma na
+  // primeira abertura).
+  function renderPickerGrid(host, preselected) {
+    host.innerHTML = "";
+    var results = (window.POLL_DATA && window.POLL_DATA.results) || {};
+    orderedCandidateIds().forEach(function (id) {
+      var c = window.CANDIDATES_DATA[id];
+      var label = document.createElement("label");
+      label.className = "candidate-picker-chip";
+
+      var checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.value = id;
+      checkbox.checked = preselected.indexOf(id) !== -1;
+      checkbox.addEventListener("change", updatePickerConfirmState);
+      label.appendChild(checkbox);
+
+      label.appendChild(buildAvatar(c.basics, "candidate-avatar-sm"));
+
+      var nameWrap = document.createElement("span");
+      var name = document.createElement("strong");
+      name.textContent = c.basics.ballotName || c.basics.name;
+      var party = el("span", "candidate-picker-party");
+      party.textContent = c.basics.party;
+      nameWrap.appendChild(name);
+      nameWrap.appendChild(party);
+      label.appendChild(nameWrap);
+
+      var pct = results[id];
+      if (pct != null) {
+        var badge = el("span", "candidate-picker-poll");
+        badge.textContent = String(pct).replace(".", ",") + "%";
+        label.appendChild(badge);
+      }
+
+      host.appendChild(label);
+    });
+    updatePickerConfirmState();
+  }
+
+  function openPicker() {
+    var dialog = document.getElementById("candidate-picker");
+    if (!dialog) return;
+    renderPickerGrid(document.getElementById("candidate-picker-grid"), visibleIds);
+    if (typeof dialog.showModal === "function") dialog.showModal();
+  }
+
+  // Liga o diálogo uma única vez (presets, checkboxes, confirmar) — chamado
+  // só a partir de init(). Reabrir o diálogo (openPicker) nunca religa nada
+  // disso de novo, só repovoa a grade.
+  function buildCandidatePicker() {
+    var dialog = document.getElementById("candidate-picker");
+    var presetsHost = document.getElementById("candidate-picker-presets");
+    var grid = document.getElementById("candidate-picker-grid");
+    var confirmBtn = document.getElementById("candidate-picker-confirm");
+    if (!dialog || !presetsHost || !grid || !confirmBtn) return;
+
+    var top5Btn = el("button", "");
+    top5Btn.type = "button";
+    var pollName = (window.POLL_DATA && window.POLL_DATA.name) || "pesquisa";
+    top5Btn.textContent = "Top 5 (" + pollName + ")";
+    top5Btn.addEventListener("click", function () {
+      applySelection((window.POLL_DATA && window.POLL_DATA.presetTop5Ids) || []);
+      dialog.close();
+    });
+
+    var allBtn = el("button", "");
+    allBtn.type = "button";
+    allBtn.textContent = "Todos os 13";
+    allBtn.addEventListener("click", function () {
+      applySelection(orderedCandidateIds());
+      dialog.close();
+    });
+
+    presetsHost.appendChild(top5Btn);
+    presetsHost.appendChild(allBtn);
+
+    confirmBtn.addEventListener("click", function () {
+      var chosen = Array.prototype.slice
+        .call(grid.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(function (cb) { return cb.value; });
+      if (!chosen.length) return;
+      applySelection(chosen);
+      dialog.close();
     });
   }
 
-  function buildCandidateFilter(host) {
-    if (!host) return;
-    var row = el("div", "candidate-filter");
-    orderedCandidateIds().forEach(function (id) {
-      var c = window.CANDIDATES_DATA[id];
-      var chip = el("button", "legend-chip");
-      chip.type = "button";
-      chip.setAttribute("aria-pressed", hiddenCandidates[id] ? "false" : "true");
-      var swatch = el("span", "legend-swatch");
-      swatch.style.background = "var(--cand-" + id + ")";
-      chip.appendChild(swatch);
-      chip.appendChild(document.createTextNode(c.basics.ballotName || c.basics.name));
-      chip.addEventListener("click", function () {
-        setCandidateHidden(id, chip.getAttribute("aria-pressed") === "true");
-      });
-      filterChipsByCandidate[id] = filterChipsByCandidate[id] || [];
-      filterChipsByCandidate[id].push(chip);
-      row.appendChild(chip);
-    });
-    host.appendChild(row);
+  function initPinnedPickerControl() {
+    var btn = document.getElementById("candidate-picker-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", openPicker);
   }
 
   /* ============================== Comparar 1×1 ============================== */
-  function buildComparisonSection() {
+  // Pinta os cards de comparação para o par (a, b) — sempre chamado depois
+  // que renderComparisonSection() já garantiu que há pelo menos 2 opções.
+  function paintComparisonPanels(a, b) {
+    var headHost = document.getElementById("compare-head-to-head");
+    var tabsHost = document.getElementById("compare-temas-tabs");
+    var panelsHost = document.getElementById("compare-temas-panels");
+    headHost.innerHTML = "";
+    headHost.appendChild(buildCandidateCard(a));
+    headHost.appendChild(buildCandidateCard(b));
+    tabsHost.innerHTML = "";
+    panelsHost.innerHTML = "";
+    buildTemasSection(tabsHost, panelsHost, [a, b], "cmp");
+  }
+
+  // Handler dos dois <select>, vinculado uma única vez em
+  // buildComparisonSection() — lê `visibleIds` "ao vivo" a cada clique em
+  // vez de um array capturado no bind, porque visibleIds muda a cada
+  // reconfirmação do diálogo de candidatos, mas este listener nunca é
+  // re-vinculado.
+  function onCompareSelectChange(ev) {
     var selectA = document.getElementById("compare-select-a");
     var selectB = document.getElementById("compare-select-b");
+    if (selectA.value === selectB.value) {
+      var alt = visibleIds.filter(function (id) { return id !== selectA.value; })[0];
+      if (alt) {
+        if (ev && ev.target === selectA) selectB.value = alt;
+        else selectA.value = alt;
+      }
+    }
+    paintComparisonPanels(selectA.value, selectB.value);
+  }
+
+  // Reconstrói as opções dos dois selects a partir de `visibleIds` — chamada
+  // no init e de novo a cada reconfirmação do diálogo. Com menos de 2
+  // candidatos visíveis, esconde o comparador e mostra um aviso em vez de
+  // quebrar.
+  function renderComparisonSection() {
+    var selectA = document.getElementById("compare-select-a");
+    var selectB = document.getElementById("compare-select-b");
+    var pickerHost = document.getElementById("compare-picker");
     var headHost = document.getElementById("compare-head-to-head");
-    var temasTabsHost = document.getElementById("compare-temas-tabs");
-    var temasPanelsHost = document.getElementById("compare-temas-panels");
+    var tabsHost = document.getElementById("compare-temas-tabs");
+    var panelsHost = document.getElementById("compare-temas-panels");
+    var notEnough = document.getElementById("compare-not-enough");
     if (!selectA || !selectB) return;
 
-    var ids = orderedCandidateIds();
-    ids.forEach(function (id) {
+    if (visibleIds.length < 2) {
+      pickerHost.hidden = true;
+      headHost.hidden = true;
+      tabsHost.hidden = true;
+      panelsHost.hidden = true;
+      notEnough.hidden = false;
+      return;
+    }
+    pickerHost.hidden = false;
+    headHost.hidden = false;
+    tabsHost.hidden = false;
+    panelsHost.hidden = false;
+    notEnough.hidden = true;
+
+    var prevA = selectA.value, prevB = selectB.value;
+    selectA.innerHTML = "";
+    selectB.innerHTML = "";
+    visibleIds.forEach(function (id) {
       var label = (window.CANDIDATES_DATA[id].basics.ballotName || window.CANDIDATES_DATA[id].basics.name);
       [selectA, selectB].forEach(function (sel) {
         var opt = document.createElement("option");
@@ -401,45 +573,70 @@
         sel.appendChild(opt);
       });
     });
-    selectA.value = ids[0];
-    selectB.value = ids[1] || ids[0];
 
-    function render() {
-      var a = selectA.value, b = selectB.value;
+    // Preserva A/B se os dois ainda estiverem em visibleIds; senão cai nos
+    // dois primeiros da nova seleção (já em ordem alfabética).
+    var a = visibleIds.indexOf(prevA) !== -1 ? prevA : visibleIds[0];
+    var b = (visibleIds.indexOf(prevB) !== -1 && prevB !== a)
+      ? prevB
+      : visibleIds.filter(function (id) { return id !== a; })[0];
+    selectA.value = a;
+    selectB.value = b;
 
-      headHost.innerHTML = "";
-      headHost.appendChild(buildCandidateCard(a));
-      headHost.appendChild(buildCandidateCard(b));
+    paintComparisonPanels(a, b);
+  }
 
-      temasTabsHost.innerHTML = "";
-      temasPanelsHost.innerHTML = "";
-      buildTemasSection(temasTabsHost, temasPanelsHost, [a, b], "cmp");
+  // Vincula os listeners dos selects uma única vez (chamado só a partir de
+  // init()) e faz a primeira pintura — reconfirmações do diálogo chamam
+  // direto renderComparisonSection(), nunca esta função de novo.
+  function buildComparisonSection() {
+    var selectA = document.getElementById("compare-select-a");
+    var selectB = document.getElementById("compare-select-b");
+    if (!selectA || !selectB) return;
+    selectA.addEventListener("change", onCompareSelectChange);
+    selectB.addEventListener("change", onCompareSelectChange);
+    renderComparisonSection();
+  }
+
+  /* ============================== Orquestrador da seleção ============================== */
+  // Chamado ao confirmar o diálogo (primeira vez ou reconfirmação): filtra
+  // `ids` contra a lista completa (preserva ordem alfabética, descarta
+  // qualquer id inválido) e reconstrói Visão Geral, Temas e Comparar 1×1.
+  // Fontes só é montada da primeira vez (sempre lista os 13, independente do
+  // filtro, então não precisa ser refeita a cada troca).
+  function applySelection(ids) {
+    var all = orderedCandidateIds();
+    visibleIds = all.filter(function (id) { return ids.indexOf(id) !== -1; });
+
+    buildCandidateGrid();
+
+    var temasTabsHost = document.getElementById("temas-tabs");
+    var temasPanelsHost = document.getElementById("temas-panels");
+    temasTabsHost.innerHTML = "";
+    temasPanelsHost.innerHTML = "";
+    buildTemasSection(temasTabsHost, temasPanelsHost, visibleIds, "temas");
+
+    renderComparisonSection();
+
+    if (!sourcesRendered) {
+      buildSourcesList();
+      sourcesRendered = true;
     }
 
-    // Não deixa escolher o mesmo candidato nos dois lados — troca o outro
-    // seletor automaticamente para o próximo disponível.
-    selectA.addEventListener("change", function () {
-      if (selectA.value === selectB.value) {
-        var alt = ids.filter(function (id) { return id !== selectA.value; })[0];
-        if (alt) selectB.value = alt;
-      }
-      render();
-    });
-    selectB.addEventListener("change", function () {
-      if (selectB.value === selectA.value) {
-        var alt = ids.filter(function (id) { return id !== selectB.value; })[0];
-        if (alt) selectA.value = alt;
-      }
-      render();
-    });
-
-    render();
+    var toggleBtn = document.getElementById("candidate-picker-toggle");
+    if (toggleBtn) {
+      toggleBtn.hidden = false;
+      toggleBtn.textContent = "Candidatos: " + describeSelection(visibleIds) + " ▾";
+    }
   }
 
   /* ============================== Fontes ============================== */
+  // Sempre lista os 13 candidatos (orderedCandidateIds()), nunca `visibleIds`
+  // — Fontes é referência de transparência, não muda com o filtro.
   function buildSourcesList() {
     var host = document.getElementById("sources-list");
     if (!host) return;
+    host.innerHTML = "";
     orderedCandidateIds().forEach(function (id) {
       var c = window.CANDIDATES_DATA[id];
       var src = (window.SOURCES_DATA || {})[id];
@@ -450,28 +647,33 @@
       var whoName = el("span", "who");
       whoName.textContent = (c.basics.ballotName || c.basics.name) + " ";
       var planTitle = el("span", "plan-title");
-      planTitle.textContent = "— " + src.planTitle + (src.pageCount ? " (" + src.pageCount + " páginas)" : "");
       who.appendChild(whoName);
       who.appendChild(planTitle);
+      row.appendChild(who);
 
-      var links = el("div", "links");
-      var pdfLink = document.createElement("a");
-      pdfLink.href = src.officialPdfUrl;
-      pdfLink.target = "_blank";
-      pdfLink.rel = "noopener";
-      pdfLink.textContent = "Ver no TSE";
-      links.appendChild(pdfLink);
-      if (src.localPdfPath) {
-        var localLink = document.createElement("a");
-        localLink.href = src.localPdfPath;
-        localLink.target = "_blank";
-        localLink.rel = "noopener";
-        localLink.textContent = "PDF (cópia local)";
-        links.appendChild(localLink);
+      if (src.planFiled === false) {
+        row.classList.add("source-row-noplan");
+        planTitle.textContent = "— Não registrou Proposta de Governo no TSE";
+      } else {
+        planTitle.textContent = "— " + src.planTitle + (src.pageCount ? " (" + src.pageCount + " páginas)" : "");
+        var links = el("div", "links");
+        var pdfLink = document.createElement("a");
+        pdfLink.href = src.officialPdfUrl;
+        pdfLink.target = "_blank";
+        pdfLink.rel = "noopener";
+        pdfLink.textContent = "Ver no TSE";
+        links.appendChild(pdfLink);
+        if (src.localPdfPath) {
+          var localLink = document.createElement("a");
+          localLink.href = src.localPdfPath;
+          localLink.target = "_blank";
+          localLink.rel = "noopener";
+          localLink.textContent = "PDF (cópia local)";
+          links.appendChild(localLink);
+        }
+        row.appendChild(links);
       }
 
-      row.appendChild(who);
-      row.appendChild(links);
       host.appendChild(row);
     });
   }
@@ -497,17 +699,22 @@
   }
 
   function init() {
+    buildCandidatePicker();
     buildCandidateGrid();
     buildTemasSection(
       document.getElementById("temas-tabs"),
       document.getElementById("temas-panels"),
-      orderedCandidateIds(),
+      visibleIds,
       "temas"
     );
-    buildCandidateFilter(document.getElementById("temas-candidate-filter"));
     buildComparisonSection();
-    buildSourcesList();
+    initPinnedPickerControl();
     initScrollSpy();
+    // visibleIds está vazio aqui — nada em Visão Geral/Temas/Comparar 1×1
+    // existe até a primeira confirmação. O diálogo modal bloqueia o resto
+    // da página nesse meio-tempo (backdrop nativo do <dialog>), então não é
+    // preciso esconder `<main>` para isso.
+    openPicker();
   }
 
   document.addEventListener("DOMContentLoaded", init);

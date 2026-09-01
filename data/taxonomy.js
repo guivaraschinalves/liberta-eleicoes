@@ -31,5 +31,24 @@ window.THEMES = [
 ];
 
 // Ordem de exibição dos candidatos: alfabética pelo nome de urna — não pela
-// posição em pesquisas eleitorais — para não sugerir ranking ou endosso.
-window.CANDIDATE_ORDER = ["caiado", "flavio-bolsonaro", "lula", "renan-santos", "zema"];
+// posição em pesquisas eleitorais — para não sugerir ranking ou endosso. Os
+// 13 são todos os candidatos a presidente registrados no TSE em 2026; quais
+// deles aparecem em cada visita é escolhido no diálogo de seleção (ver
+// `applySelection` em app.js), não aqui — esta lista continua sendo "todo
+// mundo", nesta ordem, para o próprio diálogo, para o preset "Todos os 13" e
+// para a seção Fontes (que sempre lista os 13, independente do filtro).
+window.CANDIDATE_ORDER = [
+  "clariana-barao",
+  "edmilson-costa",
+  "augusto-cury",
+  "flavio-bolsonaro",
+  "hertz-dias",
+  "lula",
+  "pablo-marcal",
+  "renan-santos",
+  "zema",
+  "caiado",
+  "rui-costa-pimenta",
+  "samara-martins",
+  "wilson-grassi"
+];

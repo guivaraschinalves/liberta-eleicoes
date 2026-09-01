@@ -22,10 +22,18 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_FILES = [
     "data/taxonomy.js",
     "data/sources.js",
+    "data/candidates/augusto-cury.js",
     "data/candidates/caiado.js",
+    "data/candidates/clariana-barao.js",
+    "data/candidates/edmilson-costa.js",
     "data/candidates/flavio-bolsonaro.js",
+    "data/candidates/hertz-dias.js",
     "data/candidates/lula.js",
+    "data/candidates/pablo-marcal.js",
     "data/candidates/renan-santos.js",
+    "data/candidates/rui-costa-pimenta.js",
+    "data/candidates/samara-martins.js",
+    "data/candidates/wilson-grassi.js",
     "data/candidates/zema.js",
 ]
 
@@ -107,7 +115,9 @@ def render(data):
         lines.append(f"- **Número:** {b['number']}")
         lines.append(f"- **Vice:** {b['vp']}")
         lines.append(f"- **Coligação:** {b['coalition']}")
-        if src:
+        if src and src.get("planFiled") is False:
+            lines.append("- **Plano de governo:** não registrado no TSE.")
+        elif src:
             lines.append(f"- **Plano de governo:** {src.get('planTitle', '')} ({src.get('pageCount', '?')} páginas) — {src.get('officialPdfUrl', '')}")
         lines.append("")
 

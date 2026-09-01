@@ -21,16 +21,25 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 SOURCES_DIR = ROOT / "sources"
 
-# Mesma ordem de carregamento do index.html: taxonomia -> fontes -> um
-# arquivo por candidato -> app.js. A ordem entre candidatos não importa (cada
-# um só grava a própria chave em window.CANDIDATES_DATA).
+# Mesma ordem de carregamento do index.html: taxonomia -> fontes -> pesquisa
+# -> um arquivo por candidato -> app.js. A ordem entre candidatos não importa
+# (cada um só grava a própria chave em window.CANDIDATES_DATA).
 SCRIPT_FILES = [
     "data/taxonomy.js",
     "data/sources.js",
+    "data/poll.js",
+    "data/candidates/augusto-cury.js",
     "data/candidates/caiado.js",
+    "data/candidates/clariana-barao.js",
+    "data/candidates/edmilson-costa.js",
     "data/candidates/flavio-bolsonaro.js",
+    "data/candidates/hertz-dias.js",
     "data/candidates/lula.js",
+    "data/candidates/pablo-marcal.js",
     "data/candidates/renan-santos.js",
+    "data/candidates/rui-costa-pimenta.js",
+    "data/candidates/samara-martins.js",
+    "data/candidates/wilson-grassi.js",
     "data/candidates/zema.js",
     "app.js",
 ]

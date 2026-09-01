@@ -1,9 +1,11 @@
 # Liberta Eleições
 
 Site estático (HTML/CSS/JS puro, sem build, sem dependências) que compara as
-propostas dos 5 candidatos com mais intenção de voto na eleição presidencial
-de 2026 (pesquisa BTG/Nexus, 17/ago/2026): Lula (PT), Flávio Bolsonaro (PL),
-Ronaldo Caiado (PSD), Renan Santos (Missão) e Romeu Zema (Novo).
+propostas dos **13 candidatos a presidente registrados no TSE** para a
+eleição de 2026: Lula (PT), Flávio Bolsonaro (PL), Ronaldo Caiado (PSD),
+Renan Santos (Missão), Romeu Zema (Novo), Augusto Cury (Avante), Pablo
+Marçal (PRTB), Rui Costa Pimenta (PCO), Hertz Dias (PSTU), Edmilson Costa
+(PCB), Clariana Barão (DC), Wilson Grassi (Democrata) e Samara Martins (UP).
 
 Cobertura em **6 temas** — Economia, Educação, Segurança Pública, Saúde,
 Política Externa e Combate à Corrupção — cada um com aba de **Diagnóstico**
@@ -13,11 +15,18 @@ par. Todo trecho de posicionamento é **citação literal** dos **planos de
 governo oficiais registrados no TSE** (nunca resumo nosso), com a página do
 PDF referenciada.
 
-Página única, navegação por âncora. As 4 seções principais (Visão Geral,
-Temas, Comparar 1×1, Fontes) são `<details>` retráteis, todas fechadas por
-padrão ao abrir o site — clique no título de cada uma para abrir,
-independentes umas das outras. Dentro de Temas, os 6 temas ficam em abas
-(clique para trocar), e Economia tem um segundo nível de abas para os
+Página única, navegação por âncora. Ao abrir o site, um **diálogo de
+seleção de candidatos** pede pra escolher quem aparece — os 13, um atalho
+de "Top 5" pela pesquisa Atlas/Bloomberg ou uma seleção livre — antes de
+qualquer seção existir; nada fica marcado por padrão, e a escolha não é
+salva entre visitas (pede de novo a cada carregamento). Um botão fixo
+"Candidatos" no topbar reabre o mesmo diálogo a qualquer momento, sem
+recarregar a página, e atualiza Visão Geral, Temas e Comparar 1×1 juntos —
+Fontes é a exceção: sempre lista os 13, independente do filtro. As 4 seções
+principais (Visão Geral, Temas, Comparar 1×1, Fontes) são `<details>`
+retráteis, todas fechadas por padrão — clique no título de cada uma para
+abrir, independentes umas das outras. Dentro de Temas, os 6 temas ficam em
+abas (clique para trocar), e Economia tem um segundo nível de abas para os
 subtemas.
 
 Este repositório é uma bifurcação de
@@ -49,20 +58,21 @@ Artifact, que bloqueia qualquer `fetch()` externo.
 ## Estrutura
 
 ```
-index.html          → casca da página (sidebar, seções) — script tags na ordem certa
-styles.css           → visual (tokens de cor/tipografia/candidato, cards, tabs)
-app.js               → lê os dados e monta as seções (DOM puro, sem framework)
+index.html          → casca da página (sidebar, diálogo de seleção, seções) — script tags na ordem certa
+styles.css           → visual (tokens de cor/tipografia/candidato, cards, tabs, diálogo)
+app.js               → lê os dados, monta as seções e o diálogo de seleção (DOM puro, sem framework)
 data/
-  taxonomy.js         → os 6 temas (window.THEMES), subtemas de Economia, ordem dos candidatos
-  sources.js           → URL oficial de cada plano no TSE + caminho do PDF local
+  taxonomy.js         → os 6 temas (window.THEMES), subtemas de Economia, ordem dos 13 candidatos
+  sources.js           → URL oficial de cada plano no TSE + caminho do PDF local (+ planFiled)
+  poll.js               → pesquisa Atlas/Bloomberg: só alimenta o preset "Top 5" e os badges do diálogo
   candidates/*.js       → um arquivo por candidato: dados básicos (com data de nascimento) + citações por tema
 sources/             → foto oficial (TSE) + cópia de cada PDF por candidato
 scripts/
   build_artifact.py    → gera dist/liberta-eleicoes-artifact.html (versão self-contained p/ Artifact)
   export_content_md.py  → gera CONTEUDO-DO-SITE.md (dump de data/*.js em markdown)
-  export_plans_md.py     → gera PLANOS-DE-GOVERNO.md (texto bruto dos 5 PDFs, um arquivo só)
+  export_plans_md.py     → gera PLANOS-DE-GOVERNO.md (texto bruto dos PDFs, um arquivo só)
 CONTEUDO-DO-SITE.md  → leitura de apoio: tudo que está em data/*.js, formatado (não é lido pelo site)
-PLANOS-DE-GOVERNO.md → leitura de apoio: os 5 planos de governo completos, um atrás do outro
+PLANOS-DE-GOVERNO.md → leitura de apoio: os planos de governo completos, um atrás do outro
 ```
 
 ## Como atualizar um candidato
@@ -86,25 +96,57 @@ não gravada como número fixo, então continua correta em qualquer visita.
 
 Para trocar/adicionar um candidato: crie `data/candidates/<id>.js` seguindo
 o formato acima, adicione `<script src="data/candidates/<id>.js">` em
-`index.html` (e na lista `SCRIPT_FILES` de `scripts/build_artifact.py`),
-inclua `<id>` em `CANDIDATE_ORDER` (`data/taxonomy.js`), adicione a entrada
-em `data/sources.js`, e coloque a foto oficial em `sources/<id>.jpg` e o PDF
-em `sources/<id>.pdf`.
+`index.html` (e nas listas `SCRIPT_FILES` de `scripts/build_artifact.py` e
+`DATA_FILES` de `scripts/export_content_md.py` — `scripts/export_plans_md.py`
+não precisa, ele lê `CANDIDATE_ORDER` direto), inclua `<id>` em
+`CANDIDATE_ORDER` (`data/taxonomy.js`, ordenado por `ballotName`), adicione a
+entrada em `data/sources.js`, uma linha em `results` de `data/poll.js` (ou
+`null` se a pesquisa de referência não nomeou esse candidato), e coloque a
+foto oficial em `sources/<id>.jpg` e o PDF em `sources/<id>.pdf`.
+
+Se o candidato registrou candidatura **sem** entregar Proposta de Governo ao
+TSE, marque `planFiled: false` na entrada dele em `data/sources.js` (com
+`officialPdfUrl`/`localPdfPath`/`pageCount` como `null` **literal**, não
+string vazia nem chave omitida — os validadores de `build_artifact.py`
+dependem disso). O site então mostra, em todo card de Temas e na linha de
+Fontes desse candidato, uma mensagem clara de que não há plano registrado —
+bem diferente de "não abordado", que pressupõe um plano real que só não fala
+daquele tema.
 
 Para adicionar/renomear um tema: edite `window.THEMES` em `data/taxonomy.js`
 (só o tema `economia` leva `subthemes`) e replique a chave em
 `themes.<id>` de cada `data/candidates/*.js`.
 
+## Seletor de candidatos
+
+Nada em Visão Geral, Temas ou Comparar 1×1 existe até o usuário confirmar
+uma seleção no diálogo que abre sozinho ao carregar a página (`#candidate-picker`
+em `index.html`, montado por `buildCandidatePicker`/`applySelection` em
+`app.js`) — a escolha não fica salva entre visitas, então o diálogo abre de
+novo a cada carregamento. Um botão fixo no topbar ("Candidatos: ...") reabre
+o mesmo diálogo depois, pré-marcado com a seleção atual, sem esconder o
+resto da página (o `<dialog>` nativo já bloqueia interação com o fundo via
+`::backdrop`). Fontes é a única seção que ignora o filtro — sempre lista os
+13, para referência de transparência.
+
+O preset "Top 5" vem de `data/poll.js` (`presetTop5Ids`), hoje a pesquisa
+Atlas/Bloomberg — trocar de pesquisa é editar esse arquivo, nunca a ordem de
+exibição dos candidatos (`CANDIDATE_ORDER`), que continua sempre alfabética
+por nome de urna, sem relação com pesquisa nenhuma.
+
 ## De onde vieram os dados
 
-Os 5 PDFs foram baixados do **Portal de Dados Abertos do TSE**
+Os PDFs e fotos oficiais vêm do **Portal de Dados Abertos do TSE**
 (`dadosabertos.tse.jus.br/dataset/candidatos-2026`, recurso "BR — Proposta de
-Governo", pacote `proposta_governo_2026_BR.zip`) e identificados cruzando o
-`SQ_CANDIDATO` de cada um no arquivo de metadados
-(`consulta_cand_2026_BR.csv`, recurso "Candidatos") com o nome do arquivo PDF
-dentro do pacote (`2026BR<SQ_CANDIDATO>_01.pdf`). As fotos oficiais vieram do
-recurso "BR — Fotos de Candidatos" do mesmo dataset, pareadas pelo mesmo
-`SQ_CANDIDATO`. Fallback individual de PDF, quando necessário:
+Governo", pacote `proposta_governo_2026_BR.zip`, e recurso "BR — Fotos de
+Candidatos"), identificados cruzando o `SQ_CANDIDATO` de cada candidato no
+arquivo de metadados (`consulta_cand_2026_BR.csv`, recurso "Candidatos") com
+o nome do arquivo dentro dos pacotes (`2026BR<SQ_CANDIDATO>_01.pdf` para o
+plano, `FBR<SQ_CANDIDATO>_div.jpg` para a foto). Quando o domínio
+`dadosabertos.tse.jus.br` não está acessível diretamente, os mesmos arquivos
+— confirmados byte a byte idênticos ao original do TSE — podem ser obtidos
+via `static.ndmais.com.br/eleicoes/2026/...`, que replica essa mesma
+estrutura de nomes. Fallback individual de PDF, quando necessário:
 `divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/<ID>`. Em caso de
 dúvida ou divergência, o PDF oficial (linkado em cada card e na seção
 Fontes) prevalece sobre qualquer citação aqui reproduzida.
@@ -152,9 +194,10 @@ python3 scripts/export_plans_md.py     # gera PLANOS-DE-GOVERNO.md
 
 `CONTEUDO-DO-SITE.md` é o conteúdo já curado (o que está em `data/*.js`,
 formatado — diagnóstico e propostas com citação e página, por tema).
-`PLANOS-DE-GOVERNO.md` é a matéria-prima: o texto bruto extraído dos 5 PDFs
-oficiais, um atrás do outro. Regenere os dois sempre que os dados mudarem;
-nenhum dos dois é referenciado por `index.html`/`app.js`.
+`PLANOS-DE-GOVERNO.md` é a matéria-prima: o texto bruto extraído dos PDFs
+oficiais, um atrás do outro (candidato sem plano registrado entra só com um
+aviso, sem texto). Regenere os dois sempre que os dados mudarem; nenhum dos
+dois é referenciado por `index.html`/`app.js`.
 
 ## Publicar no GitHub Pages
 

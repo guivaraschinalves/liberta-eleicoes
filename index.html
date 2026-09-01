@@ -32,18 +32,37 @@
       <a class="nav-link" href="#comparacao">Comparar 1×1</a>
       <a class="nav-link" href="#fontes">Fontes</a>
     </nav>
+
+    <button type="button" id="candidate-picker-toggle" class="tab-btn candidate-picker-toggle" hidden>Candidatos ▾</button>
   </header>
+
+  <dialog id="candidate-picker" aria-labelledby="candidate-picker-title">
+    <h2 id="candidate-picker-title">Escolha os candidatos</h2>
+    <p class="section-note">
+      Escolha quais dos 13 candidatos aparecem em Visão Geral, Temas e Comparar 1×1. Você pode
+      trocar essa seleção a qualquer momento pelo botão "Candidatos" no topo da página. A seção
+      Fontes sempre lista os 13 registrados no TSE, para referência de transparência, independente
+      desta escolha.
+    </p>
+    <div id="candidate-picker-presets" class="candidate-picker-presets"></div>
+    <div id="candidate-picker-grid" class="candidate-picker-grid"></div>
+    <button type="button" id="candidate-picker-confirm" class="candidate-picker-confirm" disabled>
+      Confirmar seleção (<span id="candidate-picker-count">0</span>)
+    </button>
+  </dialog>
 
   <main class="main">
     <div class="hero">
       <p class="eyebrow">Eleição presidencial · outubro de 2026</p>
       <h1>Comparador de propostas — Presidenciáveis 2026</h1>
       <p class="lede">
-        Comparação lado a lado das propostas de governo dos 5 candidatos com mais intenção de
-        voto na eleição presidencial de 2026 (pesquisa BTG/Nexus, 17/ago/2026), em 6 temas —
-        Economia, Educação, Segurança Pública, Saúde, Política Externa e Combate à Corrupção —
-        cada um com aba de Diagnóstico e aba de Propostas. Cada seção abaixo (Visão Geral, Temas,
-        Comparar 1×1, Fontes) é retrátil e começa fechada — clique no título para abrir.
+        Comparação lado a lado das propostas de governo dos 13 candidatos a presidente
+        registrados no TSE para a eleição de 2026, em 6 temas — Economia, Educação, Segurança
+        Pública, Saúde, Política Externa e Combate à Corrupção — cada um com aba de Diagnóstico e
+        aba de Propostas. Ao abrir o site, escolha quem aparece: os 13, um atalho de "Top 5" por
+        pesquisa ou uma seleção sua — dá para trocar depois pelo botão "Candidatos" no topo. Cada
+        seção abaixo (Visão Geral, Temas, Comparar 1×1, Fontes) é retrátil e começa fechada —
+        clique no título para abrir.
       </p>
       <p class="disclaimer">
         Todo trecho de posicionamento neste site é <strong>citado literalmente</strong> dos planos
@@ -51,7 +70,7 @@
         onde conferir. Onde um tema não é abordado explicitamente no plano, isso é indicado, não é
         erro de coleta. O título de cada proposta é redigido por nós só para identificar o card; o
         texto citado é sempre do próprio plano. Ordem dos candidatos: sempre alfabética pelo nome
-        de urna, sem relação com pesquisas.
+        de urna, sem relação com pesquisas ou com a seleção do momento.
       </p>
     </div>
 
@@ -72,7 +91,6 @@
         cenário atual) e uma aba de <strong>Propostas</strong> (o que ele promete fazer). Em
         Economia, ainda há um nível a mais de abas, uma por subtema.
       </p>
-      <div id="temas-candidate-filter" class="candidate-filter-host"></div>
       <div id="temas-tabs" class="tabs" role="tablist" aria-label="Temas"></div>
       <div id="temas-panels"></div>
     </details>
@@ -85,7 +103,7 @@
         Escolha 2 candidatos para ver as citações dos dois lado a lado, em todos os temas, sem
         precisar trocar de aba o tempo todo.
       </p>
-      <div class="compare-picker">
+      <div id="compare-picker" class="compare-picker">
         <label class="compare-picker-field">
           <span>Candidato A</span>
           <select id="compare-select-a"></select>
@@ -96,6 +114,9 @@
           <select id="compare-select-b"></select>
         </label>
       </div>
+      <p id="compare-not-enough" class="compare-empty" hidden>
+        Selecione pelo menos 2 candidatos para comparar — use "Candidatos" no topo da página.
+      </p>
       <div id="compare-head-to-head" class="candidate-grid compare-head-to-head"></div>
 
       <div id="compare-temas-tabs" class="tabs" role="tablist" aria-label="Temas (comparação)"></div>
@@ -107,10 +128,11 @@
         <h2>Fontes</h2>
       </summary>
       <p class="section-note">
-        Os 5 planos de governo abaixo foram baixados do Portal de Dados Abertos do TSE
-        (dataset "Candidatos 2026", recurso "BR — Proposta de Governo") e as fotos oficiais do
-        recurso "BR — Fotos de Candidatos". Cópias de cada PDF estão versionadas em
-        <code>sources/</code> neste repositório.
+        Os 13 candidatos registrados no TSE — independente do que estiver selecionado acima. Os
+        planos de governo foram baixados do Portal de Dados Abertos do TSE (dataset "Candidatos
+        2026", recurso "BR — Proposta de Governo") e as fotos oficiais do recurso "BR — Fotos de
+        Candidatos". Cópias de cada PDF estão versionadas em <code>sources/</code> neste
+        repositório.
       </p>
       <div id="sources-list" class="sources-list"></div>
       <p class="footer-disclaimer">
@@ -125,10 +147,19 @@
 
 <script src="data/taxonomy.js"></script>
 <script src="data/sources.js"></script>
+<script src="data/poll.js"></script>
+<script src="data/candidates/augusto-cury.js"></script>
 <script src="data/candidates/caiado.js"></script>
+<script src="data/candidates/clariana-barao.js"></script>
+<script src="data/candidates/edmilson-costa.js"></script>
 <script src="data/candidates/flavio-bolsonaro.js"></script>
+<script src="data/candidates/hertz-dias.js"></script>
 <script src="data/candidates/lula.js"></script>
+<script src="data/candidates/pablo-marcal.js"></script>
 <script src="data/candidates/renan-santos.js"></script>
+<script src="data/candidates/rui-costa-pimenta.js"></script>
+<script src="data/candidates/samara-martins.js"></script>
+<script src="data/candidates/wilson-grassi.js"></script>
 <script src="data/candidates/zema.js"></script>
 <script src="app.js"></script>
 </body>

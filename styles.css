@@ -221,11 +221,57 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
 .candidate-meta dd { display: inline; margin: 0; }
 .candidate-meta dd::after { content: ""; display: block; }
 
-/* ---------- Filtro de candidatos (Temas) ---------- */
-.candidate-filter-host { margin-bottom: 16px; }
-.candidate-filter { display: flex; flex-wrap: wrap; gap: 8px; }
+/* ---------- Diálogo de seleção de candidatos ---------- */
+#candidate-picker {
+  border: 1px solid var(--border); border-radius: 16px; padding: 24px clamp(18px, 4vw, 32px);
+  background: var(--page-bg); color: var(--ink); max-width: min(720px, 92vw);
+  width: 100%; box-shadow: var(--shadow);
+}
+#candidate-picker::backdrop { background: rgba(0, 0, 0, 0.55); }
+#candidate-picker h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.35rem; margin: 0 0 8px; }
+
+.candidate-picker-presets { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 20px; }
+/* Mesmo tratamento dourado de CTA das abas ativas (.tab-btn[aria-selected="true"]). */
+.candidate-picker-presets button {
+  font-family: var(--font-sans); font-weight: 700; font-size: 0.92rem; color: var(--gold-ink);
+  background: var(--gold); border: 1px solid var(--gold); border-radius: 999px; padding: 9px 18px; cursor: pointer;
+}
+.candidate-picker-presets button:hover { filter: brightness(0.95); }
+.candidate-picker-presets button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.candidate-picker-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;
+  max-height: 48vh; overflow-y: auto; padding: 2px; margin-bottom: 20px;
+}
+.candidate-picker-chip {
+  display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 9px 12px; cursor: pointer; font-size: 0.88rem;
+}
+.candidate-picker-chip:has(input:checked) { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.candidate-picker-chip strong { display: block; }
+.candidate-picker-party { display: block; font-size: 0.74rem; color: var(--ink-muted); }
+.candidate-picker-poll { margin-left: auto; font-family: var(--font-label); font-size: 0.76rem; color: var(--ink-muted); flex: none; }
+
+.candidate-picker-confirm {
+  font-family: var(--font-sans); font-weight: 700; font-size: 0.98rem; color: var(--gold-ink);
+  background: var(--gold); border: 1px solid var(--gold); border-radius: 999px; padding: 11px 22px; cursor: pointer;
+}
+.candidate-picker-confirm:disabled { opacity: 0.45; cursor: not-allowed; }
+.candidate-picker-confirm:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* ---------- Controle fixo no topbar ---------- */
+.candidate-picker-toggle { flex: none; }
 
 /* ---------- Comparar 1×1 ---------- */
+/* [hidden] perde empate de especificidade contra .candidate-grid/.tabs/
+   .compare-picker (todas 0-1-0, e a folha do site vem depois da UA
+   stylesheet) — sem isso, `element.hidden = true` em Comparar 1×1 (menos de
+   2 candidatos selecionados) não escondia nada. */
+#compare-picker[hidden],
+#compare-head-to-head[hidden],
+#compare-temas-tabs[hidden] {
+  display: none;
+}
 .compare-picker {
   display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;
 }
@@ -277,6 +323,9 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
   color: var(--ink-muted); margin: 0 0 7px;
 }
 .compare-empty { font-size: 0.92rem; color: var(--ink-muted); font-style: italic; }
+/* Candidatura sem Proposta de Governo registrada — mensagem deliberadamente
+   diferente do itálico neutro acima, para não parecer só "tema não coberto". */
+.compare-empty-noplan { font-style: normal; color: var(--danger); }
 
 /* Citação literal do plano de governo. */
 .plan-quote {
@@ -316,6 +365,7 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
 .source-row .links { display: flex; gap: 12px; flex: none; }
 .source-row a { font-family: var(--font-label); font-size: 0.76rem; color: var(--brand); text-decoration: none; }
 .source-row a:hover { text-decoration: underline; }
+.source-row-noplan .plan-title { color: var(--ink-muted); font-style: italic; }
 .footer-disclaimer { font-size: 0.84rem; color: var(--ink-muted); max-width: 76ch; line-height: 1.58; }
 
 @media (max-width: 860px) {
@@ -337,4 +387,6 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
   .compare-picker { flex-direction: column; align-items: stretch; gap: 10px; }
   .compare-picker-field { min-width: 0; }
   .compare-picker-vs { padding-bottom: 0; align-self: center; }
+  .candidate-picker-grid { grid-template-columns: 1fr; max-height: 56vh; }
+  .candidate-picker-confirm { width: 100%; }
 }
