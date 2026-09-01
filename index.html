@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liberta Eleições</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='19' font-size='20'%3E%F0%9F%97%B3%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-emoji" aria-hidden="true">🗳️</span>
+      <div>
+        <div class="brand-name">Liberta Eleições</div>
+        <div class="brand-tag">Presidenciáveis 2026</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Seções">
+      <a class="nav-link" href="#visao-geral">Visão Geral</a>
+      <a class="nav-link" href="#temas">Temas</a>
+      <a class="nav-link" href="#comparacao">Comparar 1×1</a>
+      <a class="nav-link" href="#fontes">Fontes</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <p class="eyebrow">Eleição presidencial · outubro de 2026</p>
+    <h1>Comparador de propostas — Presidenciáveis 2026</h1>
+    <p class="lede">
+      Comparação lado a lado das propostas de governo dos 5 candidatos com mais intenção de
+      voto na eleição presidencial de 2026 (pesquisa BTG/Nexus, 17/ago/2026), em 6 temas —
+      Economia, Educação, Segurança Pública, Saúde, Política Externa e Combate à Corrupção —
+      cada um com aba de Diagnóstico e aba de Propostas. Cada seção abaixo (Visão Geral, Temas,
+      Comparar 1×1, Fontes) é retrátil e começa fechada — clique no título para abrir.
+    </p>
+    <p class="disclaimer">
+      Todo trecho de posicionamento neste site é <strong>citado literalmente</strong> dos planos
+      de governo oficiais registrados no TSE — nunca resumo nosso — sempre com a página do PDF
+      onde conferir. Onde um tema não é abordado explicitamente no plano, isso é indicado, não é
+      erro de coleta. O título de cada proposta é redigido por nós só para identificar o card; o
+      texto citado é sempre do próprio plano. Ordem dos candidatos: sempre alfabética pelo nome
+      de urna, sem relação com pesquisas.
+    </p>
+
+    <details id="visao-geral" class="page-section">
+      <summary class="section-heading">
+        <h2>Visão Geral</h2>
+      </summary>
+      <div id="candidate-grid" class="candidate-grid"></div>
+    </details>
+
+    <details id="temas" class="page-section">
+      <summary class="section-heading">
+        <h2>Temas</h2>
+        <span class="count">6 temas · diagnóstico e propostas</span>
+      </summary>
+      <p class="section-note">
+        Cada tema tem uma aba de <strong>Diagnóstico</strong> (o que o candidato diz sobre o
+        cenário atual) e uma aba de <strong>Propostas</strong> (o que ele promete fazer). Em
+        Economia, ainda há um nível a mais de abas, uma por subtema.
+      </p>
+      <div id="temas-candidate-filter" class="candidate-filter-host"></div>
+      <div id="temas-tabs" class="tabs" role="tablist" aria-label="Temas"></div>
+      <div id="temas-panels"></div>
+    </details>
+
+    <details id="comparacao" class="page-section">
+      <summary class="section-heading">
+        <h2>Comparar 1×1</h2>
+      </summary>
+      <p class="section-note">
+        Escolha 2 candidatos para ver as citações dos dois lado a lado, em todos os temas, sem
+        precisar trocar de aba o tempo todo.
+      </p>
+      <div class="compare-picker">
+        <label class="compare-picker-field">
+          <span>Candidato A</span>
+          <select id="compare-select-a"></select>
+        </label>
+        <span class="compare-picker-vs">vs.</span>
+        <label class="compare-picker-field">
+          <span>Candidato B</span>
+          <select id="compare-select-b"></select>
+        </label>
+      </div>
+      <div id="compare-head-to-head" class="candidate-grid compare-head-to-head"></div>
+
+      <div id="compare-temas-tabs" class="tabs" role="tablist" aria-label="Temas (comparação)"></div>
+      <div id="compare-temas-panels"></div>
+    </details>
+
+    <details id="fontes" class="page-section">
+      <summary class="section-heading">
+        <h2>Fontes</h2>
+      </summary>
+      <p class="section-note">
+        Os 5 planos de governo abaixo foram baixados do Portal de Dados Abertos do TSE
+        (dataset "Candidatos 2026", recurso "BR — Proposta de Governo") e as fotos oficiais do
+        recurso "BR — Fotos de Candidatos". Cópias de cada PDF estão versionadas em
+        <code>sources/</code> neste repositório.
+      </p>
+      <div id="sources-list" class="sources-list"></div>
+      <p class="footer-disclaimer">
+        Este site é um projeto independente de organização de informação pública eleitoral.
+        Não representa nem é endossado por nenhum candidato, partido ou pela Justiça
+        Eleitoral. Em caso de divergência, o PDF oficial no TSE prevalece sobre qualquer
+        conteúdo aqui apresentado.
+      </p>
+    </details>
+  </main>
+</div>
+
+<script src="data/taxonomy.js"></script>
+<script src="data/sources.js"></script>
+<script src="data/candidates/caiado.js"></script>
+<script src="data/candidates/flavio-bolsonaro.js"></script>
+<script src="data/candidates/lula.js"></script>
+<script src="data/candidates/renan-santos.js"></script>
+<script src="data/candidates/zema.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
