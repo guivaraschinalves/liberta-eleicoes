@@ -27,14 +27,24 @@ Contagem de Palavras (leitura editorial e contagem mecânica, respectivamente
 — não citação), e com um tema novo, Combate à Corrupção, que o original não
 tinha.
 
-## Por que esse formato
+## Identidade visual
 
-O visual (sidebar, tipografia serifada+mono, tema claro/escuro) é herdado do
+Paleta e tipografia herdadas da marca **Poder & Mercado**: verde-escuro
+`#0D2220`, verde `#1ED760`, dourado `#FEE801`, branco e preto — dourado é a
+cor de ação (abas ativas, sempre com texto escuro por cima, igual aos CTAs
+da marca), verde é o brilho ambiente atrás do hero e a borda que aparece ao
+passar o mouse nos cards. Tipografia: **Neue Haas Grotesk Display Pro** nos
+títulos (fonte paga, sem CDN público — cai para Helvetica Neue/Arial quando
+não instalada) e **Montserrat** (Google Fonts) no texto e nos rótulos. Os
+tokens de cor/fonte ficam todos no topo de `styles.css`; claro e escuro
+continuam suportados via `prefers-color-scheme`/`data-theme`, os dois
+recolorindo para a mesma paleta.
+
+O mecanismo de dados (`window.X = {...}` em `data/*.js`, sem nenhuma
+chamada de rede em runtime) é herdado do
 [ftm-chartbook](https://github.com/guivaraschinalves/ftm-chartbook), outro
-projeto do mesmo autor — mas **não** o mecanismo. Os dados vivem em
-arquivos `data/*.js` (`window.X = {...}`), carregados como `<script>`
-normal, sem nenhuma chamada de rede em runtime — o site também precisa
-funcionar como Claude Artifact, que bloqueia qualquer `fetch()` externo.
+projeto do mesmo autor — o site também precisa funcionar como Claude
+Artifact, que bloqueia qualquer `fetch()` externo.
 
 ## Estrutura
 

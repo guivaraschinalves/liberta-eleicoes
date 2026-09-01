@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liberta Eleições</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='19' font-size='20'%3E%F0%9F%97%B3%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Montserrat (Google Fonts) é a fonte de texto/rótulos da identidade
+     "Poder & Mercado" adotada aqui. Neue Haas Grotesk Display Pro, a fonte
+     de título da mesma identidade, é licenciada e não tem CDN público — os
+     títulos (--font-display em styles.css) caem para Helvetica Neue/Arial
+     em quem não a tem instalada. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="app">
   <header class="topbar">
     <div class="brand">
-      <span class="brand-emoji" aria-hidden="true">🗳️</span>
+      <span class="brand-mark" aria-hidden="true"></span>
       <div>
         <div class="brand-name">Liberta Eleições</div>
         <div class="brand-tag">Presidenciáveis 2026</div>
@@ -27,23 +35,25 @@
   </header>
 
   <main class="main">
-    <p class="eyebrow">Eleição presidencial · outubro de 2026</p>
-    <h1>Comparador de propostas — Presidenciáveis 2026</h1>
-    <p class="lede">
-      Comparação lado a lado das propostas de governo dos 5 candidatos com mais intenção de
-      voto na eleição presidencial de 2026 (pesquisa BTG/Nexus, 17/ago/2026), em 6 temas —
-      Economia, Educação, Segurança Pública, Saúde, Política Externa e Combate à Corrupção —
-      cada um com aba de Diagnóstico e aba de Propostas. Cada seção abaixo (Visão Geral, Temas,
-      Comparar 1×1, Fontes) é retrátil e começa fechada — clique no título para abrir.
-    </p>
-    <p class="disclaimer">
-      Todo trecho de posicionamento neste site é <strong>citado literalmente</strong> dos planos
-      de governo oficiais registrados no TSE — nunca resumo nosso — sempre com a página do PDF
-      onde conferir. Onde um tema não é abordado explicitamente no plano, isso é indicado, não é
-      erro de coleta. O título de cada proposta é redigido por nós só para identificar o card; o
-      texto citado é sempre do próprio plano. Ordem dos candidatos: sempre alfabética pelo nome
-      de urna, sem relação com pesquisas.
-    </p>
+    <div class="hero">
+      <p class="eyebrow">Eleição presidencial · outubro de 2026</p>
+      <h1>Comparador de propostas — Presidenciáveis 2026</h1>
+      <p class="lede">
+        Comparação lado a lado das propostas de governo dos 5 candidatos com mais intenção de
+        voto na eleição presidencial de 2026 (pesquisa BTG/Nexus, 17/ago/2026), em 6 temas —
+        Economia, Educação, Segurança Pública, Saúde, Política Externa e Combate à Corrupção —
+        cada um com aba de Diagnóstico e aba de Propostas. Cada seção abaixo (Visão Geral, Temas,
+        Comparar 1×1, Fontes) é retrátil e começa fechada — clique no título para abrir.
+      </p>
+      <p class="disclaimer">
+        Todo trecho de posicionamento neste site é <strong>citado literalmente</strong> dos planos
+        de governo oficiais registrados no TSE — nunca resumo nosso — sempre com a página do PDF
+        onde conferir. Onde um tema não é abordado explicitamente no plano, isso é indicado, não é
+        erro de coleta. O título de cada proposta é redigido por nós só para identificar o card; o
+        texto citado é sempre do próprio plano. Ordem dos candidatos: sempre alfabética pelo nome
+        de urna, sem relação com pesquisas.
+      </p>
+    </div>
 
     <details id="visao-geral" class="page-section">
       <summary class="section-heading">

@@ -1,16 +1,34 @@
+/* ============================================================================
+   IDENTIDADE VISUAL — herdada da marca "Poder & Mercado": paleta de 5 cores
+   (verde-escuro, verde, dourado, branco, preto) e par tipográfico Neue Haas
+   Grotesk Display Pro (títulos) + Montserrat (texto/rótulos). Dourado é a
+   cor de ação (abas ativas, CTAs — texto escuro sobre fundo dourado, como
+   nos posts da marca); verde é o brilho ambiente (fundo, glow, bordas); as
+   duas convivem com preto/branco/verde-escuro para texto e superfícies.
+   Neue Haas Grotesk Display Pro é fonte paga, sem CDN público — declarada
+   com fallback gráfico equivalente (Helvetica Neue) para quem não a tem
+   instalada; Montserrat vem do Google Fonts (ver <link> em index.html).
+   ============================================================================ */
 :root {
   color-scheme: light;
-  --page-bg: #f9f9f7;
-  --surface: #fcfcfb;
-  --ink: #0b0b0b;
-  --ink-secondary: #52514e;
-  --ink-muted: #898781;
-  --border: rgba(11, 11, 11, 0.10);
-  --series-1: #2a78d6;
-  --danger: #e34948;
-  --brand: var(--series-1);
-  --accent-wash: rgba(42, 120, 214, 0.08);
-  --shadow: 0 10px 30px rgba(20, 20, 15, 0.08);
+  --brand-green-dark: #0d2220;
+  --brand-green: #1ed760;
+  --brand-gold: #fee801;
+  --brand-white: #ffffff;
+  --brand-black: #000000;
+
+  --page-bg: var(--brand-white);
+  --surface: #f3f6f5;
+  --ink: var(--brand-black);
+  --ink-secondary: var(--brand-green-dark);
+  --ink-muted: #6b7877;
+  --border: rgba(13, 34, 32, 0.14);
+  --danger: #c23a3a;
+  --brand: var(--brand-green-dark);
+  --gold: var(--brand-gold);
+  --gold-ink: var(--brand-black);
+  --accent-wash: rgba(13, 34, 32, 0.06);
+  --shadow: 0 10px 30px rgba(13, 34, 32, 0.10);
 
   /* Cores por candidato — só para diferenciar o filtro de candidatos e as
      bordas nos cards (categóricas, sem relação com as cores oficiais de
@@ -21,24 +39,26 @@
   --cand-renan-santos: #9b6bb3;
   --cand-zema: #b3922a;
 
-  --font-serif: 'Iowan Old Style', 'STIX Two Text', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', 'Roboto Mono', Consolas, monospace;
+  --font-display: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-label: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --page-bg: #0d0d0d;
-    --surface: #1a1a19;
-    --ink: #ffffff;
-    --ink-secondary: #c3c2b7;
-    --ink-muted: #898781;
-    --border: rgba(255, 255, 255, 0.10);
-    --series-1: #3987e5;
+    --page-bg: var(--brand-black);
+    --surface: var(--brand-green-dark);
+    --ink: var(--brand-white);
+    --ink-secondary: #b7c9c5;
+    --ink-muted: #7c8c89;
+    --border: rgba(30, 215, 96, 0.16);
     --danger: #e66767;
-    --accent-wash: rgba(57, 135, 229, 0.14);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --brand: var(--brand-gold);
+    --gold: var(--brand-gold);
+    --gold-ink: var(--brand-black);
+    --accent-wash: rgba(30, 215, 96, 0.10);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     --cand-caiado: #56b3a3;
     --cand-flavio-bolsonaro: #e08e54;
     --cand-lula: #3987e5;
@@ -48,16 +68,18 @@
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page-bg: #0d0d0d;
-  --surface: #1a1a19;
-  --ink: #ffffff;
-  --ink-secondary: #c3c2b7;
-  --ink-muted: #898781;
-  --border: rgba(255, 255, 255, 0.10);
-  --series-1: #3987e5;
+  --page-bg: var(--brand-black);
+  --surface: var(--brand-green-dark);
+  --ink: var(--brand-white);
+  --ink-secondary: #b7c9c5;
+  --ink-muted: #7c8c89;
+  --border: rgba(30, 215, 96, 0.16);
   --danger: #e66767;
-  --accent-wash: rgba(57, 135, 229, 0.14);
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --brand: var(--brand-gold);
+  --gold: var(--brand-gold);
+  --gold-ink: var(--brand-black);
+  --accent-wash: rgba(30, 215, 96, 0.10);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   --cand-caiado: #56b3a3;
   --cand-flavio-bolsonaro: #e08e54;
   --cand-lula: #3987e5;
@@ -94,9 +116,15 @@ body { background: var(--page-bg); }
   z-index: 10;
 }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--brand); flex: none; }
-.brand-emoji { flex-shrink: 0; font-size: 1.3rem; line-height: 1; }
-.brand-name { font-family: var(--font-serif); font-size: 1.08rem; color: var(--ink); line-height: 1.1; }
-.brand-tag { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-muted); margin-top: 2px; }
+/* Marca quadrada dourada no lugar do antigo emoji — mesmo papel do "&"
+   colorido no logotipo "Poder & Mercado": um acento de cor ao lado do nome,
+   sem depender de emoji. */
+.brand-mark { flex-shrink: 0; width: 11px; height: 11px; border-radius: 3px; background: var(--gold); }
+.brand-name {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em;
+  text-transform: uppercase; color: var(--ink); line-height: 1.1;
+}
+.brand-tag { font-family: var(--font-label); font-size: 0.64rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-muted); margin-top: 3px; }
 
 .nav { display: flex; flex-direction: row; flex-wrap: wrap; gap: 2px; }
 .nav-link {
@@ -110,16 +138,33 @@ body { background: var(--page-bg); }
 /* ---------- Main ---------- */
 .main { padding: 40px 48px 90px; max-width: 1360px; margin: 0 auto; width: 100%; }
 
+/* Hero: mesmo brilho radial verde+dourado ambiente da seção de abertura da
+   identidade "Poder & Mercado", contido dentro do card (isolation cria um
+   novo contexto de empilhamento, então z-index: -1 no glow fica atrás só do
+   conteúdo daqui dentro, sem vazar para o resto da página). */
+.hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+  padding: 32px clamp(20px, 4vw, 48px) 36px; margin-bottom: 8px;
+}
+.hero::before {
+  content: ""; position: absolute; z-index: -1; inset: -60% -10% auto -10%; height: 260%;
+  background:
+    radial-gradient(ellipse 55% 60% at 22% 20%, var(--brand-green) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 45% at 92% 5%, var(--brand-gold) 0%, transparent 70%);
+  opacity: 0.16; pointer-events: none;
+}
+
 .eyebrow {
-  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em;
+  font-family: var(--font-label); text-transform: uppercase; letter-spacing: 0.1em;
   font-size: 0.72rem; color: var(--brand); margin: 0 0 10px;
 }
-h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin: 0 0 12px; text-wrap: balance; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; margin: 0 0 12px; text-wrap: balance; letter-spacing: -0.01em; }
 .lede { color: var(--ink-secondary); max-width: 76ch; font-size: 1.06rem; line-height: 1.58; margin: 0 0 14px; }
 .disclaimer {
   font-size: 0.92rem; color: var(--ink-secondary); max-width: 76ch; line-height: 1.58;
-  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--brand);
-  border-radius: 6px; padding: 12px 16px; margin: 0 0 8px;
+  background: var(--page-bg); border: 1px solid var(--border); border-left: 3px solid var(--gold);
+  border-radius: 6px; padding: 12px 16px; margin: 0;
 }
 
 /* ---------- Page sections (retráteis: cada uma é um <details>) ---------- */
@@ -130,8 +175,8 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
 }
 .section-heading::-webkit-details-marker { display: none; }
 .section-heading:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; }
-.section-heading h2 { font-family: var(--font-serif); font-weight: 500; font-size: 1.55rem; margin: 0; }
-.section-heading .count { font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-muted); }
+.section-heading h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.55rem; margin: 0; }
+.section-heading .count { font-family: var(--font-label); font-size: 0.74rem; color: var(--ink-muted); }
 /* Seta que indica aberto/fechado, sempre encostada na borda direita do
    título (margin-left: auto dentro do flex), centralizada verticalmente
    mesmo com align-items: baseline no restante da linha. */
@@ -148,7 +193,7 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
 /* ---------- Candidate avatars (foto oficial TSE, com fallback p/ iniciais) ---------- */
 .candidate-avatar {
   border-radius: 50%; background: var(--accent-wash); color: var(--brand); overflow: hidden;
-  display: flex; align-items: center; justify-content: center; font-family: var(--font-serif);
+  display: flex; align-items: center; justify-content: center; font-family: var(--font-display);
   font-weight: 600; flex: none;
 }
 .candidate-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -160,10 +205,17 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
 .candidate-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
   padding: 20px; display: flex; flex-direction: column; gap: 10px;
+  transition: box-shadow 0.15s ease;
+}
+/* Brilho verde sutil ao passar o mouse — a mesma borda neon que contorna os
+   cards de palestrante nos posts da identidade "Poder & Mercado", aqui bem
+   discreta para não brigar com o conteúdo. */
+.candidate-card:hover, .candidate-card:focus-within {
+  box-shadow: 0 0 0 1px rgba(30, 215, 96, 0.4), 0 0 24px rgba(30, 215, 96, 0.14);
 }
 .candidate-card-head { display: flex; align-items: center; gap: 13px; }
-.candidate-name { font-family: var(--font-serif); font-weight: 500; font-size: 1.18rem; margin: 0; }
-.candidate-party { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted); margin-top: 2px; }
+.candidate-name { font-family: var(--font-display); font-weight: 500; font-size: 1.18rem; margin: 0; }
+.candidate-party { font-family: var(--font-label); font-size: 0.78rem; color: var(--ink-muted); margin-top: 2px; }
 .candidate-meta { font-size: 0.9rem; color: var(--ink-secondary); line-height: 1.58; }
 .candidate-meta dt { display: inline; font-weight: 600; color: var(--ink); }
 .candidate-meta dd { display: inline; margin: 0; }
@@ -183,7 +235,7 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
   border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; cursor: pointer;
 }
 .compare-picker-field select:focus-visible { outline: 2px solid var(--brand); outline-offset: 1px; }
-.compare-picker-vs { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted); padding-bottom: 9px; }
+.compare-picker-vs { font-family: var(--font-label); font-size: 0.78rem; color: var(--ink-muted); padding-bottom: 9px; }
 .compare-head-to-head { margin-bottom: 32px; }
 
 /* ---------- Tabs (subtemas / temas) ---------- */
@@ -195,24 +247,33 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
 }
 .tab-btn:hover { color: var(--ink); border-color: var(--ink-muted); }
 .tab-btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
-.tab-btn[aria-selected="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+/* Aba ativa em dourado com texto escuro — mesmo tratamento dos botões de
+   call-to-action da identidade "Poder & Mercado" (dourado + texto no ink
+   mais escuro, não branco, para manter o contraste alto em ambos os temas). */
+.tab-btn[aria-selected="true"] { background: var(--gold); border-color: var(--gold); color: var(--gold-ink); font-weight: 700; }
 .tabs-inner { margin: 4px 0 16px; }
 .tab-btn-inner { font-size: 0.78rem; padding: 5px 12px; }
 
 .tab-panel[hidden] { display: none; }
-.panel-heading { font-family: var(--font-serif); font-weight: 500; font-size: 1.22rem; margin: 0 0 6px; }
+.panel-heading { font-family: var(--font-display); font-weight: 500; font-size: 1.22rem; margin: 0 0 6px; }
 
 /* ---------- Compare grid (Economia / Outros Temas) ---------- */
 .compare-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 18px; align-items: start; }
-.compare-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
+.compare-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px;
+  transition: box-shadow 0.15s ease;
+}
+.compare-card:hover, .compare-card:focus-within {
+  box-shadow: 0 0 0 1px rgba(30, 215, 96, 0.4), 0 0 24px rgba(30, 215, 96, 0.14);
+}
 .compare-card-head { display: flex; align-items: center; gap: 11px; margin-bottom: 13px; }
-.compare-card-head h4 { font-family: var(--font-serif); font-weight: 500; font-size: 1.02rem; margin: 0; }
+.compare-card-head h4 { font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; margin: 0; }
 .compare-card-head .candidate-party { margin-top: 0; }
 
 .compare-block { margin-top: 13px; }
 .compare-block:first-of-type { margin-top: 0; }
 .compare-block-label {
-  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+  font-family: var(--font-label); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-muted); margin: 0 0 7px;
 }
 .compare-empty { font-size: 0.92rem; color: var(--ink-muted); font-style: italic; }
@@ -233,13 +294,13 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
 .proposal-item { margin-bottom: 18px; }
 .proposal-item:last-child { margin-bottom: 0; }
 .proposal-title {
-  font-family: var(--font-serif); font-weight: 700; font-size: 1.12rem; color: var(--ink);
+  font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; color: var(--ink);
   line-height: 1.3; margin: 0 0 8px; padding-left: 13px; border-left: 3px solid var(--brand);
 }
 
 .cite-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; margin-bottom: 12px; }
 .cite-link {
-  font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-muted); text-decoration: none;
+  font-family: var(--font-label); font-size: 0.72rem; color: var(--ink-muted); text-decoration: none;
   border: 1px solid var(--border); border-radius: 5px; padding: 2px 7px;
 }
 .cite-link:hover { color: var(--brand); border-color: var(--brand); }
@@ -250,10 +311,10 @@ h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.3rem; margin
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; justify-content: space-between;
   background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 13px 16px;
 }
-.source-row .who { font-family: var(--font-serif); font-size: 0.98rem; }
+.source-row .who { font-family: var(--font-display); font-size: 0.98rem; }
 .source-row .plan-title { color: var(--ink-secondary); font-size: 0.86rem; }
 .source-row .links { display: flex; gap: 12px; flex: none; }
-.source-row a { font-family: var(--font-mono); font-size: 0.76rem; color: var(--brand); text-decoration: none; }
+.source-row a { font-family: var(--font-label); font-size: 0.76rem; color: var(--brand); text-decoration: none; }
 .source-row a:hover { text-decoration: underline; }
 .footer-disclaimer { font-size: 0.84rem; color: var(--ink-muted); max-width: 76ch; line-height: 1.58; }
 
