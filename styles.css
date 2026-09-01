@@ -116,10 +116,10 @@ body { background: var(--page-bg); }
   z-index: 10;
 }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--brand); flex: none; }
-/* Marca quadrada dourada no lugar do antigo emoji — mesmo papel do "&"
-   colorido no logotipo "Poder & Mercado": um acento de cor ao lado do nome,
-   sem depender de emoji. */
-.brand-mark { flex-shrink: 0; width: 11px; height: 11px; border-radius: 3px; background: var(--gold); }
+/* Logotipo "Poder & Mercado" (SVG inline em index.html, chip preto com o "&"
+   dourado) ao lado do nome do site — mesmo lockup usado no favicon, só que
+   na variante horizontal de uma linha só. */
+.brand-logo { flex-shrink: 0; height: 34px; width: auto; border-radius: 8px; }
 .brand-name {
   font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em;
   text-transform: uppercase; color: var(--ink); line-height: 1.1;
