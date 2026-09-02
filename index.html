@@ -36,6 +36,7 @@
       <a class="nav-link" href="#visao-geral">Visão Geral</a>
       <a class="nav-link" href="#temas">Temas</a>
       <a class="nav-link" href="#comparacao">Comparar 1×1</a>
+      <a class="nav-link" href="#contagem-palavras">Contagem de Palavras</a>
       <a class="nav-link" href="#fontes">Fontes</a>
     </nav>
 
@@ -129,6 +130,29 @@
       <div id="compare-temas-panels"></div>
     </details>
 
+    <details id="contagem-palavras" class="page-section">
+      <summary class="section-heading">
+        <h2>Contagem de Palavras</h2>
+      </summary>
+      <p class="section-note">
+        Contagem mecânica de quantas vezes uma palavra aparece no texto completo do plano de
+        governo de cada candidato selecionado acima — só a palavra inteira (sem plural nem outra
+        variação), sem acento nem maiúscula/minúscula importarem na busca. Diferente do resto do
+        site, isto <strong>não</strong> é uma citação: é uma contagem bruta de ocorrências, útil
+        para comparar ênfase textual, não substitui a leitura do trecho em contexto.
+      </p>
+      <form id="word-count-form" class="word-count-form">
+        <label class="word-count-field">
+          <span>Palavra</span>
+          <input type="text" id="word-count-input" name="word" autocomplete="off" placeholder="ex.: imposto">
+        </label>
+        <button type="submit" class="word-count-submit">Contar</button>
+      </form>
+      <div id="word-count-chart" class="word-count-chart">
+        <p class="compare-empty">Digite uma palavra e clique em "Contar" para ver o gráfico.</p>
+      </div>
+    </details>
+
     <details id="fontes" class="page-section">
       <summary class="section-heading">
         <h2>Fontes</h2>
@@ -153,6 +177,7 @@
 
 <script src="data/taxonomy.js"></script>
 <script src="data/sources.js"></script>
+<script src="data/plan-texts.js"></script>
 <script src="data/poll.js"></script>
 <script src="data/candidates/augusto-cury.js"></script>
 <script src="data/candidates/caiado.js"></script>

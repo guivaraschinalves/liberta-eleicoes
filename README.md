@@ -21,20 +21,22 @@ de "Top 5" pela pesquisa Atlas/Bloomberg ou uma seleção livre — antes de
 qualquer seção existir; nada fica marcado por padrão, e a escolha não é
 salva entre visitas (pede de novo a cada carregamento). Um botão fixo
 "Candidatos" no topbar reabre o mesmo diálogo a qualquer momento, sem
-recarregar a página, e atualiza Visão Geral, Temas e Comparar 1×1 juntos —
-Fontes é a exceção: sempre lista os 13, independente do filtro. As 4 seções
-principais (Visão Geral, Temas, Comparar 1×1, Fontes) são `<details>`
-retráteis, todas fechadas por padrão — clique no título de cada uma para
-abrir, independentes umas das outras. Dentro de Temas, os 6 temas ficam em
-abas (clique para trocar), e Economia tem um segundo nível de abas para os
-subtemas.
+recarregar a página, e atualiza Visão Geral, Temas, Comparar 1×1 e Contagem
+de Palavras juntos — Fontes é a exceção: sempre lista os 13, independente
+do filtro. As 5 seções principais (Visão Geral, Temas, Comparar 1×1,
+Contagem de Palavras, Fontes) são `<details>` retráteis, todas fechadas por
+padrão — clique no título de cada uma para abrir, independentes umas das
+outras. Dentro de Temas, os 6 temas ficam em abas (clique para trocar), e
+Economia tem um segundo nível de abas para os subtemas.
 
 Este repositório é uma bifurcação de
 [ftm-eleicoes](https://github.com/guivaraschinalves/ftm-eleicoes), do mesmo
-autor, com o escopo reduzido: sem Perfil Político, Papel do Estado nem
-Contagem de Palavras (leitura editorial e contagem mecânica, respectivamente
-— não citação), e com um tema novo, Combate à Corrupção, que o original não
-tinha.
+autor, com o escopo reduzido: sem Perfil Político nem Papel do Estado
+(leitura editorial, não citação — os dois ficaram de fora), mas com
+**Contagem de Palavras reincorporada** (contagem mecânica de ocorrências no
+texto integral do plano — bem diferente das citações com página do resto do
+site; ver "## Contador de palavras" abaixo) e com um tema novo, Combate à
+Corrupção, que o original não tinha.
 
 ## Identidade visual
 
@@ -64,6 +66,7 @@ app.js               → lê os dados, monta as seções e o diálogo de seleç�
 data/
   taxonomy.js         → os 6 temas (window.THEMES), subtemas de Economia, ordem dos 13 candidatos
   sources.js           → URL oficial de cada plano no TSE + caminho do PDF local (+ planFiled)
+  plan-texts.js         → texto INTEGRAL de cada plano (window.PLAN_TEXTS) — gerado, não editar à mão; só a Contagem de Palavras usa
   poll.js               → pesquisa Atlas/Bloomberg: só alimenta o preset "Top 5" e os badges do diálogo
   candidates/*.js       → um arquivo por candidato: dados básicos (com data de nascimento) + citações por tema
 sources/             → foto oficial (TSE) + cópia de cada PDF por candidato
@@ -71,6 +74,8 @@ scripts/
   build_artifact.py    → gera dist/liberta-eleicoes-artifact.html (versão self-contained p/ Artifact)
   export_content_md.py  → gera CONTEUDO-DO-SITE.md (dump de data/*.js em markdown)
   export_plans_md.py     → gera PLANOS-DE-GOVERNO.md (texto bruto dos PDFs, um arquivo só)
+  extract_plan_texts.py  → extrai .sources-cache/texts/<id>.txt de sources/<id>.pdf (PyMuPDF)
+  build_plan_texts.py    → gera data/plan-texts.js a partir de .sources-cache/texts/
 CONTEUDO-DO-SITE.md  → leitura de apoio: tudo que está em data/*.js, formatado (não é lido pelo site)
 PLANOS-DE-GOVERNO.md → leitura de apoio: os planos de governo completos, um atrás do outro
 ```
@@ -104,6 +109,12 @@ entrada em `data/sources.js`, uma linha em `results` de `data/poll.js` (ou
 `null` se a pesquisa de referência não nomeou esse candidato), e coloque a
 foto oficial em `sources/<id>.jpg` e o PDF em `sources/<id>.pdf`.
 
+Depois de colocar o PDF, rode `python3 scripts/extract_plan_texts.py <id>`
+(extrai o texto pra `.sources-cache/texts/<id>.txt` via PyMuPDF) e em
+seguida `python3 scripts/build_plan_texts.py` (regenera `data/plan-texts.js`
+a partir do cache) — sem isso o candidato aparece em Visão Geral/Temas mas
+fica de fora da Contagem de Palavras.
+
 Se o candidato registrou candidatura **sem** entregar Proposta de Governo ao
 TSE, marque `planFiled: false` na entrada dele em `data/sources.js` (com
 `officialPdfUrl`/`localPdfPath`/`pageCount` como `null` **literal**, não
@@ -133,6 +144,28 @@ O preset "Top 5" vem de `data/poll.js` (`presetTop5Ids`), hoje a pesquisa
 Atlas/Bloomberg — trocar de pesquisa é editar esse arquivo, nunca a ordem de
 exibição dos candidatos (`CANDIDATE_ORDER`), que continua sempre alfabética
 por nome de urna, sem relação com pesquisa nenhuma.
+
+## Contador de palavras
+
+Digite uma palavra em Contagem de Palavras para ver um gráfico de barras de
+quantas vezes ela aparece no **texto completo** do plano de governo de cada
+candidato atualmente selecionado — os mesmos `visibleIds` de Visão
+Geral/Temas/Comparar 1×1 (trocar a seleção no diálogo de candidatos
+recalcula o gráfico sozinho, sem precisar buscar de novo). Busca por
+**palavra inteira** (não substring — "imposto" não casa com "impostos"),
+sem diferenciar maiúscula/minúscula nem acento (`normalizeForMatch`/
+`countWordOccurrences` em `app.js`). Candidato com `planFiled: false` em
+`data/sources.js` fica de fora do gráfico com um aviso, nunca vira uma barra
+de "0" — "0 ocorrências reais" e "não há plano pra contar" são fatos
+diferentes.
+
+Diferente do resto do site, isto é **contagem mecânica bruta**, não
+citação: o texto vem de `data/plan-texts.js` (`window.PLAN_TEXTS`), gerado
+por `scripts/build_plan_texts.py` a partir do cache em
+`.sources-cache/texts/*.txt`, que por sua vez vem de
+`scripts/extract_plan_texts.py` (PyMuPDF sobre `sources/*.pdf`). Rode os
+dois sempre que adicionar ou trocar um PDF — ver "Como atualizar um
+candidato" acima.
 
 ## De onde vieram os dados
 

@@ -6,7 +6,11 @@ Artifact — que bloqueia qualquer fetch/recurso externo em runtime.
 
 Lê sempre os arquivos-fonte (index.html, styles.css, data/*.js, sources/*,
 app.js) — nunca edite dist/liberta-eleicoes-artifact.html à mão, ele é sempre
-regenerado daqui. Uso:
+regenerado daqui. `data/plan-texts.js` (texto integral dos planos, usado pela
+Contagem de Palavras) sozinho já soma ~1,7 MB — bem menor que os ~17 MB de
+PDFs que este script opta por não embutir (ver drop_local_pdf_links), mas é
+o maior arquivo de dados individual do projeto; não é surpresa o tamanho do
+Artifact ter saltado quando esse arquivo foi adicionado. Uso:
 
     cd liberta-eleicoes
     python3 scripts/build_artifact.py
@@ -27,6 +31,7 @@ SOURCES_DIR = ROOT / "sources"
 SCRIPT_FILES = [
     "data/taxonomy.js",
     "data/sources.js",
+    "data/plan-texts.js",
     "data/poll.js",
     "data/candidates/augusto-cury.js",
     "data/candidates/caiado.js",

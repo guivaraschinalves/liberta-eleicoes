@@ -283,6 +283,37 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
 .compare-picker-vs { font-family: var(--font-label); font-size: 0.78rem; color: var(--ink-muted); padding-bottom: 9px; }
 .compare-head-to-head { margin-bottom: 32px; }
 
+/* ---------- Contagem de Palavras ---------- */
+.word-count-form { display: flex; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+.word-count-field { display: flex; flex-direction: column; gap: 5px; font-size: 0.8rem; color: var(--ink-secondary); flex: 1 1 220px; min-width: 160px; }
+.word-count-field input {
+  font-family: var(--font-sans); font-size: 1rem; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px;
+}
+.word-count-field input:focus-visible { outline: 2px solid var(--brand); outline-offset: 1px; }
+.word-count-submit {
+  font-family: var(--font-sans); font-weight: 700; font-size: 0.98rem; color: var(--gold-ink);
+  background: var(--gold); border: 1px solid var(--gold); border-radius: 999px; padding: 9px 20px; cursor: pointer;
+}
+.word-count-submit:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.word-count-list { display: flex; flex-direction: column; gap: 10px; }
+.word-count-row { display: grid; grid-template-columns: minmax(110px, 180px) 1fr auto; align-items: center; gap: 12px; }
+.word-count-label { font-size: 0.88rem; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* Trilho num tom translúcido (--accent-wash) + borda — só pra dar contraste
+   contra o fundo da página, já que esta seção não vive dentro de um card
+   como .compare-card. */
+.word-count-track { height: 18px; background: var(--accent-wash); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+/* Barra única, cor sólida (dourado) — sem cor por candidato de propósito
+   (só 5 dos 13 têm um --cand-* definido hoje); ponta arredondada, base
+   quadrada, cresce a partir da esquerda. */
+.word-count-fill { height: 100%; background: var(--gold); border-radius: 0 4px 4px 0; transition: width 0.2s ease; }
+/* Número exato numa coluna fixa à direita, não "na ponta da barra": aqui o
+   valor exato É o dado que a pessoa veio buscar (não uma tendência com
+   muitos pontos), então toda linha é rotulada — uma coluna fixa evita que o
+   número pule de posição a cada linha conforme a barra cresce/encolhe. */
+.word-count-value { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.92rem; color: var(--ink); min-width: 2.4ch; text-align: right; }
+
 /* ---------- Tabs (subtemas / temas) ---------- */
 .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
 .tab-btn {
@@ -383,9 +414,17 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
     margin: 0 -16px; padding: 0 16px; mask-image: linear-gradient(to right, transparent, black 12px, black calc(100% - 12px), transparent);
   }
   .nav-link { white-space: nowrap; flex: none; }
+  /* flex-basis vira altura (não largura) quando o container passa a
+     flex-direction: column — sem "flex-basis: auto" aqui, os dois campos
+     ficam com uma altura sobrando do valor em px pensado pra largura. */
   .compare-picker { flex-direction: column; align-items: stretch; gap: 10px; }
-  .compare-picker-field { min-width: 0; }
+  .compare-picker-field { min-width: 0; flex-basis: auto; }
   .compare-picker-vs { padding-bottom: 0; align-self: center; }
   .candidate-picker-grid { grid-template-columns: 1fr; max-height: 56vh; }
   .candidate-picker-confirm { width: 100%; }
+  .word-count-form { flex-direction: column; align-items: stretch; }
+  .word-count-field { flex-basis: auto; }
+  .word-count-submit { width: 100%; }
+  .word-count-row { grid-template-columns: 1fr; row-gap: 4px; }
+  .word-count-value { text-align: left; }
 }

@@ -33,6 +33,12 @@
   var visibleIds = [];
   var sourcesRendered = false;
 
+  // Última palavra buscada em Contagem de Palavras (null até a 1ª busca) —
+  // guardada pra poder recalcular o gráfico sozinho quando a seleção de
+  // candidatos muda (ver applySelection), sem o usuário precisar buscar de
+  // novo.
+  var lastSearchedWord = null;
+
   // Idade calculada a partir de `basics.birthDate` ("AAAA-MM-DD"), sempre em
   // relação à data de hoje — não é um número fixo gravado nos dados, então
   // continua correto em qualquer visita, não só na data de publicação.
@@ -607,6 +613,133 @@
     renderComparisonSection();
   }
 
+  /* ============================== Contagem de Palavras ============================== */
+  // Contagem MECÂNICA (não citação): conta ocorrências da palavra digitada
+  // no texto INTEGRAL de cada plano (window.PLAN_TEXTS, gerado por
+  // scripts/build_plan_texts.py a partir do PDF via PyMuPDF) — diferente do
+  // resto do site, que só mostra trechos curados com página.
+
+  // O \b do regex em JS só reconhece [A-Za-z0-9_] como caractere de palavra
+  // — uma palavra acentuada ("política") sem normalizar antes pode não
+  // casar a fronteira nenhuma. Normalizar (remover diacríticos + minúsculas)
+  // dos dois lados não é só pra ignorar maiúscula/acento: é o que faz o \b
+  // funcionar direito em português.
+  function normalizeForMatch(str) {
+    return String(str || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
+
+  function countWordOccurrences(word, text) {
+    var needle = normalizeForMatch(word).trim();
+    if (!needle) return 0;
+    var escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    var re = new RegExp("\\b" + escaped + "\\b", "g");
+    var matches = normalizeForMatch(text).match(re);
+    return matches ? matches.length : 0;
+  }
+
+  // Conta contra visibleIds; separa quem não tem plano registrado
+  // (planFiled: false) — fica de fora do gráfico com aviso, nunca vira uma
+  // barra de "0" (0 ocorrências reais e "sem plano pra contar" são fatos
+  // diferentes).
+  function computeWordCounts(word) {
+    var rows = [];
+    var excludedNoPlan = [];
+    visibleIds.forEach(function (id) {
+      var src = (window.SOURCES_DATA || {})[id];
+      var c = window.CANDIDATES_DATA[id];
+      var label = c.basics.ballotName || c.basics.name;
+      if (src && src.planFiled === false) {
+        excludedNoPlan.push({ id: id, label: label });
+        return;
+      }
+      var text = (window.PLAN_TEXTS || {})[id] || "";
+      rows.push({ id: id, label: label, count: countWordOccurrences(word, text) });
+    });
+    // Array#sort é estável: candidatos empatados mantêm a ordem alfabética
+    // original de visibleIds.
+    rows.sort(function (a, b) { return a.count - b.count; });
+    return { rows: rows, excludedNoPlan: excludedNoPlan };
+  }
+
+  // Uma linha do gráfico: rótulo, trilho+barra (largura proporcional ao
+  // maior valor do conjunto atual) e o número exato ao final — diferente de
+  // um gráfico de tendência com muitos pontos, aqui o valor exato de cada
+  // candidato É o dado que a pessoa veio buscar, então toda barra é
+  // rotulada (não só a extrema), com o número numa coluna fixa à direita em
+  // vez de "na ponta da barra" — assim ele não pula de posição a cada linha
+  // conforme a barra cresce/encolhe.
+  function wordCountRow(row, maxCount) {
+    var wrap = el("div", "word-count-row");
+    var label = el("span", "word-count-label");
+    label.textContent = row.label;
+    var track = el("div", "word-count-track");
+    var fill = el("div", "word-count-fill");
+    fill.style.width = (maxCount > 0 ? (row.count / maxCount) * 100 : 0) + "%";
+    track.appendChild(fill);
+    var value = el("span", "word-count-value");
+    value.textContent = String(row.count);
+    wrap.appendChild(label);
+    wrap.appendChild(track);
+    wrap.appendChild(value);
+    return wrap;
+  }
+
+  // Limpa e reconstrói #word-count-chart inteiro a cada busca/reseleção —
+  // mesmo padrão de buildCandidateGrid/buildSourcesList (conteúdo barato de
+  // recriar; não precisa do cuidado de esconder/mostrar nós existentes que
+  // o Comparar 1×1 tem por outros motivos).
+  function renderWordCountChart(word) {
+    var host = document.getElementById("word-count-chart");
+    if (!host) return;
+    host.innerHTML = "";
+
+    if (!visibleIds.length) {
+      var none = el("p", "compare-empty");
+      none.textContent = 'Selecione pelo menos 1 candidato — use "Candidatos" no topo da página.';
+      host.appendChild(none);
+      return;
+    }
+
+    var result = computeWordCounts(word);
+
+    if (result.excludedNoPlan.length) {
+      var note = el("p", "compare-empty compare-empty-noplan");
+      var names = result.excludedNoPlan.map(function (r) { return r.label; }).join(", ");
+      var plural = result.excludedNoPlan.length > 1;
+      note.textContent = names + (plural ? " não registraram" : " não registrou") +
+        " Proposta de Governo no TSE — exclu" + (plural ? "ídos" : "ído") + " da contagem.";
+      host.appendChild(note);
+    }
+
+    if (!result.rows.length) return; // só sobraram excluídos
+
+    var maxCount = result.rows.reduce(function (m, r) { return Math.max(m, r.count); }, 0);
+    var list = el("div", "word-count-list");
+    result.rows.forEach(function (row) {
+      list.appendChild(wordCountRow(row, maxCount));
+    });
+    host.appendChild(list);
+  }
+
+  // Vincula o submit do formulário uma única vez (chamado só a partir de
+  // init()) — usar <form> dá Enter-pra-buscar de graça, sem precisar de
+  // listener de keydown separado.
+  function buildWordCountSection() {
+    var form = document.getElementById("word-count-form");
+    var input = document.getElementById("word-count-input");
+    if (!form || !input) return;
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var word = input.value.trim();
+      if (!word) return; // busca vazia: não mexe no gráfico anterior
+      lastSearchedWord = word;
+      renderWordCountChart(lastSearchedWord);
+    });
+  }
+
   /* ============================== Orquestrador da seleção ============================== */
   // Chamado ao confirmar o diálogo (primeira vez ou reconfirmação): filtra
   // `ids` contra a lista completa (preserva ordem alfabética, descarta
@@ -626,6 +759,11 @@
     buildTemasSection(temasTabsHost, temasPanelsHost, visibleIds, "temas");
 
     renderComparisonSection();
+
+    // Se já tinha busca em Contagem de Palavras, recalcula sozinho pra nova
+    // seleção — mesmo espírito reativo do Comparar 1×1, sem o usuário
+    // precisar clicar em "Contar" de novo.
+    if (lastSearchedWord) renderWordCountChart(lastSearchedWord);
 
     if (!sourcesRendered) {
       buildSourcesList();
@@ -717,6 +855,7 @@
       "temas"
     );
     buildComparisonSection();
+    buildWordCountSection();
     initPinnedPickerControl();
     initScrollSpy();
     // visibleIds está vazio aqui — nada em Visão Geral/Temas/Comparar 1×1
