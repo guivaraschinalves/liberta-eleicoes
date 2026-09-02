@@ -302,12 +302,34 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
 .word-count-label { font-size: 0.88rem; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 /* Trilho num tom translúcido (--accent-wash) + borda — só pra dar contraste
    contra o fundo da página, já que esta seção não vive dentro de um card
-   como .compare-card. */
-.word-count-track { height: 18px; background: var(--accent-wash); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+   como .compare-card. Mesmo arredondamento da barra (só na ponta, não na
+   base) pra não sobrar quina torta atrás da barra em nenhuma largura — e
+   sem overflow:hidden, porque isso cortaria o tooltip de hover abaixo. */
+.word-count-track {
+  position: relative; height: 18px; background: var(--accent-wash); border: 1px solid var(--border);
+  border-radius: 0 4px 4px 0; cursor: default;
+}
+.word-count-track:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 /* Barra única, cor sólida (dourado) — sem cor por candidato de propósito
    (só 5 dos 13 têm um --cand-* definido hoje); ponta arredondada, base
    quadrada, cresce a partir da esquerda. */
 .word-count-fill { height: 100%; background: var(--gold); border-radius: 0 4px 4px 0; transition: width 0.2s ease; }
+/* Tooltip ao passar o mouse (ou focar via teclado, já que a barra leva
+   tabindex="0") na barra: taxa de ocorrência a cada 10 mil palavras do
+   plano ou, pra planos com menos de 10 mil palavras (onde essa taxa
+   extrapolaria demais pra ser representativa), só o tamanho do plano. CSS
+   puro via data-tooltip + ::after — sem JS de posicionamento nem
+   biblioteca. Cores invertidas de propósito (--ink de fundo, --page-bg no
+   texto) pra sempre destacar contra a página em claro ou escuro, sem cor
+   nova. */
+.word-count-track[data-tooltip]:hover::after,
+.word-count-track[data-tooltip]:focus-visible::after {
+  content: attr(data-tooltip);
+  position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%);
+  background: var(--ink); color: var(--page-bg); font-family: var(--font-sans); font-size: 0.78rem;
+  font-weight: 500; white-space: nowrap; padding: 6px 10px; border-radius: 6px; box-shadow: var(--shadow);
+  pointer-events: none; z-index: 5;
+}
 /* Número exato numa coluna fixa à direita, não "na ponta da barra": aqui o
    valor exato É o dado que a pessoa veio buscar (não uma tendência com
    muitos pontos), então toda linha é rotulada — uma coluna fixa evita que o

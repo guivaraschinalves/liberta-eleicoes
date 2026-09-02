@@ -671,11 +671,44 @@
   // rotulada (não só a extrema), com o número numa coluna fixa à direita em
   // vez de "na ponta da barra" — assim ele não pula de posição a cada linha
   // conforme a barra cresce/encolhe.
+  // Tamanho total (em palavras) do plano de cada candidato — só pra
+  // calcular a taxa do tooltip de hover, não tem relação com a contagem da
+  // palavra buscada. Calculado uma vez por candidato e guardado em cache
+  // (window.PLAN_TEXTS não muda em runtime, e alguns planos passam de 40 mil
+  // palavras — não vale recalcular isso a cada hover).
+  var planWordCountCache = {};
+  function getPlanWordCount(id) {
+    if (planWordCountCache[id] == null) {
+      var text = (window.PLAN_TEXTS || {})[id] || "";
+      planWordCountCache[id] = text.split(/\s+/).filter(Boolean).length;
+    }
+    return planWordCountCache[id];
+  }
+
+  // Texto do tooltip de hover na barra: taxa de ocorrência a cada 10 mil
+  // palavras do plano — mas só quando o plano tem pelo menos 10 mil
+  // palavras, senão a taxa extrapolaria demais pra ser representativa (ex.:
+  // 1 ocorrência num plano de 2 mil palavras "viraria" 5 a cada 10 mil, um
+  // número que soa preciso mas não é). Abaixo de 10 mil, mostra só o
+  // tamanho do plano, sem taxa nenhuma.
+  function wordCountTooltip(row) {
+    var totalWords = getPlanWordCount(row.id);
+    if (totalWords >= 10000) {
+      var rate = (row.count / totalWords) * 10000;
+      return rate.toFixed(1).replace(".", ",") + " ocorrências a cada 10 mil palavras";
+    }
+    return row.label + " possui " + totalWords.toLocaleString("pt-BR") + " palavras no plano.";
+  }
+
   function wordCountRow(row, maxCount) {
     var wrap = el("div", "word-count-row");
     var label = el("span", "word-count-label");
     label.textContent = row.label;
     var track = el("div", "word-count-track");
+    var tooltip = wordCountTooltip(row);
+    track.dataset.tooltip = tooltip;
+    track.setAttribute("aria-label", tooltip);
+    track.tabIndex = 0;
     var fill = el("div", "word-count-fill");
     fill.style.width = (maxCount > 0 ? (row.count / maxCount) * 100 : 0) + "%";
     track.appendChild(fill);

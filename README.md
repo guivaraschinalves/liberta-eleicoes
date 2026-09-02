@@ -167,6 +167,15 @@ por `scripts/build_plan_texts.py` a partir do cache em
 dois sempre que adicionar ou trocar um PDF — ver "Como atualizar um
 candidato" acima.
 
+Passar o mouse (ou navegar com Tab) em cima de uma barra mostra um tooltip
+com a **taxa de ocorrência a cada 10 mil palavras do plano** — não a
+contagem absoluta, que já fica visível no número ao lado da barra. Planos
+com menos de 10 mil palavras não mostram taxa (extrapolaria demais pra ser
+representativa): o tooltip mostra só o tamanho do plano nesse caso, ex.
+"Clariana Barão possui 1.945 palavras no plano." O tamanho de cada plano é
+calculado a partir do próprio `window.PLAN_TEXTS`, não é um número gravado
+em lugar nenhum.
+
 ## De onde vieram os dados
 
 Os PDFs e fotos oficiais vêm do **Portal de Dados Abertos do TSE**
