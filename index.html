@@ -41,6 +41,10 @@
     </nav>
 
     <button type="button" id="candidate-picker-toggle" class="tab-btn candidate-picker-toggle" hidden>Candidatos ▾</button>
+    <!-- Rótulo/ícone preenchidos por initThemeToggle() em app.js — evita
+         cravar um estado (claro/escuro) que pode estar errado antes do JS
+         rodar. -->
+    <button type="button" id="theme-toggle" class="tab-btn theme-toggle" aria-label="Alternar modo claro/escuro"></button>
   </header>
 
   <dialog id="candidate-picker" aria-labelledby="candidate-picker-title">
@@ -64,28 +68,28 @@
       <h1>Guia dos Planos de Governo</h1>
       <p class="lede">
         Compare, lado a lado, as propostas de governo dos 13 candidatos a presidente registrados
-        no TSE, organizadas em 6 temas — Economia, Educação, Segurança Pública, Saúde, Política
+        no TSE, organizadas em 6 temas: Economia, Educação, Segurança Pública, Saúde, Política
         Externa e Combate à Corrupção.
       </p>
       <ol class="hero-steps">
         <li>
-          <strong>Escolha os candidatos</strong> — os 13, um atalho de "Top 5" pela pesquisa, ou
+          <strong>Escolha os candidatos</strong>: os 13, um atalho de "Top 5" pela pesquisa, ou
           sua própria seleção (dá para trocar depois no botão "Candidatos").
         </li>
         <li>
-          <strong>Abra uma seção no menu do topo</strong> — uma de cada vez, em tela cheia.
+          <strong>Abra uma seção no menu do topo</strong>: uma de cada vez, em tela cheia.
         </li>
         <li>
-          <strong>Volte pelo logo</strong> — "Poder & Mercado" no topo sempre traz de volta pra
+          <strong>Volte pelo logo</strong>: "Poder & Mercado" no topo sempre traz de volta pra
           esta página.
         </li>
       </ol>
       <div class="disclaimer">
         <ul>
           <li>Toda citação é <strong>literal</strong>, com a página do PDF pra conferir.</li>
-          <li>"Não abordado" é o próprio plano ser omisso — não é erro nosso de coleta.</li>
+          <li>"Não abordado" é o próprio plano ser omisso, não é erro nosso de coleta.</li>
           <li>Só o título de cada card é nosso; o texto citado é sempre do próprio plano.</li>
-          <li>Ordem dos candidatos é sempre alfabética pelo nome de urna — nunca por pesquisa nem
+          <li>Ordem dos candidatos é sempre alfabética pelo nome de urna, nunca por pesquisa nem
             pela seleção do momento.</li>
         </ul>
       </div>

@@ -269,6 +269,7 @@ h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; marg
 
 /* ---------- Controle fixo no topbar ---------- */
 .candidate-picker-toggle { flex: none; }
+.theme-toggle { flex: none; }
 
 /* ---------- Comparar 1×1 ---------- */
 /* [hidden] perde empate de especificidade contra .candidate-grid/.tabs/

@@ -905,6 +905,78 @@
     }
   }
 
+  /* ============================== Tema claro/escuro ============================== */
+  // Por padrão o site segue o sistema (prefers-color-scheme, já resolvido
+  // 100% em CSS). Esse botão permite fixar um tema manualmente por cima do
+  // sistema — grava em `data-theme` no <html> (mecanismo que o CSS já tem
+  // pronto: :root[data-theme="dark"] força escuro; "light" não precisa de
+  // bloco próprio, a guarda `:not([data-theme="light"])` no
+  // @media(prefers-color-scheme:dark) já faz cair de volta no :root padrão)
+  // e persiste em localStorage — diferente da seleção de candidatos, que é
+  // resetada de propósito a cada carregamento, aqui não há esse motivo.
+  var THEME_STORAGE_KEY = "liberta-eleicoes-theme";
+  // Símbolos Unicode simples (não emoji colorido) — mesmo estilo tipográfico
+  // do resto da UI (▾, ×), sem depender de fonte de emoji instalada.
+  var THEME_LABELS = { light: "☀ Claro", dark: "☾ Escuro" };
+
+  // localStorage pode lançar exceção em contexto restrito (modo privado
+  // antigo, iframe sandboxed, extensão bloqueando) — nunca deixar isso
+  // quebrar o restante de init() (o diálogo de seleção de candidatos vem
+  // depois na cadeia e não pode deixar de abrir por causa do tema).
+  function readSavedTheme() {
+    try {
+      var v = localStorage.getItem(THEME_STORAGE_KEY);
+      return v === "light" || v === "dark" ? v : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeSavedTheme(value) {
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, value);
+    } catch (e) {
+      // Sem persistência entre visitas nesse caso — o toggle ainda funciona
+      // pra sessão atual.
+    }
+  }
+
+  function effectiveTheme() {
+    var saved = readSavedTheme();
+    if (saved) return saved;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  }
+
+  function paintThemeToggle(btn) {
+    btn.textContent = THEME_LABELS[effectiveTheme()];
+  }
+
+  function initThemeToggle() {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    var saved = readSavedTheme();
+    if (saved) document.documentElement.dataset.theme = saved;
+    paintThemeToggle(btn);
+
+    btn.addEventListener("click", function () {
+      var next = effectiveTheme() === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = next;
+      writeSavedTheme(next);
+      paintThemeToggle(btn);
+    });
+
+    // Sem escolha salva, o botão deve continuar refletindo o sistema se ele
+    // mudar com a aba aberta (ex.: SO troca de tema à noite).
+    if (window.matchMedia) {
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+        if (!readSavedTheme()) paintThemeToggle(btn);
+      });
+    }
+  }
+
   function init() {
     buildCandidatePicker();
     buildCandidateGrid();
@@ -917,6 +989,7 @@
     buildComparisonSection();
     buildWordCountSection();
     initPinnedPickerControl();
+    initThemeToggle();
     initViewSwitcher();
     // visibleIds está vazio aqui — nada em Visão Geral/Temas/Comparar 1×1
     // existe até a primeira confirmação. O diálogo modal bloqueia o resto
