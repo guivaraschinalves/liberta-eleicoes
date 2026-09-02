@@ -18,7 +18,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand">
+    <a class="brand" href="#" id="brand-home" aria-label="Voltar ao início">
       <!-- Lockup "Poder & Mercado" sem chip de fundo — só o texto, na cor de
            tinta do tema (var(--ink): preto no claro, branco no escuro), pra
            mesclar com o topbar em vez de flutuar como uma caixa preta por
@@ -30,7 +30,7 @@
         <text x="0" y="25" style="font-family: var(--font-display); font-weight: 500; letter-spacing: 1.1px;" font-size="20" fill="var(--ink)">PODER <tspan fill="#FEE801" font-size="25" style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400;">&amp;</tspan> MERCADO</text>
       </svg>
       <div class="brand-tag">Presidenciáveis 2026</div>
-    </div>
+    </a>
 
     <nav class="nav" aria-label="Seções">
       <a class="nav-link" href="#visao-geral">Visão Geral</a>
@@ -67,9 +67,10 @@
         registrados no TSE para a eleição de 2026, em 6 temas — Economia, Educação, Segurança
         Pública, Saúde, Política Externa e Combate à Corrupção — cada um com aba de Diagnóstico e
         aba de Propostas. Ao abrir o site, escolha quem aparece: os 13, um atalho de "Top 5" por
-        pesquisa ou uma seleção sua — dá para trocar depois pelo botão "Candidatos" no topo. Cada
-        seção abaixo (Visão Geral, Temas, Comparar 1×1, Fontes) é retrátil e começa fechada —
-        clique no título para abrir.
+        pesquisa ou uma seleção sua — dá para trocar depois pelo botão "Candidatos" no topo. Use o
+        menu no topo (Visão Geral, Temas, Comparar 1×1, Contagem de Palavras, Fontes) para abrir
+        uma seção por vez em tela cheia; clique no logo "Poder & Mercado" para voltar a esta
+        página inicial.
       </p>
       <p class="disclaimer">
         Todo trecho de posicionamento neste site é <strong>citado literalmente</strong> dos planos
@@ -81,18 +82,18 @@
       </p>
     </div>
 
-    <details id="visao-geral" class="page-section">
-      <summary class="section-heading">
+    <section id="visao-geral" class="page-section" hidden>
+      <div class="section-heading">
         <h2>Visão Geral</h2>
-      </summary>
+      </div>
       <div id="candidate-grid" class="candidate-grid"></div>
-    </details>
+    </section>
 
-    <details id="temas" class="page-section">
-      <summary class="section-heading">
+    <section id="temas" class="page-section" hidden>
+      <div class="section-heading">
         <h2>Temas</h2>
         <span class="count">6 temas · diagnóstico e propostas</span>
-      </summary>
+      </div>
       <p class="section-note">
         Cada tema tem uma aba de <strong>Diagnóstico</strong> (o que o candidato diz sobre o
         cenário atual) e uma aba de <strong>Propostas</strong> (o que ele promete fazer). Em
@@ -100,12 +101,12 @@
       </p>
       <div id="temas-tabs" class="tabs" role="tablist" aria-label="Temas"></div>
       <div id="temas-panels"></div>
-    </details>
+    </section>
 
-    <details id="comparacao" class="page-section">
-      <summary class="section-heading">
+    <section id="comparacao" class="page-section" hidden>
+      <div class="section-heading">
         <h2>Comparar 1×1</h2>
-      </summary>
+      </div>
       <p class="section-note">
         Escolha 2 candidatos para ver as citações dos dois lado a lado, em todos os temas, sem
         precisar trocar de aba o tempo todo.
@@ -128,12 +129,12 @@
 
       <div id="compare-temas-tabs" class="tabs" role="tablist" aria-label="Temas (comparação)"></div>
       <div id="compare-temas-panels"></div>
-    </details>
+    </section>
 
-    <details id="contagem-palavras" class="page-section">
-      <summary class="section-heading">
+    <section id="contagem-palavras" class="page-section" hidden>
+      <div class="section-heading">
         <h2>Contagem de Palavras</h2>
-      </summary>
+      </div>
       <p class="section-note">
         Contagem mecânica de quantas vezes uma palavra aparece no texto completo do plano de
         governo de cada candidato selecionado acima — só a palavra inteira (sem plural nem outra
@@ -151,12 +152,12 @@
       <div id="word-count-chart" class="word-count-chart">
         <p class="compare-empty">Digite uma palavra e clique em "Contar" para ver o gráfico.</p>
       </div>
-    </details>
+    </section>
 
-    <details id="fontes" class="page-section">
-      <summary class="section-heading">
+    <section id="fontes" class="page-section" hidden>
+      <div class="section-heading">
         <h2>Fontes</h2>
-      </summary>
+      </div>
       <p class="section-note">
         Os 13 candidatos registrados no TSE — independente do que estiver selecionado acima. Os
         planos de governo foram baixados do Portal de Dados Abertos do TSE (dataset "Candidatos
@@ -171,7 +172,7 @@
         Eleitoral. Em caso de divergência, o PDF oficial no TSE prevalece sobre qualquer
         conteúdo aqui apresentado.
       </p>
-    </details>
+    </section>
   </main>
 </div>
 

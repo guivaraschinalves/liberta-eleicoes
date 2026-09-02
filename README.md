@@ -15,19 +15,25 @@ par. Todo trecho de posicionamento é **citação literal** dos **planos de
 governo oficiais registrados no TSE** (nunca resumo nosso), com a página do
 PDF referenciada.
 
-Página única, navegação por âncora. Ao abrir o site, um **diálogo de
-seleção de candidatos** pede pra escolher quem aparece — os 13, um atalho
-de "Top 5" pela pesquisa Atlas/Bloomberg ou uma seleção livre — antes de
-qualquer seção existir; nada fica marcado por padrão, e a escolha não é
-salva entre visitas (pede de novo a cada carregamento). Um botão fixo
-"Candidatos" no topbar reabre o mesmo diálogo a qualquer momento, sem
-recarregar a página, e atualiza Visão Geral, Temas, Comparar 1×1 e Contagem
-de Palavras juntos — Fontes é a exceção: sempre lista os 13, independente
-do filtro. As 5 seções principais (Visão Geral, Temas, Comparar 1×1,
-Contagem de Palavras, Fontes) são `<details>` retráteis, todas fechadas por
-padrão — clique no título de cada uma para abrir, independentes umas das
-outras. Dentro de Temas, os 6 temas ficam em abas (clique para trocar), e
-Economia tem um segundo nível de abas para os subtemas.
+Página única, sem navegação por âncora — trocar de seção nunca muda a URL
+(atualizar a página ou compartilhar o link sempre cai no cardzinho
+inicial). Ao abrir o site, um **diálogo de seleção de candidatos** pede pra
+escolher quem aparece — os 13, um atalho de "Top 5" pela pesquisa
+Atlas/Bloomberg ou uma seleção livre — antes de qualquer seção existir;
+nada fica marcado por padrão, e a escolha não é salva entre visitas (pede
+de novo a cada carregamento). Um botão fixo "Candidatos" no topbar reabre o
+mesmo diálogo a qualquer momento, sem recarregar a página, e atualiza Visão
+Geral, Temas, Comparar 1×1 e Contagem de Palavras juntos — Fontes é a
+exceção: sempre lista os 13, independente do filtro.
+
+Por padrão só o cardzinho inicial aparece. O menu no topo (Visão Geral,
+Temas, Comparar 1×1, Contagem de Palavras, Fontes) mostra uma seção por vez
+em tela cheia, escondendo o cardzinho e as demais — é sempre uma coisa de
+cada vez, nunca duas seções juntas nem seção e cardzinho ao mesmo tempo.
+Clicar no logo "Poder & Mercado" no canto esquerdo do topbar volta pro
+cardzinho inicial (é a única forma de voltar — não tem item "Início" na
+navegação). Dentro de Temas, os 6 temas ficam em abas (clique para
+trocar), e Economia tem um segundo nível de abas para os subtemas.
 
 Este repositório é uma bifurcação de
 [ftm-eleicoes](https://github.com/guivaraschinalves/ftm-eleicoes), do mesmo

@@ -858,24 +858,51 @@
     });
   }
 
-  /* ============================== Sidebar nav ativo ============================== */
-  function initScrollSpy() {
-    var links = Array.prototype.slice.call(document.querySelectorAll(".nav-link"));
-    var sections = links
-      .map(function (l) { return document.querySelector(l.getAttribute("href")); })
-      .filter(Boolean);
-    if (!sections.length) return;
+  /* ============================== Troca de tela (hero <-> seções) ============================== */
+  // Só uma "tela" fica visível por vez: o cardzinho inicial (.hero) ou uma
+  // das 5 seções — nunca os dois juntos, e nunca mais de uma seção. Troca
+  // de tela nunca mexe na URL (sem hash, sem history.pushState) — recarregar
+  // a página ou compartilhar o link sempre cai no cardzinho inicial, de
+  // propósito. viewId "hero" volta pro cardzinho; qualquer outro precisa
+  // bater com o id de uma .page-section.
+  function showView(viewId) {
+    var hero = document.querySelector(".hero");
+    if (hero) hero.hidden = viewId !== "hero";
 
-    function onScroll() {
-      var pos = window.scrollY + 120;
-      var current = sections[0];
-      sections.forEach(function (s) { if (s.offsetTop <= pos) current = s; });
-      links.forEach(function (l) {
-        l.classList.toggle("active", l.getAttribute("href") === "#" + current.id);
+    var sections = Array.prototype.slice.call(document.querySelectorAll(".page-section"));
+    sections.forEach(function (s) { s.hidden = s.id !== viewId; });
+
+    var links = Array.prototype.slice.call(document.querySelectorAll(".nav-link"));
+    links.forEach(function (l) {
+      l.classList.toggle("active", l.getAttribute("href") === "#" + viewId);
+    });
+
+    // Troca de tela é contexto novo, não navegação incremental — sem isso a
+    // pessoa cairia no meio de uma seção nova na posição de scroll da
+    // anterior. Sem animação de propósito: é uma troca de tela, não um
+    // scroll até um trecho da mesma página.
+    window.scrollTo(0, 0);
+  }
+
+  // Liga o clique dos links do menu e do logo uma única vez (chamado só a
+  // partir de init()) — cada um sempre com preventDefault(), já que nenhuma
+  // troca de tela deve tocar na URL.
+  function initViewSwitcher() {
+    var links = Array.prototype.slice.call(document.querySelectorAll(".nav-link"));
+    links.forEach(function (l) {
+      l.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        showView(l.getAttribute("href").slice(1));
+      });
+    });
+
+    var brand = document.getElementById("brand-home");
+    if (brand) {
+      brand.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        showView("hero");
       });
     }
-    document.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
   }
 
   function init() {
@@ -890,11 +917,13 @@
     buildComparisonSection();
     buildWordCountSection();
     initPinnedPickerControl();
-    initScrollSpy();
+    initViewSwitcher();
     // visibleIds está vazio aqui — nada em Visão Geral/Temas/Comparar 1×1
     // existe até a primeira confirmação. O diálogo modal bloqueia o resto
     // da página nesse meio-tempo (backdrop nativo do <dialog>), então não é
-    // preciso esconder `<main>` para isso.
+    // preciso esconder `<main>` para isso. O cardzinho inicial já começa
+    // visível e as 5 seções já começam com `hidden` declarado no HTML —
+    // não precisa de um showView("hero") explícito aqui.
     openPicker();
   }
 
