@@ -81,7 +81,8 @@ window.CANDIDATES_DATA["renan-santos"] = {
         { title: "Zona Econômica de Terras Raras (8 estágios da cadeia)", quotes: [{ quote: "A ZEE de Terras Raras busca verticalizar a cadeia produtiva nacional, aproveitando a segunda maior reserva mundial do Brasil (cerca de 23%, USGS 2026), integrando oito estágios: (1) extração, (2) separação química, (3) refino, (4) ligas, (5) ímãs, (6) motores, (7) componentes para baterias e (8) semicondutores/defesa.", page: 36 }] },
         { title: "Três polos industriais no Nordeste via ZEEs", quotes: [{ quote: "Polo Industrial de Suape (Pernambuco), focado em hidrogênio verde e petroquímica [...] Pecém (Ceará) e Araripe (Pernambuco), polo interestadual especializado em aço de baixo carbono [...] Aratu-Camaçari (Bahia) direcionado à mobilidade elétrica, baterias e semicondutores.", page: 35 }] },
         { title: "Missão Rondon: meta de 40 mil km de ferrovias", quotes: [{ quote: "Ferrovias: meta mínima de 40 mil km de malha; conclusão antecipada da Ferrovia Alcântara-Açailândia, conclusão da Ferrovia de Integração Oeste-Leste (FIOL), início imediato das obras da Ferrogrão e viabilização da Ferrovia Transoceânica.", page: 24 }] },
-        { title: "Mobilizar capital privado por concessões e novo regime ferroviário", quotes: [{ quote: "mobilização do capital privado por concessões, PPPs e o novo regime de autorização ferroviária [...] aumento do investimento estatal em infraestrutura, condicionado à reforma administrativa e fiscal prévia.", page: 24 }] }
+        { title: "Mobilizar capital privado por concessões e novo regime ferroviário", quotes: [{ quote: "mobilização do capital privado por concessões, PPPs e o novo regime de autorização ferroviária [...] aumento do investimento estatal em infraestrutura, condicionado à reforma administrativa e fiscal prévia.", page: 24 }] },
+        { title: "Meta de dobrar o investimento em infraestrutura para 4% do PIB", quotes: [{ quote: "Esses projetos contemplam a renovação dos modais de transporte, a expansão da malha ferroviária, a retomada de obras interrompidas em portos e aeroportos e um melhor aproveitamento do potencial energético da nossa matriz limpa, com a meta de elevar os investimentos em infraestrutura dos atuais 2% do PIB para, pelo menos, 4%.", page: 6 }] }
       ]
     }
   },
@@ -99,11 +100,13 @@ window.CANDIDATES_DATA["renan-santos"] = {
     },
     seguranca: {
       diagnosis: [
-        { quote: "Estado brasileiro manteve-se preso a processos burocráticos, polícias que não compartilham dados, sistemas judiciários sobrecarregados e uma visão de policiamento baseada apenas no confronto físico, negligenciando a asfixia financeira e a inteligência preditiva. O problema, portanto, é duplo: nosso arcabouço legal protege o inimigo, e nosso aparato operacional não o alcança.", page: 12 }
+        { quote: "Estado brasileiro manteve-se preso a processos burocráticos, polícias que não compartilham dados, sistemas judiciários sobrecarregados e uma visão de policiamento baseada apenas no confronto físico, negligenciando a asfixia financeira e a inteligência preditiva. O problema, portanto, é duplo: nosso arcabouço legal protege o inimigo, e nosso aparato operacional não o alcança.", page: 12 },
+        { quote: "Estamos a um passo de nos tornarmos um narcoestado, com a consolidação de organizações criminosas que funcionam como governos paralelos, exercendo controle territorial, governança e poder normativo sobre aproximadamente 20% da população.", page: 11 }
       ],
       proposals: [
         { title: "Direito Penal do Inimigo via Lei Antifacção", quotes: [{ quote: "o governo da Missão vai declarar no primeiro dia de mandato uma grande Guerra ao Crime, visando à adoção imediata do Direito Penal do Inimigo (DPI) como framework jurídico para o combate ao crime organizado no Brasil.", page: 12 }] },
-        { title: "Superpresídios modelo CECOT (El Salvador)", quotes: [{ quote: "As lideranças condenadas serão deslocadas a superpresídios de segurança máxima em regiões remotas, no modelo do CECOT salvadorenho, equipados com blindagem eletromagnética e biometria contínua.", page: 13 }] }
+        { title: "Superpresídios modelo CECOT (El Salvador)", quotes: [{ quote: "As lideranças condenadas serão deslocadas a superpresídios de segurança máxima em regiões remotas, no modelo do CECOT salvadorenho, equipados com blindagem eletromagnética e biometria contínua.", page: 13 }] },
+        { title: "Tomemos as Cidades: retomada territorial dos espaços controlados pelo crime", quotes: [{ quote: "Proposta de retomada territorial, literalmente \"Tomemos as Cidades\", por meio de institucionalização da segurança pública, modernização institucional e uma estratégia de presença estatal em regiões onde o crime organizado domina, reduzindo gradualmente os espaços controlados por narcotraficantes.", page: 46 }] }
       ]
     },
     saude: {
@@ -113,7 +116,8 @@ window.CANDIDATES_DATA["renan-santos"] = {
       ],
       proposals: [
         { title: "ENER — fila do SUS por risco clínico, não ordem cronológica", quotes: [{ quote: "criar a ENER, um sistema de fila viva, que não fique engessado na ordem cronológica, mas atenda critérios objetivos de prioridade relativos ao estado do paciente [...] fundada nos seguintes critérios: (i) gravidade clínica atual; (ii) risco de progressão em curto e médio prazo.", page: 25 }] },
-        { title: "PRONTO — prontuário eletrônico nacional interoperável", quotes: [{ quote: "Criação do PRONTO (Prontuário Eletrônico Nacional Interoperável) que irá conectar a atenção primária, os serviços especializados, os hospitais públicos e privados, laboratórios e farmácias.", page: 26 }] }
+        { title: "PRONTO — prontuário eletrônico nacional interoperável", quotes: [{ quote: "Criação do PRONTO (Prontuário Eletrônico Nacional Interoperável) que irá conectar a atenção primária, os serviços especializados, os hospitais públicos e privados, laboratórios e farmácias.", page: 26 }] },
+        { title: "Sistema digital de saúde com telemedicina e IA inspirado no DoctorSV (El Salvador)", quotes: [{ quote: "Criação de um sistema digital de saúde, que combine telemedicina, diagnósticos por IA, monitoramento clínico e histórico permanente, inspirado no DoctorSV, de El Salvador.", page: 26 }] }
       ]
     },
     "politica-externa": {
@@ -124,7 +128,8 @@ window.CANDIDATES_DATA["renan-santos"] = {
       ],
       proposals: [
         { title: "Brasil como 'árbitro do Sul Global'", quotes: [{ quote: "Posicionamento do Brasil como Árbitro do Sul Global por meio de uma diplomacia ativa nas três regiões estratégicas: África [...] Ásia [...] e América Latina.", page: 44 }] },
-        { title: "Nuclearização brasileira", quotes: [{ quote: "Proposta de nuclearização brasileira busca alcançar autonomia completa do ciclo de combustível nuclear, incluindo capacidade de reprocessamento, convertendo-a em ativo estratégico de deterrência.", page: 46 }] }
+        { title: "Nuclearização brasileira", quotes: [{ quote: "Proposta de nuclearização brasileira busca alcançar autonomia completa do ciclo de combustível nuclear, incluindo capacidade de reprocessamento, convertendo-a em ativo estratégico de deterrência.", page: 46 }] },
+        { title: "Guerra contra o Tráfico como questão de segurança nacional militar", quotes: [{ quote: "Proposta sobre a Guerra contra o Tráfico redefine esse combate como questão de segurança nacional de nível militar, não simplesmente policial, exigindo um Pacto Interamericano contra o crime organizado, liderado pelo Brasil e ancorado na Convenção de Palermo e na OEA, com um Centro de Operações Central na América Latina e um tribunal internacional especializado em criminalidade transnacional.", page: 45 }] }
       ]
     },
     corrupcao: {

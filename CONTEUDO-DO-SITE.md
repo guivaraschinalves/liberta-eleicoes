@@ -1,6 +1,6 @@
 # Conteúdo do site — Liberta Eleições
 
-Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações de Diagnóstico + Propostas dos 6 Temas (Economia, dividida em 7 subtemas, e Educação, Segurança Pública, Saúde, Política Externa, Combate à Corrupção). Gerado por `scripts/export_content_md.py` — reflete o estado atual dos dados, não é lido pelo site (a fonte real continua sendo `data/*.js` + `app.js`). Toda citação (`quote`) é transcrição literal do plano de governo oficial; só o título de cada proposta é redigido por nós. Idade calculada em 2026-09-01.
+Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações de Diagnóstico + Propostas dos 6 Temas (Economia, dividida em 7 subtemas, e Educação, Segurança Pública, Saúde, Política Externa, Combate à Corrupção). Gerado por `scripts/export_content_md.py` — reflete o estado atual dos dados, não é lido pelo site (a fonte real continua sendo `data/*.js` + `app.js`). Toda citação (`quote`) é transcrição literal do plano de governo oficial; só o título de cada proposta é redigido por nós. Idade calculada em 2026-09-02.
 
 ## Sumário de candidatos
 
@@ -99,6 +99,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Alfabetização na idade adequada** — "Alfabetização na idade adequada" (p. 7)
 - **Recomposição de aprendizagem com avaliação frequente** — "Recomposição de aprendizagem" (p. 7); "Avaliação frequente com intervenção pedagógica" (p. 7)
+- **Busca ativa de crianças fora da escola** — "Busca ativa de crianças fora da escola" (p. 3)
 
 ### Segurança Pública
 
@@ -183,6 +184,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Jornada de 30 horas sem redução salarial e fim da escala 6x1** — "Garantiremos o direito ao trabalho para todos, com redução da jornada de trabalho para 30 horas sem redução de salário e o fim da escala 6x1." (p. 5)
 - **Registro em carteira e piso salarial para trabalhadores de aplicativo** — "Garantiremos também o registro em carteira e piso salarial para os trabalhadores e as trabalhadoras de plataformas de aplicativos, garantindo todos os direitos e pondo fim as jornadas exaustivas." (p. 5)
+- **Recomposição do salário-mínimo e ampliação do seguro-desemprego** — "Recuperação gradual do poder de compra dos salários, especialmente do salário-mínimo, visando alcançar o piso do salário-mínimo do Dieese." (p. 14); "Será reforçado e ampliado o seguro-desemprego e garantido o provimento de auxílios emergenciais e outras formas de cobertura para situações de vulnerabilidade." (p. 14)
 
 #### Inflação e Política Monetária
 
@@ -219,6 +221,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Ensino 100% público e gratuito, com estatização do sistema privado** — "Na educação, implantaremos o ensino 100% público e gratuito, das creches à pós-graduação, com a estatização do sistema privado de ensino." (p. 7)
 - **Piso Salarial Profissional Nacional dos professores** — "É preciso implantar em definitivo o Piso Salarial Profissional Nacional como vencimento básico do primeiro nível da carreira, produzindo reflexos em toda a estrutura remuneratória da categoria." (p. 7)
+- **Fim das escolas cívico-militares e defesa da educação laica** — "Fim das escolas cívico-militares. Defesa de uma educação laica e socialmente referenciada e de políticas de ciência e tecnologia em prol de um projeto popular de soberania nacional." (p. 10)
+- **Reestruturação dos currículos da educação básica contra a divisão sexual do trabalho** — "Reestruturação dos currículos da educação básica para incluir o trabalho de reprodução e as tarefas domésticas, para meninos e meninas aprendam desde cedo as tarefas domésticas, reduzindo o impacto da divisão sexual do trabalho." (p. 11)
 
 ### Segurança Pública
 
@@ -228,6 +232,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Desmilitarização da segurança pública e unificação das polícias** — "para o que se faz necessária a completa desmilitarização da segurança pública, com unificação das polícias e instituição do ciclo completo junto com a desvinculação das forças de segurança do exército" (p. 6)
 - **Descriminalização de drogas e legalização da maconha a curto prazo** — "Descriminalização do uso de drogas, com legalização da maconha a curto prazo." (p. 12)
+- **Priorização do controle de fronteiras pelas Forças Armadas e Polícia Federal** — "As forças armadas priorizarão o cuidado das fronteiras, em conjunto com a polícia federal e demais órgãos de inteligência." (p. 13)
 
 ### Saúde
 
@@ -237,6 +242,10 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Sistema de saúde 100% público, com estatização do setor privado** — "Expansão do sistema público de saúde, com a reversão das privatizações e revogação dos contratos de todas as OSs no setor, bem como estatização de todo o setor privado de saúde." (p. 9)
 - **Investimento de 10% do PIB na saúde pública** — "investimento de 10% do PIB na saúde pública." (p. 9)
+- **SUS integrado com fortalecimento da atenção básica em todos os bairros** — "Na saúde o governo do poder popular tornará público todo o sistema de saúde, integrado com assistência (hospitais, serviços ambulatoriais, de apoio diagnóstico e terapêutico), pesquisa, produção de medicamentos, vacinas e equipamentos, com fortalecimento da atenção básica em todos os bairros, visando garantir atendimento à saúde a todas as pessoas o mais próximo possível de seus locais de moradia ou trabalho." (p. 6)
+- **Conselhos Populares de Saúde eleitos pelos trabalhadores** — "Criação dos Conselhos Populares de Saúde, eleitos pelos trabalhadores, para o controle do sistema de saúde em todos os níveis." (p. 10)
+- **Fim das comunidades terapêuticas e expansão da Fiocruz e do Instituto Butantã** — "Proibição das comunidades terapêuticas e fortalecimento do SUS na perspectiva da luta antimanicomial; expansão da Fiocruz e do Instituto Butantã para outros estados, com ampliação dos investimentos públicos." (p. 10)
+- **Legalização do aborto com atendimento garantido na rede pública de saúde** — "Legalização do aborto, com garantia de atendimento na rede pública de saúde, bem como políticas públicas que possibilitem a emancipação da mulher dos trabalhos domésticos, zerando as filas de creches, ampliando a educação integral e efetuando a construção massiva de restaurantes e lavanderias populares." (p. 11)
 
 ### Política Externa
 
@@ -301,9 +310,12 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Diagnóstico:**
 - "Há cerca de 8 milhões de jovens que nem trabalham e nem estudam no país, os chamados "nem-nem". É a era da desesperança." (p. 56)
+- "De um lado, o avanço acelerado da inteligência artificial, da robótica e da automação ameaça milhões de empregos tradicionais." (p. 131)
 
 **Propostas:**
 - **Programa nacional de inserção produtiva da juventude** — "Criaremos um grande programa nacional de inserção produtiva da juventude, com incentivos fiscais para empresas que contratarem jovens em seu primeiro emprego, estágios ampliados e programas de aprendizagem tecnológica." (p. 57)
+- **BCOO: meta de dobrar o número de cooperados no país** — "Dobrar o número de cooperados, passando de 27 milhões para 54 milhões." (p. 131)
+- **Projeto BEE: 10 milhões de microempreendedores na malha rodoviária** — "O Projeto BEE integra o plano nacional de formação de 10 milhões de microempreendedores nos próximos anos, transformando a malha rodoviária brasileira em um grande corredor de prosperidade." (p. 120)
 
 #### Inflação e Política Monetária
 
@@ -330,15 +342,20 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Ampliação de concessões e parcerias público-privadas** — "ampliaremos as concessões e as parcerias público-privadas, sempre com regras claras, segurança jurídica e rigorosa fiscalização. O objetivo será acelerar obras, melhorar a qualidade dos serviços públicos, atrair investimentos nacionais e internacionais." (p. 49)
 - **Marco Legal do Saneamento Básico como prioridade nacional** — "Fazer cumprir o Marco Legal do Saneamento Básico como prioridade nacional por representar uma das políticas públicas de maior impacto sobre a saúde, a qualidade de vida, a preservação ambiental e a redução dos gastos públicos com doenças evitáveis." (p. 49)
+- **Programa nacional de integração logística (rodovias, ferrovias, hidrovias, portos e aeroportos)** — "Implantaremos um grande programa nacional de integração logística para reduzir o custo do transporte de cargas, aumentar a competitividade do agronegócio, da indústria e do comércio e conectar de forma eficiente todas as regiões do país." (p. 50)
+- **Duplicação das principais rodovias** — "Propomos duplicação das principais rodovias." (p. 120)
 
 ### Educação
 
 **Diagnóstico:**
 - "em 2025, quase 8 milhões de jovens, entre 15 e 29 anos de idade, nem trabalham nem estudam, segundo dados do IBGE. Trata-se de uma realidade tão grave e cruel que precisa ser enfrentada com urgência." (p. 3)
+- "O Brasil ocupa uma posição dramática no Programa Internacional de Avaliação de Estudantes — PISA, que mede as competências de jovens em leitura, matemática e ciências. É inadmissível que uma das maiores economias do mundo permaneça tão distante dos países que lideram a educação mundial." (p. 70)
 
 **Propostas:**
 - **Alfabetização na idade certa e valorização dos professores** — "Investiremos na alfabetização na idade certa, na melhoria da aprendizagem, na valorização dos professores e na redução das desigualdades educacionais." (p. 42)
 - **Expansão do ensino técnico integrado ao ensino médio** — "Ampliaremos significativamente a oferta de ensino técnico integrado ao ensino médio, aproximando escolas e empresas, formando jovens com competências práticas e aumentando sua empregabilidade." (p. 43)
+- **Escola de Tempo Integral: Clube de Desenvolvimento Humano** — "Ao lado das disciplinas tradicionais, a proposta incorpora três pilares essenciais para a formação das novas gerações: Gestão da Emoção, para desenvolver o equilíbrio psicológico, a autonomia e a capacidade de enfrentar desafios; Educação Financeira, preparando crianças e jovens para decisões responsáveis ao longo da vida; e Empreendedorismo, estimulando a criatividade, a inovação e a geração de oportunidades desde os primeiros anos da formação escolar." (p. 75)
+- **Projeto Brasil Neuroinclusivo** — "O Projeto Brasil Neuroinclusivo institui uma política permanente de Estado para acolher crianças, adolescentes e adultos neurodivergentes, particularmente pessoas com autismo, TDAH, dislexia, transtornos de aprendizagem e altas habilidades." (p. 81); "Será criado um grande Programa Nacional de Formação em Neurodiversidade e Gestão da Emoção, presencial e digital, para professores, coordenadores e gestores escolares." (p. 82)
 
 ### Segurança Pública
 
@@ -348,6 +365,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Recriação do Ministério da Segurança Pública** — "Recriação do Ministério da segurança pública." (p. 45)
 - **Programa FATO — Força de Alerta Total** — "Programa FATO – Força de Alerta Total: será o maior programa já realizado no Brasil que integra, treina, equipa e valoriza todas as forças policiais: Polícia Federal, Polícia Militar, Polícia Civil e a Polícia FOCO." (p. 45)
+- **Programa Mulheres Vivas — proteção contra a violência** — "Nenhuma mulher deverá viver sob o medo permanente da violência. Implantaremos o Programa Mulheres Vivas, integrando tecnologia, forças de segurança, atendimento psicológico, assistência jurídica e proteção social para oferecer respostas rápidas às vítimas e prevenir novos casos de violência." (p. 53)
+- **Reforma do sistema penitenciário e ressocialização** — "Reformaremos o sistema penitenciário com foco em segurança, controle e ressocialização, reduzindo a reincidência criminal e fortalecendo programas de reintegração social." (p. 47)
 
 ### Saúde
 
@@ -356,8 +375,9 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - "Vivemos uma epidemia silenciosa de ansiedade, depressão, estresse e sofrimento emocional." (p. 44)
 
 **Propostas:**
-- **Brasil como maior centro de telemedicina do mundo** — "Creremos transformar o Brasil em um maior centro de telemedicina do mundo... O objetivo é desafogar o SUS ao atender certa de 80% das consultas básicas e, assim, as consultas com especialistas que as vezes demoram mais de 50 dias, serão atendidas com maior rapidez." (p. 44)
+- **Brasil como maior centro de telemedicina do mundo** — "Creremos transformar o Brasil em um maior centro de telemedicina do mundo... O objetivo é desafogar o SUS ao atender certa de 80% das consultas básicas e, assim, as consultas com especialistas que as vezes demoram mais de 50 dias, serão atendidas com maior rapidez." (p. 44); "Nosso compromisso é estabelecer uma meta nacional de atendimento digital em até trinta minutos para os casos compatíveis com telemedicina." (p. 162)
 - **Programa Nacional de Saúde Mental** — "Implantaremos uma ampla política nacional de saúde mental envolvendo escolas, empresas, universidades, forças de segurança, unidades de saúde e comunidades, promovendo prevenção, acolhimento e tratamento humanizado." (p. 44)
+- **Comitês Sociedade Está Abraçando (SEA) para prevenção do câncer** — "Cada município contará com um Comitê Sociedade Está Abraçando (SEA), reunindo representantes de diferentes áreas para fortalecer a prevenção e a promoção da saúde." (p. 172)
 
 ### Política Externa
 
@@ -367,16 +387,18 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Política externa ativa, equilibrada e pragmática** — "O Brasil adotará uma política externa ativa, equilibrada e pragmática, baseada no diálogo, na cooperação internacional e na defesa dos interesses nacionais." (p. 58)
 - **Embaixada 4.0: diplomacia com metas de comércio e investimento** — "Implantaremos o modelo Embaixada 4.0, com metas anuais de abertura de mercados, atração de investimentos e apoio a exportadores, medidas por indicadores objetivos e divulgadas publicamente." (p. 58)
+- **Diplomacia climática e ambiental** — "O Brasil terá papel central nas negociações globais sobre clima e meio ambiente, defendendo um modelo de desenvolvimento sustentável que reconheça a importância da Amazônia e da biodiversidade como ativos estratégicos do país." (p. 59)
 
 ### Combate à Corrupção
 
 **Diagnóstico:**
-- _Não abordado explicitamente no plano de governo._
+- "Mais do que punir a corrupção, precisamos preveni-la." (p. 53)
 
 **Propostas:**
 - **Programa SEO — Sociedade Está de Olho** — "Implantaremos uma ampla rede nacional de controle social denominada Sociedade Está de Olho (SEO), envolvendo cidadãos, universidades, entidades da sociedade civil, órgãos de controle e tecnologias inteligentes para acompanhar a aplicação dos recursos públicos." (p. 52)
 - **Inteligência Artificial no controle dos gastos públicos** — "Utilizaremos sistemas avançados de Inteligência Artificial para cruzar milhões de informações, identificar sobrepreços, pagamentos indevidos, fraudes em licitações, conflitos de interesse e outras irregularidades." (p. 52)
 - **Fortalecimento dos órgãos de controle** — "Tribunais de Contas, Controladorias, Ministério Público, Polícia Federal e demais instituições de fiscalização receberão investimentos em tecnologia, integração de dados e capacitação técnica. O combate à corrupção depende de instituições fortes, independentes e tecnicamente preparadas." (p. 52)
+- **Cultura nacional de integridade e compliance no setor público** — "Implantaremos programas permanentes de ética pública, integridade administrativa e educação cidadã, fortalecendo valores republicanos desde a escola até a alta administração pública. Promoveremos a adoção de programas de Compliance e governança corporativa no setor público, modernizando legislações burocráticas que geram brechas para desvios." (p. 53)
 
 ---
 
@@ -460,10 +482,15 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Diagnóstico:**
 - "O custo logístico no Brasil é de 15,5% do PIB, quase o dobro dos 8,8% dos Estados Unidos." (p. 31)
 - "O país cresceu, em média, 2% ao ano nas últimas duas décadas, menos do que o mundo. Nossa meta é dobrar esse ritmo e alcançar um crescimento sustentado de 4% ao ano ao longo da próxima década." (p. 49)
+- "O maior avanço do país nessa área tem nome e sobrenome: foi o Marco Legal do Saneamento, sancionado pelo governo Bolsonaro em 2020, que abriu o setor ao investimento privado e fixou a meta de levar água e esgoto a praticamente toda a população até 2033." (p. 47)
+- "o Brasil produz cada vez mais gás no pré-sal, mas desperdiça parte dele por falta de escoamento, enquanto importa gás caro do exterior." (p. 53)
 
 **Propostas:**
 - **R$ 900 bi em infraestrutura em 4 anos** — "Vamos investir R$ 900 bilhões em quatro anos em rodovias, hidrovias, portos, aeroportos e ferrovias." (p. 51)
 - **Estabilidade regulatória de até 20 anos** — "Vamos também garantir que a regra combinada no início seja a regra do fim. Para os grandes projetos de longa maturação, criaremos mecanismos de estabilidade das regras de até 20 anos, para que o contrato não seja mudado depois que a obra já estiver de pé." (p. 50)
+- **Acelerar concessões para universalizar água e esgoto** — "nós vamos garantir sua plena aplicação e acelerar as concessões e parcerias para universalizar o acesso à água tratada e ao esgoto, com atenção especial ao saneamento rural." (p. 47)
+- **Expandir a rede de escoamento e transporte de gás** — "Vamos apoiar a expansão da rede de escoamento e transporte de gás conforme a demanda, com segurança jurídica e regras estáveis que atraiam o investimento privado, para integrar à malha os estados hoje desconectados e baratear a energia da indústria e da família." (p. 53)
+- **Armazenamento de energia e polo global de data centers** — "Vamos regular as diversas fontes buscando o menor preço ao consumidor final, implantar um programa de armazenamento de energia, com baterias de grande porte e outras tecnologias, e transformar o país em polo global de data centers sustentáveis, aproveitando a matriz elétrica renovável." (p. 53)
 
 ### Educação
 
@@ -494,10 +521,16 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Diagnóstico:**
 - "A saúde é a base de tudo o que este capítulo promete: criança doente não aprende, adulto doente não trabalha, e uma família com um enfermo grave vê o orçamento e os planos ruírem juntos." (p. 37)
 - "A lei de reajuste já existe, mas, presa ao orçamento, não enfrentou a defasagem que asfixia hospitais, santas casas e clínicas, sobretudo no interior." (p. 37)
+- "O médico que atende hoje não sabe o que outro médico já descobriu." (p. 26)
+- "A saúde mental é outra face do cuidado, e hoje pesa sobre milhões de famílias, quase sempre em silêncio." (p. 39)
 
 **Propostas:**
 - **Correção efetiva da tabela SUS** — "Vamos garantir as condições para que seja possível a correção efetiva da tabela SUS. [...] Vamos assegurar uma remuneração que cubra o custo real do atendimento." (p. 37)
 - **Programa de Atendimento aos Idosos** — "criar o Programa de Atendimento aos Idosos, com atendimento facilitado e adequado a quem envelhece, para que o idoso não enfrente o mesmo percurso cansativo de sempre para se cuidar." (p. 37)
+- **Prontuário eletrônico único e digitalização do SUS** — "Vamos implantar o prontuário eletrônico único, vinculado ao CPF e integrado ao Gov.br, interoperável entre as redes pública e privada, com histórico completo de consultas, exames, vacinas e prescrições, sempre observados o consentimento do paciente, a LGPD, o sigilo médico e os protocolos de segurança" (p. 26); "vamos completar a digitalização do SUS e usar inteligência artificial para agilizar o agendamento de consultas e exames, ajudando a encaixar o paciente na primeira vaga disponível, para que ninguém mais fique meses aguardando uma marcação que poderia ser resolvida em muito menos tempo." (p. 26)
+- **Telessaúde e entrega de remédio em domicílio** — "Vamos também levar o atendimento até quem não consegue chegar até ele. Com a telessaúde e o teleatendimento por aplicativo, médicos de regiões com baixa demanda poderão atender pacientes onde as filas são longas, aproximando o cuidado de quem vive longe de um grande centro. E um sistema de entrega de remédio em domicílio vai garantir que o idoso, a pessoa com deficiência e o doente crônico não precisem escolher entre buscar o tratamento e pagar o transporte." (p. 38)
+- **Inteligência artificial de apoio à prevenção** — "A tecnologia também ajuda a cuidar antes de a doença se agravar. Com inteligência artificial de apoio à prevenção, o sistema poderá identificar quem corre maior risco de adoecer e chamar essa pessoa para se cuidar a tempo, em vez de esperar que ela chegue ao pronto-socorro quando já é grave." (p. 38)
+- **Fortalecer a atenção à saúde mental** — "Vamos fortalecer e ampliar a atenção à saúde mental, chegando às famílias que muitas vezes enfrentam tudo sozinhas: o diagnóstico precoce e o apoio às crianças com TDAH; a atenção à depressão e à ansiedade; e o cuidado com os idosos que enfrentam o Alzheimer e outras doenças neurológicas, e com quem cuida deles." (p. 39)
 
 ### Política Externa
 
@@ -567,6 +600,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Fim da escala 6x1 sem redução de salários e direitos** — "Fim da escala 6×1 sem redução de salários e direitos, sem pejotização e sem demissões" (p. 8)
 - **Jornada de 36 horas rumo à escala móvel de trabalho** — "Redução da jornada de trabalho para 36 horas, sem redução dos salários e sem flexibilização de direitos, rumo à escala móvel de horas de trabalho (pleno emprego). Trabalhar menos para que todos trabalhem!" (p. 8)
+- **Direitos trabalhistas plenos e combate ao trabalho análogo à escravidão no campo** — "Garantia de direitos trabalhistas plenos, com equiparação aos direitos urbanos, incluindo jornadas regulamentadas, descanso semanal e previdência." (p. 18); "Combate efetivo ao trabalho análogo à escravidão, com fiscalização rigorosa, punição exemplar aos responsáveis e expropriação das empresas onde essas práticas forem identificadas, colocando-as sob controle dos trabalhadores." (p. 18)
 
 #### Inflação e Política Monetária
 
@@ -580,6 +614,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Diagnóstico:**
 - "O problema é que o Brasil é controlado por cerca de 250 grandes conglomerados capitalistas, grande parte transnacionais, cujo único interesse é explorar ao máximo a mão de obra do trabalhador brasileiro e nossos recursos naturais, como as cobiçadas "terras raras"." (p. 2)
+- "Avançam processos de privatização e concessão de metrôs, estradas e ferrovias, aprofundando a mercantilização da mobilidade." (p. 13)
 
 **Propostas:**
 - **Expropriação/reversão de privatizações em mineração, petróleo e energia** — "Expropriação imediata (em grande parte dos casos, reversão de privatização) das grandes empresas privadas dos setores de mineração, petróleo, energia, siderurgia, celulose e das grandes comercializadoras e centralizadoras do agronegócio, incorporando seus ativos ao patrimônio público nacional." (p. 26)
@@ -593,24 +628,30 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Plano nacional de obras públicas para saneamento, escolas e hospitais** — "Plano nacional de obras públicas voltado à geração de empregos, universalização do saneamento básico, construção de escolas, hospitais, creches, infraestrutura ambiental, entre outras obras necessárias e respeitadoras do meio ambiente." (p. 8)
 - **Estatização dos sistemas de transporte urbano** — "Estatização dos sistemas de transporte urbano e reversão das concessões privadas" (p. 13)
+- **Fundo público de investimento produtivo financiado por excedentes de empresas expropriadas** — "Criação de fundos públicos de investimento produtivo, abastecidos pelos excedentes das empresas expropriadas, e não por impostos, voltados à industrialização, inovação tecnológica e expansão da infraestrutura nacional organicamente associados a todas as universidades e institutos públicos de pesquisa e desenvolvimento." (p. 27)
 
 ### Educação
 
 **Diagnóstico:**
 - "Cada vez mais se aprofunda a desigualdade educacional no país: enquanto os filhos dos ricos têm acesso a escolas equipadas e a um ensino completo para aprender a mandar, os filhos da classe trabalhadora estudam em escolas sem estrutura, com um currículo cada vez mais simplificado." (p. 11)
+- "Os grandes grupos empresariais da educação avançam hoje sobre a educação básica. Por intermédio de institutos, fundações e movimentos como o Todos Pela Educação, definem as políticas públicas e influenciam legislações que abrem espaço para diversos mecanismos de apropriação das verbas públicas." (p. 12)
 
 **Propostas:**
 - **Revogação das propostas curriculares de empresários da educação (BNCC)** — "Revogação das propostas curriculares elaboradas pelos grandes empresários da educação e fundações privadas (BNCC e Novo Ensino Médio). Por propostas curriculares elaboradas pelos trabalhadores da educação." (p. 11)
 - **Valorização dos profissionais da educação** — "Valorização dos profissionais da educação, com carreira e salários dignos" (p. 11)
+- **Educação no campo e combate ao analfabetismo** — "Educação no campo, combate ao analfabetismo e valorização dos saberes locais." (p. 17)
 
 ### Segurança Pública
 
 **Diagnóstico:**
 - "A população trabalhadora convive diariamente com diferentes formas de violência... além da violência praticada pelo próprio Estado contra as periferias, especialmente contra a juventude negra e pobre e os movimentos populares." (p. 18)
+- "Nas periferias e nos grandes centros urbanos, a violência policial por meio, principalmente, da Polícia Militar, submete toda uma população a um estado de exceção permanente, com execuções sumárias, chacinas e o encarceramento em massa, sob a justificativa da “guerra às drogas”." (p. 2)
+- "Não é por menos que, nos governos  estaduais, sejam governadas pelo PT ou a extrema direita, o que chamam de "segurança pública", na verdade, aparatos de repressão policial, sejam priorizados como política pública. Porque isso não tem nada a ver com garantir a segurança do trabalhador e das famílias brasileiras. Isso tem a ver com conter e disciplinar, seja pelo encarceramento em massa, seja pelo genocídio da juventude, principalmente negra e periférica, qualquer expressão de revolta ou descontentamento social." (p. 3)
 
 **Propostas:**
 - **Combate ao crime organizado pelo patrimônio e financiamento** — "Combater o crime organizado, as máfias, as milícias, as facções e demais organizações criminosas por meio da investigação, inteligência e desarticulação de seus negócios, atingindo seu patrimônio, suas fontes de financiamento e suas relações com agentes públicos, políticos, empresários." (p. 18)
 - **Desmilitarização da Polícia Militar** — "Desmilitarização da Polícia Militar e reversão da dinâmica de militarização das demais polÍcias e guardas municipais." (p. 19)
+- **Unificação das polícias em instituição civil única, com comandantes eleitos** — "Unificação das polícias em uma única instituição de caráter civil, com eleição de comandantes e delegados pela população e mandatos revogáveis" (p. 20)
 
 ### Saúde
 
@@ -620,6 +661,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **SUS público, universal, gratuito e 100% estatal** — "Defesa do sus público, universal, gratuito e 100% estatal" (p. 10)
 - **Fim da privatização e da gestão privada da saúde** — "Fim da privatização e da gestão privada da saúde (OS, Fundações e PPP)" (p. 10)
+- **Integração entre saúde e saneamento** — "Integração entre saúde e saneamento, enfrentando doenças relacionadas à falta de infraestrutura." (p. 11)
 
 ### Política Externa
 
@@ -694,6 +736,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Diagnóstico:**
 - "O Brasil chegou às mais baixas taxas de desemprego da história e gerou 8,0 milhões de empregos entre 2023 e junho de 2026." (p. 73)
 - "Com a retomada da política de valorização do salário-mínimo, asseguramos aumento real para o piso de remuneração todos os anos, permitindo a recuperação de seu poder de compra e impulsionando os rendimentos do trabalho, que chegaram aos maiores patamares reais da história." (p. 73)
+- "No mercado de trabalho e na previdência, observamos a precarização das relações laborais, a expansão da informalidade e o desamparo de trabalhadores de plataforma, reduzindo o rendimento médio real das famílias." (p. 9)
 
 **Propostas:**
 - **Fim da escala 6x1 e jornada de 40h** — "Manteremos nossa ação junto ao Senado Federal para assegurar o fim da escala 6x1 e a redução da jornada de trabalho para 40 horas, sem redução salarial, nos termos aprovados na Câmara dos Deputados." (p. 75)
@@ -716,6 +759,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Diagnóstico:**
 - "A retomada do crescimento industrial nesse mandato é resultado do enfrentamento do processo de desindustrialização por meio dos investimentos coordenados por uma nova, legítima e indispensável política industrial, a Nova Indústria Brasil (NIB)." (p. 50)
 - "O governo Lula III retomou os investimentos em petróleo e gás. A Petrobras tem batido sucessivos recordes de produção de petróleo e voltou a investir em refino e derivados, em gás e fertilizantes, ampliando suas encomendas às indústrias naval e petroquímica." (p. 66)
+- "O governo avançou na modernização do setor elétrico, conciliando expansão da infraestrutura, segurança energética, competitividade e modicidade tarifária. Houve forte expansão das fontes solar e eólica na geração elétrica." (p. 63)
 
 **Propostas:**
 - **Ampliar investimento da Petrobras** — "Entendemos que a Petrobras continuará ampliando investimentos em exploração onshore e offshore, para recuperar participação no controle de reservas nacionais" (p. 67)
@@ -732,12 +776,14 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Nova edição do Novo PAC** — "A nova edição do Novo PAC manterá a articulação dos investimentos públicos e privados em infraestrutura logística, dando sequência a obras públicas e concessões. Manteremos o ritmo nas concessões rodoviárias e intensificaremos as de ferrovias em duas frentes: leilão de novos projetos e repactuação dos contratos existentes." (p. 53)
 - **Reduzir déficit de fibra óptica e ampliar 5G** — "Vamos reduzir o déficit de fibra óptica que ainda atinge 11% dos municípios e ampliar o 5G no campo, com prioridade para Norte, Nordeste e periferias." (p. 55)
 - **Universalizar saneamento e ampliar transporte de alta capacidade** — "O governo Lula investiu de forma consistente em saneamento. A partir de 2023, foram R$ 23,3 bilhões para novas obras de abastecimento de água, esgotamento sanitário e gestão de resíduos sólidos [...] Continuaremos, no próximo mandato, a perseguir o objetivo de apoiar estados e municípios a universalizar acesso à água tratada e ao esgotamento sanitário." (p. 46); "A atual carteira, entre retomada de obras e novos investimentos, resultará em mais 233 km de metrôs, trens e VLTs e outros 296 km de corredores exclusivos de ônibus no padrão BRT." (p. 46)
+- **Novos arrendamentos portuários** — "Além disso, daremos prosseguimento à política de novos arrendamentos nos portos organizados, bem como aos processos de concessão da manutenção dos canais de acesso e outros serviços portuários." (p. 54)
 
 ### Educação
 
 **Diagnóstico:**
 - "O Compromisso Nacional Criança Alfabetizada instituiu uma estratégia nacional de cooperação federativa, cujos resultados – 66% das crianças alfabetizadas na idade certa em 2025 - superaram a meta prevista de 64%." (p. 31)
 - "Vale lembrar que o governo Lula também retomou obras que estavam paralisadas em governos anteriores – no caso da educação, são 5.967 creches, escolas, quadras esportivas e outros equipamentos que tiveram seus contratos repactuados e voltaram a receber recursos para conclusão." (p. 32)
+- "Na educação, a ausência de uma coordenação federativa integrada, a redução dos recursos e a paralisia de milhares de obras de creches e escolas que abandonaram os municípios à própria sorte, deprimindo a qualidade pedagógica e estimulando o aumento da evasão escolar." (p. 9)
 
 **Propostas:**
 - **Meta de 80% de alfabetização na idade certa** — "Seguiremos com as ações e políticas já pactuadas com os estados e municípios brasileiros para chegarmos à meta de 80% das nossas crianças alfabetizadas na idade certa." (p. 31)
@@ -750,22 +796,27 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Diagnóstico:**
 - "É nesse contexto que deve avançar a construção de um Sistema Nacional de Segurança Pública mais articulado, capaz de combinar medidas imediatas com as reformas constitucionais e legais necessárias para superar o atual modelo fragmentado." (p. 27)
 - "A revogação dos decretos editados no governo anterior, que facilitavam o acesso a armas de fogo, foi uma medida acertada." (p. 28)
+- "A segurança pública, sob o pretexto da desregulamentação, facilitou a proliferação descontrolada de armas de fogo, o que fortaleceu estruturas de milícias e facções criminosas nos territórios vulneráveis e ampliou a letalidade das violências domésticas, em especial contra mulheres, crianças e adolescentes." (p. 9)
 
 **Propostas:**
 - **Criação do Ministério da Segurança Pública** — "Uma vez aprovada a PEC da Segurança Pública proposta pelo Executivo, criaremos o Ministério da Segurança Pública para coordenar, em articulação com estados e municípios, a execução das políticas nacionais de segurança pública no âmbito do Sistema Único de Segurança Pública (SUSP)." (p. 30)
 - **Programa Brasil Contra o Crime Organizado** — "Fortaleceremos o Programa Brasil Contra o Crime Organizado, lançado em maio de 2026 [...] O programa prevê R$ 10 bilhões do Fundo Nacional de Investimento em Infraestrutura Social para estados e municípios realizarem investimentos em equipamentos e infraestrutura." (p. 27)
 - **Plano Pena Justa** — "Cumpriremos as metas do Plano Pena Justa e instituiremos o Pacto Nacional de Execução Penal para o Enfrentamento ao Crime Organizado, fortalecendo a governança do sistema prisional e a cooperação entre União, estados e sistema de justiça." (p. 28)
+- **Programa Celular Seguro** — "Continuaremos expandindo e aprimorando o Programa Celular Seguro, que já conta com mais de 4 milhões de usuários cadastrados. Com a criação da Base Nacional de Celulares com Restrição, o programa passou a oferecer ao cidadão possibilidade de verificar, antes da compra, se o aparelho possui restrição." (p. 29)
+- **Prevenção à violência e proteção da juventude negra** — "Fortaleceremos as políticas de prevenção à violência com foco na proteção da juventude negra e da expansão de programas de mediação comunitária e justiça restaurativa em parceria com estados e municípios." (p. 29)
 
 ### Saúde
 
 **Diagnóstico:**
 - "Avançamos muito, mas o SUS é um sistema que requer contínua evolução para assegurar, de fato, o direito universal à saúde." (p. 34)
 - "Começamos a enfrentar, no atual mandato, com o Agora tem Especialistas, um dos maiores desafios da saúde pública brasileira – garantir o acesso à atenção especializada, com qualidade e agilidade." (p. 37)
+- "O Novo PAC apoiou a estruturação de 336 novos Centros de Atenção Psicossocial - CAPS." (p. 39)
 
 **Propostas:**
 - **Prontuário único do cidadão** — "Vamos acelerar os esforços na consolidação do prontuário único do cidadão, que já avança por meio da Rede Nacional de Dados em Saúde (RNDS)." (p. 35)
 - **IA para triagem e diagnóstico** — "Vamos acelerar a utilização de inteligência artificial para a triagem, a priorização de casos graves, a regulação por risco clínico e o diagnóstico em áreas com escassez de especialistas." (p. 35)
 - **Farmácia Popular 100% gratuito** — "Retomamos o Farmácia Popular, ampliando para 41 o número de medicamentos gratuitos distribuídos. Chegamos, em 2025, a 27,3 milhões de pessoas atendidas [...] O programa será mantido, 100% gratuito." (p. 36)
+- **Ampliar Rede de Atenção Psicossocial e CAPS** — "Na saúde mental, ampliaremos os investimentos na Rede de Atenção Psicossocial e nos CAPS, ampliando a atenção a crianças, adolescentes e jovens." (p. 39)
 
 ### Política Externa
 
@@ -839,6 +890,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Ministério da Empresarização** — "Criar o Ministério da Empresarização" (p. 19)
 - **Renegocia Brasil: renegociação de dívidas de 70 milhões de negativados** — "Programa de renegociação de dívidas dos quase 70 milhões de brasileiros com nome no SPC e das mais de 30% das empresas que se encontram negativadas" (p. 19)
+- **Salário mínimo como o melhor da América do Sul** — "Valorizamos o trabalhador brasileiro que se empenha em trazer o sustento para sua família através do seu suor, de modo que definiremos e manteremos o valor do salário mínimo como o melhor da América do Sul." (p. 14)
 
 #### Inflação e Política Monetária
 
@@ -874,6 +926,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Alfabetização plena até o 2º ano** — "Garantir a alfabetização plena até o 2º ano" (p. 17)
 - **Valorização dos professores: salário, segurança e capacitação** — "Valorização dos professores: salario, segurança e capacitação" (p. 17)
+- **IA aplicada à educação pública** — "IA aplicada à educação pública" (p. 22)
+- **Internet em 100% das escolas públicas** — "Internet em 100% das escolas públicas" (p. 22)
 
 ### Segurança Pública
 
@@ -991,6 +1045,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Três polos industriais no Nordeste via ZEEs** — "Polo Industrial de Suape (Pernambuco), focado em hidrogênio verde e petroquímica [...] Pecém (Ceará) e Araripe (Pernambuco), polo interestadual especializado em aço de baixo carbono [...] Aratu-Camaçari (Bahia) direcionado à mobilidade elétrica, baterias e semicondutores." (p. 35)
 - **Missão Rondon: meta de 40 mil km de ferrovias** — "Ferrovias: meta mínima de 40 mil km de malha; conclusão antecipada da Ferrovia Alcântara-Açailândia, conclusão da Ferrovia de Integração Oeste-Leste (FIOL), início imediato das obras da Ferrogrão e viabilização da Ferrovia Transoceânica." (p. 24)
 - **Mobilizar capital privado por concessões e novo regime ferroviário** — "mobilização do capital privado por concessões, PPPs e o novo regime de autorização ferroviária [...] aumento do investimento estatal em infraestrutura, condicionado à reforma administrativa e fiscal prévia." (p. 24)
+- **Meta de dobrar o investimento em infraestrutura para 4% do PIB** — "Esses projetos contemplam a renovação dos modais de transporte, a expansão da malha ferroviária, a retomada de obras interrompidas em portos e aeroportos e um melhor aproveitamento do potencial energético da nossa matriz limpa, com a meta de elevar os investimentos em infraestrutura dos atuais 2% do PIB para, pelo menos, 4%." (p. 6)
 
 ### Educação
 
@@ -1007,10 +1062,12 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Diagnóstico:**
 - "Estado brasileiro manteve-se preso a processos burocráticos, polícias que não compartilham dados, sistemas judiciários sobrecarregados e uma visão de policiamento baseada apenas no confronto físico, negligenciando a asfixia financeira e a inteligência preditiva. O problema, portanto, é duplo: nosso arcabouço legal protege o inimigo, e nosso aparato operacional não o alcança." (p. 12)
+- "Estamos a um passo de nos tornarmos um narcoestado, com a consolidação de organizações criminosas que funcionam como governos paralelos, exercendo controle territorial, governança e poder normativo sobre aproximadamente 20% da população." (p. 11)
 
 **Propostas:**
 - **Direito Penal do Inimigo via Lei Antifacção** — "o governo da Missão vai declarar no primeiro dia de mandato uma grande Guerra ao Crime, visando à adoção imediata do Direito Penal do Inimigo (DPI) como framework jurídico para o combate ao crime organizado no Brasil." (p. 12)
 - **Superpresídios modelo CECOT (El Salvador)** — "As lideranças condenadas serão deslocadas a superpresídios de segurança máxima em regiões remotas, no modelo do CECOT salvadorenho, equipados com blindagem eletromagnética e biometria contínua." (p. 13)
+- **Tomemos as Cidades: retomada territorial dos espaços controlados pelo crime** — "Proposta de retomada territorial, literalmente "Tomemos as Cidades", por meio de institucionalização da segurança pública, modernização institucional e uma estratégia de presença estatal em regiões onde o crime organizado domina, reduzindo gradualmente os espaços controlados por narcotraficantes." (p. 46)
 
 ### Saúde
 
@@ -1021,6 +1078,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **ENER — fila do SUS por risco clínico, não ordem cronológica** — "criar a ENER, um sistema de fila viva, que não fique engessado na ordem cronológica, mas atenda critérios objetivos de prioridade relativos ao estado do paciente [...] fundada nos seguintes critérios: (i) gravidade clínica atual; (ii) risco de progressão em curto e médio prazo." (p. 25)
 - **PRONTO — prontuário eletrônico nacional interoperável** — "Criação do PRONTO (Prontuário Eletrônico Nacional Interoperável) que irá conectar a atenção primária, os serviços especializados, os hospitais públicos e privados, laboratórios e farmácias." (p. 26)
+- **Sistema digital de saúde com telemedicina e IA inspirado no DoctorSV (El Salvador)** — "Criação de um sistema digital de saúde, que combine telemedicina, diagnósticos por IA, monitoramento clínico e histórico permanente, inspirado no DoctorSV, de El Salvador." (p. 26)
 
 ### Política Externa
 
@@ -1032,6 +1090,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Brasil como 'árbitro do Sul Global'** — "Posicionamento do Brasil como Árbitro do Sul Global por meio de uma diplomacia ativa nas três regiões estratégicas: África [...] Ásia [...] e América Latina." (p. 44)
 - **Nuclearização brasileira** — "Proposta de nuclearização brasileira busca alcançar autonomia completa do ciclo de combustível nuclear, incluindo capacidade de reprocessamento, convertendo-a em ativo estratégico de deterrência." (p. 46)
+- **Guerra contra o Tráfico como questão de segurança nacional militar** — "Proposta sobre a Guerra contra o Tráfico redefine esse combate como questão de segurança nacional de nível militar, não simplesmente policial, exigindo um Pacto Interamericano contra o crime organizado, liderado pelo Brasil e ancorado na Convenção de Palermo e na OEA, com um Centro de Operações Central na América Latina e um tribunal internacional especializado em criminalidade transnacional." (p. 45)
 
 ### Combate à Corrupção
 
@@ -1138,16 +1197,28 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Ampliar e modernizar a malha ferroviária** — "Dar destinação célere aos trechos ferroviários ociosos ou devolvidos [...] avançando também na implantação de corredores ferroviários estruturantes, com prioridade para projetos estratégicos como a FICO, a FIOL e a Ferrogrão, de modo a ampliar a integração logística nacional e reduzir os custos do transporte." (p. 29)
 - **Ampliar concessões rodoviárias e mobilidade urbana federal** — "Aperfeiçoar os modelos de contratação, financiamento e gestão dos ativos rodoviários, ampliando o uso de concessões e PPPs e de contratos de longo prazo orientados por indicadores de desempenho, inclusive para trechos de menor viabilidade econômica." (p. 30); "Integrar o planejamento da mobilidade urbana ao Ministério da Infraestrutura [...] e instituir uma política nacional de implantação e expansão dos sistemas estruturantes de transporte coletivo de alta capacidade, com o Governo Federal apoiando a estruturação dos projetos." (p. 30)
 - **Fortalecer a ANA e o Novo Marco do Saneamento** — "Consolidar a ANA como coordenadora nacional da regulação do saneamento, ampliando a adoção de suas normas de referência pelas entidades reguladoras subnacionais [...] de modo a fortalecer a harmonização regulatória e a efetividade do Novo Marco do Saneamento." (p. 29)
+- **Ampliar o financiamento privado de projetos de infraestrutura** — "Ampliar e diversificar o mercado de financiamento e desenvolvimento de projetos de infraestrutura: Reduzir a dependência dos bancos públicos federais e multilaterais nas etapas de estruturação e financiamento dos projetos; aprimorar os mecanismos de project finance, visando à ampliação da participação do mercado de capitais e de fontes privadas no financiamento dos projetos; e criar um ambiente institucional que estimule a participação de outros atores na estruturação de projetos, de maneira a ampliar a oferta de projetos de infraestrutura nos níveis federal, estadual e municipal." (p. 27)
+- **Recuperar a independência das agências reguladoras** — "Recuperar a independência e a capacidade institucional das Agências Reguladoras: Reconstruir as agências como instituições técnicas fortes e autônomas, com dirigentes de reputação ilibada, mandatos independentes, quadros técnicos qualificados e autonomia administrativa, financeira e decisória, blindando-as da captura política e assegurando estabilidade regulatória aos investimentos de longo prazo." (p. 28)
+- **Conectar todo o Brasil à internet de qualidade** — "Conectar todo o Brasil à internet de qualidade: Estruturar a abertura de novas faixas de espectro para o 5G, atraindo novos concorrentes para baixar preços e melhorar o serviço ao consumidor, e usar parcerias com o setor privado e incentivos econômicos para levar conectividade de qualidade ao interior, ao campo e às regiões isoladas do país, conectando também escolas, postos de saúde e demais serviços públicos que hoje ficam à margem da rede." (p. 31)
+- **Reduzir encargos e baixar a conta de luz** — "Reduzir encargos setoriais da tarifa de energia elétrica: Retirar da conta de luz a grande quantidade de encargos e subsídios que hoje são pagos por todo consumidor, mas privilegiam setores escolhidos pelo governo." (p. 33)
 
 ### Educação
 
 **Diagnóstico:**
 - "apenas 13,3% dos alunos saem do ensino fundamental sabendo Português e Matemática de forma adequada. No ensino médio, a situação é ainda mais trágica: somente 4,5% dos estudantes se formam com conhecimento adequado." (p. 50)
 - "Cerca de 826 mil crianças estão na fila de espera por vagas em creches, 4 em cada 10 alunos do 2o ano do ensino fundamental ainda não estão alfabetizados e cerca de 230 mil estudantes abandonam o ensino médio todos os anos." (p. 50)
+- "O Brasil investe no ensino superior público cerca de 0,7% do PIB, patamar próximo ao da União Europeia, mas não tem nenhuma universidade entre as 100 melhores do mundo. Gastamos mais de 15 mil dólares por aluno no ensino superior, acima da média da OCDE, e ainda assim cerca de metade dos brasileiros com diploma não possuem domínio proficiente do próprio português." (p. 54)
 
 **Propostas:**
 - **Creches e pré-escolas com parceria privada** — "Aumentar o acesso à educação infantil, especialmente para famílias mais vulneráveis, por meio do fortalecimento das redes públicas e de parcerias com entidades privadas e comunitárias, com e sem fins lucrativos, priorizando a expansão com qualidade." (p. 50)
 - **Modernizar a BNCC** — "Revisar e aprimorar a BNCC para torná-la mais clara, objetiva e focada nas aprendizagens essenciais de cada etapa da educação básica, alinhando o currículo às competências necessárias para o século XXI." (p. 51)
+- **Transferir o ensino superior para o Ministério de Ciência e Tecnologia** — "Transferir as atribuições relacionadas ao ensino superior do atual Ministério da Educação para o Ministério de Ciência e Tecnologia, permitindo que o MEC esteja exclusivamente focado na aprendizagem das crianças e jovens e nos desafios inerentes à primeira infância, alfabetização, ensinos fundamental e médio e na educação profissional e tecnológica." (p. 52); "Transferir a gestão do ensino superior do Ministério da Educação para o Ministério de Ciência e Tecnologia, de forma a integrar o ensino superior, o financiamento à pesquisa e o desenvolvimento tecnológico em uma única direção." (p. 54)
+- **Fortalecer a formação e a carreira dos professores** — "Fortalecer a formação dos professores na graduação para aproximá-la da prática em sala de aula e das evidências científicas sobre aprendizagem, com prioridade para alfabetização, matemática e ensino estruturado, fortalecendo os critérios de qualidade para cursos de licenciatura, ampliando residências pedagógicas e incentivando programas que atraiam e desenvolvam os melhores talentos para a carreira docente." (p. 52); "Avançar na adoção de modelos mais modernos de valorização docente, para que a progressão na carreira dependa do desenvolvimento profissional, do desempenho pedagógico e da atuação em contextos vulneráveis, e não do tempo de serviço." (p. 52)
+- **Ampliar a liberdade de escolha educacional das famílias** — "Dar mais liberdade aos pais de escolher o modelo educacional de seus filhos, facilitando a formalização de parcerias com instituições comunitárias, filantrópicas e confessionais, avançando em uma agenda de parcerias com escolas conveniadas na educação, escolas cívico-militares e regulamentando o homeschooling." (p. 53)
+- **Vincular o Pé-de-Meia ao desempenho escolar** — "Elevar a exigência de frequência escolar do programa e premiar os estudantes de excelência ao fim do ensino médio com o pagamento do valor máximo, fortalecendo o incentivo à aprendizagem e alinhando os recursos aos objetivos de aprendizado, inclusive com a exigência de nota mínima no Enem para o recebimento da parcela." (p. 53)
+- **Ampliar a educação inclusiva para alunos com deficiência e TEA** — "Ampliar o acesso de estudantes com deficiência e TEA a atendimento adequado às suas necessidades em ambientes inclusivos, com professores e profissionais especializados capacitados, plano educacional individualizado obrigatório, autorização de matrícula em escolas especializadas e instrumentos específicos de avaliação da aprendizagem, assegurando a participação ativa das famílias na escolha do modelo mais adequado para cada estudante." (p. 53)
+- **Escolher reitores por critérios técnicos e financiar universidades por desempenho** — "Substituir o atual modelo de eleição interna de reitores por um processo de escolha técnico e transparente, com participação de conselhos externos e critérios objetivos de capacidade de gestão, despolitizando as universidades e profissionalizando sua gestão." (p. 55); "Criar incentivos financeiros para universidades e institutos federais com base em indicadores objetivos de qualidade da gestão e acadêmica, como resultados em exames padronizados, empregabilidade dos egressos e produção científica relevante, estimulando as instituições a aprimorar sua gestão e entregar melhores resultados à sociedade." (p. 55)
+- **Formar mais profissionais em STEM e atrair especialistas estrangeiros** — "Ampliar as vagas e o financiamento de bolsas de pesquisa para as áreas de ciências, tecnologia, engenharia e matemática, alinhando a oferta do ensino superior às demandas da economia e aos setores com maior potencial de geração de renda e inovação para o Brasil." (p. 56); "Simplificar os processos de reconhecimento de qualificações e de concessão de vistos para especialistas em setores de fronteira tecnológica, reduzindo os obstáculos à entrada desses profissionais no mercado e nas universidades brasileiras e permitindo que o setor privado tenha acesso aos talentos de que necessita para crescer." (p. 56)
 
 ### Segurança Pública
 
@@ -1159,6 +1230,11 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Classificar facções como organizações terroristas** — "Classificar, nacional e internacionalmente, as facções criminosas como organizações terroristas: enquadrar como terroristas os criminosos que usam táticas e armamentos de guerra para dominar territórios." (p. 5)
 - **Presídios de segurança máxima** — "Construir presídios de segurança máxima para confinamento de faccionados." (p. 6)
+- **Substituir a progressão automática de pena por prisão efetiva e condicional monitorada** — "Garantir que o criminoso fique efetivamente preso durante o cumprimento da pena substituindo o modelo atual em que o preso progride rapidamente do regime fechado para o semiaberto e aberto, por um modelo de restrição de liberdade seguido de liberdade condicional com monitoramento eletrônico." (p. 7)
+- **Dar autonomia aos estados para criar seus próprios crimes e penas** — "Conceder autonomia para que cada estado endureça o combate ao crime, com a possibilidade de instituir novos crimes e agravar penas e regimes de cumprimento de pena em relação ao previsto na legislação federal." (p. 7)
+- **Dar respaldo legal e tecnológico à atuação policial** — "Fortalecer a atuação policial, garantindo proteção legal na legítima defesa contra criminosos armados, especialmente com fuzis, e fornecer estrutura para o trabalho policial, integrando em tempo real as informações entre as polícias federal e estaduais e ampliando o acesso a equipamentos e tecnologias." (p. 7)
+- **Proteger a mulher e monitorar o agressor: Patrulhas Maria da Penha e Salas Lilás** — "Ampliar a rede de delegacias da mulher com atuação 24 horas e equipes preferencialmente femininas capacitadas em violência de gênero, e apoiar os estados na construção de sistemas integrados entre Saúde, Segurança Pública e delegacias." (p. 7); "Expandir nas redes de segurança pública e saúde de estados e municípios as Patrulhas Maria da Penha, que monitoram o cumprimento de medidas protetivas para reduzir a reincidência, e as Salas Lilás, com espaços de acolhimento às vítimas em unidades policiais." (p. 7)
+- **Assumir protagonismo no combate ao crime que cruza fronteiras** — "Ampliar a presença do Estado brasileiro nos postos de fronteira e na Amazônia, integrando inteligência, vigilância e forças de segurança para sufocar a entrada de drogas e armas que abastecem o crime organizado." (p. 38); "Coordenar com os Estados Unidos, países sul americanos e demais países e atores interessados no combate ao PCC, ao CV e às demais facções terroristas, compartilhando inteligência e atuando de forma conjunta contra suas redes financeiras e operacionais que atravessam fronteiras." (p. 38)
 
 ### Saúde
 
@@ -1169,6 +1245,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Registro nacional de saúde sob controle do cidadão** — "Construir um registro nacional de saúde unificado e sob controle do cidadão por meio do prontuário eletrônico, centralizando o histórico clínico do paciente, garantindo a continuidade do cuidado em qualquer unidade de atendimento." (p. 58)
 - **Expandir telemedicina** — "Expandir o acesso a consultas médicas e ao monitoramento de doenças por meio da telemedicina, reduzindo a escassez de especialistas em regiões remotas, as longas filas de espera nos grandes centros urbanos e os vazios assistenciais." (p. 57)
+- **Reduzir filas do SUS com parcerias com clínicas e hospitais privados** — "Reduzir as filas e o tempo de espera no SUS por meio de parcerias com clínicas e hospitais privados para realização de consultas, exames e cirurgias, com metas claras de atendimentos e qualidade dos serviços, aproveitando a capacidade ociosa dessas unidades de saúde privadas." (p. 60)
+- **Expandir hospitais e UPAs por meio de concessões e PPPs** — "Ampliar o uso de parcerias público-privadas para construir e gerir as unidades de saúde, garantindo maior eficiência operacional, melhor experiência para o paciente e controle rigoroso de resultados por parte do poder público." (p. 60)
 
 ### Política Externa
 
@@ -1281,6 +1359,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **BNDES como estruturador, não financiador direto** — "Aprofundar os instrumentos de financiamento privado que o país construiu na última década [...] com o BNDES atuando prioritariamente como estruturador de projetos e catalisador de capital privado." (p. 47)
 - **Logística integrada para reduzir o Custo Brasil** — "Rebalancear a matriz de transportes, hoje excessivamente concentrada no modal rodoviário, com prioridade a ferrovias, hidrovias, cabotagem e terminais intermodais, conectando as regiões produtoras aos portos e colocando o custo logístico do país em trajetória firme de queda." (p. 48)
 - **Universalizar o saneamento até 2033** — "Cumprir e acelerar as metas do marco legal do saneamento (universalização até 2033), água tratada e coleta e tratamento de esgoto para todos os brasileiros [...] avançar na prestação regionalizada, que viabiliza a universalização nos municípios de menor atratividade." (p. 48)
+- **Corredores logísticos para escoar o agronegócio** — "Organizar ferrovias, hidrovias, rodovias, portos e armazenagem em corredores logísticos estratégicos. Estabelecer um programa decenal para a logística do agronegócio, assegurar manutenção permanente das hidrovias e ampliar a capacidade de armazenagem próxima às regiões produtoras. Priorizar obras estruturantes de escoamento, como a Ferrogrão, a Ferrovia Norte-Sul, a Fiol, a Malha Norte, a BR-163 e as hidrovias do Centro-Oeste e do Norte." (p. 23)
+- **Infraestrutura pública digital como instrumento de diplomacia tecnológica** — "Transformar PIX, gov.br, open finance e outras soluções brasileiras em instrumentos de cooperação e exportação; diversificar parcerias de computação e tecnologia; liderar coalizões de potências médias para ampliar o acesso global à capacidade computacional; e usar a política externa para atrair investimento, conhecimento e mercado." (p. 27)
 
 ### Educação
 
@@ -1292,6 +1372,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Pacto Nacional pela Alfabetização e Matemática na Idade Certa** — "Apoiar estados e municípios para que todas as crianças leiam, escrevam, compreendam e dominem fundamentos matemáticos até o fim do 2º ano." (p. 32)
 - **Recomposição nacional das aprendizagens** — "Diagnosticar defasagens por estudante e rede, oferecer material, tempo adicional, tutoria e formação. Estabelecer meta de reduzir drasticamente o contingente abaixo do básico, com prioridade a português, matemática e ciências." (p. 32)
 - **Professor bem formado, apoiado e valorizado** — "Elevar padrão das licenciaturas, exigir prática supervisionada robusta, restringir cursos de baixa qualidade e oferecer bolsas a bons estudantes que escolham docência." (p. 33)
+- **Educação de jovens e adultos conectada à oportunidade** — "Integrar alfabetização e conclusão escolar a qualificação, certificação de competências, cuidado infantil e intermediação de trabalho. Oferecer horários flexíveis e modelos híbridos de qualidade para adultos, trabalhadores rurais." (p. 34)
 
 ### Segurança Pública
 
@@ -1304,6 +1385,11 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Ministério da Segurança Pública** — "Criar o Ministério da Segurança Pública e instituir o Conselho Estratégico Nacional de Segurança Pública e Combate ao Terrorismo Doméstico, sob liderança da Presidência da República e com participação dos governadores." (p. 16)
 - **Lei do Terrorismo Doméstico para facções** — "Propor legislação que enquadre como terrorismo doméstico as organizações criminosas e milícias que apresentem estrutura permanente de comando, domínio territorial, capacidade armada, poder econômico e uso sistemático da violência." (p. 17)
 - **Sistema Nacional de Inteligência Criminal** — "Integrar os bancos de dados da União, dos estados, do Distrito Federal, do Ministério Público e do Poder Judiciário, reunindo antecedentes, mandados, vínculos com organizações criminosas, informações penitenciárias, perfis genéticos e dados biométricos." (p. 17)
+- **Rede Nacional de Presídios de Segurança Máxima e REDAD** — "Criar uma Rede Nacional de Presídios de Segurança Máxima, com padrões comuns para unidades federais e estaduais. Identificar e separar os integrantes das organizações criminosas conforme suas funções de comando, financiamento, disciplina, comunicação e recrutamento." (p. 18); "Aplicar às lideranças o Regime Especial Disciplinar Antiterrorismo Doméstico (REDAD), com isolamento em cela individual, bloqueio de celulares, monitoramento ambiental, proibição de visitas íntimas e progressão somente após o cumprimento de 90% da pena, impedindo que os presídios sejam utilizados para transmitir ordens ou administrar atividades criminosas." (p. 18)
+- **Comando Nacional de Proteção de Fronteiras, Portos e Aeroportos** — "Implantar o Comando Nacional de Proteção de Fronteiras e Corredores Logísticos, reunindo Forças Armadas, Polícia Federal, Polícia Rodoviária Federal, forças estaduais, órgãos ambientais e autoridades portuárias e aeroportuárias na defesa permanente das fronteiras brasileiras, portos e aeroportos, e na recuperação do controle territorial da Amazônia Legal pelo Estado brasileiro, e, de forma complementar, no apoio aos estados e DF em ações de reintegração de territórios ao Estado brasileiro." (p. 18)
+- **Secretaria Nacional da Segurança da Mulher, da Criança e Minorias** — "Criar a Secretaria Nacional da Segurança da Mulher, da Criança e Minorias, vinculada ao Ministério da Segurança Pública." (p. 19); "Implantar o monitoramento nacional de agressores submetidos a medidas protetivas, associado a sistemas de alerta, botão de pânico e cadastro nacional. Integrar boletins de ocorrência, decisões judiciais, avaliações de risco e chamadas de emergência." (p. 19)
+- **Redução da maioridade penal para 16 anos em crimes graves** — "Trabalhar fortemente pela aprovação da PEC da redução da maioridade penal para 16 (dezesseis) anos, com redirecionamento para: autores de crimes de homicídio, tentativa de homicídio, tortura, lesão corporal seguida de morte, estupro de vulnerável, roubo cometido com violência ou grave ameaça à pessoa (assalto) e todos os crimes tipificados na Lei de Combate ao Terrorismo Doméstico, submetendo-os integralmente ao regime penal aplicável aos maiores de idade." (p. 20)
+- **Segurança pública sem discriminação e auditoria de vieses no reconhecimento facial** — "Aperfeiçoar formação, protocolos de abordagem, videomonitoramento com Inteligência Artificial (estratégias de reconhecimento facial e uso de câmeras deverão considerar toda a diversidade brasileira, com auditoria permanente e medidas para treinar, identificar e reduzir vieses raciais e enfrentar o racismo algorítmico), supervisão e responsabilização, protegendo simultaneamente cidadãos e policiais." (p. 67)
 
 ### Saúde
 
@@ -1314,6 +1400,14 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **SUS mais preventivo, integrado e digital** — "O SUS será preservado como sistema universal e transformado em uma rede mais preventiva, integrada, digital e orientada por resultados." (p. 75)
 - **Acesso regulado por risco clínico** — "A saúde será organizada por regiões, com atenção primária resolutiva, acesso regulado por risco clínico, especialistas conectados, hospitais avaliados por qualidade e profissionais valorizados." (p. 75)
+- **Ação 1 — Zerar a espera evitável** — "Criar um Sistema Nacional de Acesso e Regulação Inteligente que substitua progressivamente a fila passiva por uma jornada clínica rastreável. A posição do cidadão não será definida apenas pela data do pedido, mas por gravidade, risco de progressão, impacto do atraso, vulnerabilidade e tempo já transcorrido." (p. 77)
+- **Ação 2 — Um SUS preventivo e resolutivo** — "A Estratégia Saúde da Família deve continuar sendo a principal porta de entrada do SUS, mas precisa evoluir de um modelo centrado em atender quem procura para outro capaz de conhecer sua população, identificar risco e buscar ativamente quem precisa." (p. 78)
+- **Ação 5 — Saúde da mulher ao longo de toda a vida** — "A saúde da mulher não pode ser reduzida à gestação. A política nacional deverá integrar adolescência, saúde sexual e reprodutiva, maternidade segura, prevenção cardiovascular, câncer, endometriose, saúde mental, climatério, menopausa, saúde óssea e envelhecimento." (p. 81)
+- **Ação 8 — Saúde mental como prioridade nacional** — "A política de saúde mental deve começar antes da crise, estar próxima da comunidade e funcionar de forma integrada ao restante do SUS." (p. 84); "Os CAPS permanecem essenciais para os casos de maior complexidade, mas não podem ser a única porta de entrada para uma demanda que atravessa todas as idades e diferentes graus de gravidade. A Atenção Primária deve assumir papel central na prevenção, identificação precoce, acompanhamento longitudinal e encaminhamento oportuno, com apoio matricial, teleconsultoria e referência especializada sempre que necessário." (p. 84)
+- **Ação 9 — Saúde indígena com equidade, território e respeito cultural** — "Equidade significa reconhecer que populações indígenas vivem realidades epidemiológicas, geográficas e culturais próprias. O subsistema indígena deve ser fortalecido, conectado às redes regionais do SUS e capaz de oferecer continuidade do cuidado da aldeia à alta complexidade." (p. 86)
+- **Ação 13 — Soberania sanitária e medicamentos de alto custo** — "Saúde é também soberania, ciência, emprego qualificado e capacidade industrial. O Brasil precisa usar a escala do SUS e a força de suas instituições científicas para reduzir dependência externa, garantir abastecimento e participar das novas fronteiras da medicina." (p. 90)
+- **Saúde da população negra** — "Fortalecer atenção a hipertensão, diabetes, doença falciforme, saúde mental, câncer e mortalidade materna, com protocolos, formação e acesso regional. Combater discriminação no atendimento e melhorar qualidade dos registros de raça e cor." (p. 68)
+- **Estratégia de Saúde Amazônica no SUS** — "Estruturar atenção primária fluvial e itinerante, telemedicina, transporte sanitário aéreo e fluvial, diagnóstico remoto, redes de referência e provimento de profissionais. Integrar saúde indígena e ribeirinha, vigilância epidemiológica e cuidado relacionado a doenças tropicais, contaminação da água, fumaça, mineração e eventos climáticos." (p. 71)
 
 ### Política Externa
 
@@ -1325,6 +1419,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Política externa como política de Estado** — "Definir uma estratégia nacional de inserção internacional aprovada em conselho de governo e debatida com o Congresso, o setor produtivo, a academia e a sociedade. As prioridades transcenderão ciclos políticos e eleitorais." (p. 72)
 - **Sem alinhamento automático a nenhum polo** — "Fortalecer simultaneamente as relações com os Estados Unidos, a União Europeia, a América Latina, a África, a Ásia e o Oriente Médio, sem hierarquias ou preferências determinadas por afinidades ideológicas." (p. 73)
 - **Aproximação pragmática com a OCDE** — "Participar ativamente da ONU, da OMC, do G20 e do BRICS e retomar, com pragmatismo, o processo de aproximação com a OCDE." (p. 74)
+- **Integração sul-americana física, energética e econômica** — "Priorizar corredores rodoviários, ferroviários, hidroviários e portuários, interconexões elétricas, gás e telecomunicações, conectando regiões brasileiras ao Pacífico e aos mercados vizinhos, com viabilidade econômica e governança de projetos aferidas caso a caso." (p. 74)
+- **Cooperação internacional contra o crime organizado transnacional** — "Ampliar a cooperação internacional no combate ao crime organizado transnacional, ao narcotráfico, ao tráfico de armas, aos crimes ambientais, à lavagem de dinheiro e às ameaças cibernéticas, com mecanismos permanentes de inteligência, investigações conjuntas e controle de fronteiras." (p. 74)
 
 ### Combate à Corrupção
 
@@ -1396,6 +1492,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Redução imediata das taxas de juros** — "Imediata redução das taxas de juros;" (p. 6)
 - **Fim da independência do Banco Central** — "Fim da “independência” do Banco Central" (p. 6)
 - **Estatização do sistema financeiro** — "Estatização do sistema financeiro; banco estatal único sob o controle dos trabalhadores" (p. 6)
+- **Cancelamento das dívidas externa e interna com bancos e credores** — "Cancelamento das dívidas externa e interna com os bancos e grandes credores" (p. 6)
 
 #### Papel do Estado e Privatizações
 
@@ -1474,10 +1571,12 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 #### Fiscal e Contas Públicas
 
 **Diagnóstico:**
-- _Não abordado explicitamente no plano de governo._
+- "Depois de 6 anos de vigência do antigo Teto de Gastos, o atual Governo Federal aprovou o chamado "Arcabouço Fiscal" que na prática significou pouca coisa na realidade do orçamento público." (p. 12)
+- "Foi para atender a esses vampiros do orçamento público que os investimentos sociais e os salários dos servidores foram congelados no Brasil, seja pelo "Teto de Gastos" ou pelo Arcabouço Fiscal. Como se não bastasse, todos os anos, o Governo Federal deixa de arrecadar mais de R$ 800 bilhões em impostos das grandes empresas por meio de isenções fiscais e enquanto 42% do Orçamento Federal está comprometido com juros e amortizações da dívida, apenas 4,2% foram destinados à saúde, 3,1% à educação, 0,04% à cultura, 0,008% à habitação e 0,004% ao saneamento ambiental." (p. 15)
 
 **Propostas:**
 - **Fim do Arcabouço Fiscal para reajustar aposentadoria e assistência** — "Fim do Arcabouço Fiscal garantindo o reajuste nos benefícios de aposentadoria e assistência social." (p. 9)
+- **Suspensão do pagamento e auditoria cidadã da dívida pública** — "Suspensão Imediata do Pagamento e Auditoria Cidadã da Dívida Pública: Interrupção da sangria dos cofres públicos para a remuneração de banqueiros e especuladores, canalizando centenas de bilhões para saúde, educação e habitação." (p. 15)
 
 #### Tributação
 
@@ -1500,10 +1599,14 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Diagnóstico:**
 - "Essa desigualdade não é natural. Ela resulta de escolhas políticas e de um modelo econômico que coloca os interesses dos bancos, dos grandes monopólios, dos latifundiários, dos fundos de investimento e do mercado financeiro acima das necessidades populares." (p. 7)
+- "Os dados do IBGE, referentes ao trimestre encerrado em maio de 2026, revelam que 5,9 milhões de pessoas permanecem desempregadas e 13,6 milhões trabalham sem carteira assinada, ou seja, sem nenhum direito garantido. Além disso, 38,3 milhões trabalham na informalidade." (p. 6)
+- "No Brasil, cerca de 14,8 milhões de trabalhadores atuam na escala 6x1 (seis dias de trabalho consecutivos para apenas um dia de descanso), aproximadamente um terço (33,2%) da população ocupada no país." (p. 10)
 
 **Propostas:**
 - **Aumento de 100% no salário mínimo** — "Elevação Imediata dos salários e Aumento de 100% do Salário Mínimo. Reajuste imediato para cobrir os custos reais da cesta básica e da vida familiar (rumo ao valor calculado pelo DIEESE), acompanhado de valorização permanente acima da inflação." (p. 9)
-- **Fim da escala 6x1 e escala 4x3** — "A exploração capitalista está diretamente relacionada ao tempo de trabalho dedicado pela classe trabalhadora a serviço da burguesia." (p. 9)
+- **Fim da escala 6x1 e escala 4x3** — "A exploração capitalista está diretamente relacionada ao tempo de trabalho dedicado pela classe trabalhadora a serviço da burguesia." (p. 9); "Fim da Escala 6x1 e Redução da Jornada para 30 Horas Semanais: Implementação do regime de 30 horas sem redução salarial (escala 4x3 ou turnos de 6 horas diárias), permitindo a criação de múltiplos turnos nas indústrias e serviços para gerar novos postos formais de trabalho." (p. 10)
+- **Garantia de emprego obrigatório e fim do trabalho infantil** — "Garantia de Emprego e Trabalho Obrigatórios para Todas as Pessoas Adultas Capazes de Trabalhar; Proibição da Exploração do Trabalho Infantil" (p. 10)
+- **Frentes Emergenciais de Trabalho e emprego público garantido** — "A UP defende a criação de Frentes Emergenciais de Emprego Público. A execução de um plano nacional de obras de infraestrutura, moradia, saneamento básico, creches e postos de saúde nos bairros periféricos e interior do país, garantindo emprego formal com todos os direitos da CLT." (p. 12)
 
 #### Inflação e Política Monetária
 
@@ -1516,10 +1619,10 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 #### Papel do Estado e Privatizações
 
 **Diagnóstico:**
-- _Não abordado explicitamente no plano de governo._
+- "Para atender aos interesses dos capitalistas nacionais e estrangeiros, variados governos, nos últimos 35 anos, têm vendido abaixo do preço lucrativas e estratégicas empresas estatais e realizado uma verdadeira transferência de patrimônio público para grupos privados." (p. 58)
 
 **Propostas:**
-- _Não abordado explicitamente no plano de governo._
+- **Reestatização das estatais privatizadas e fim das concessões** — "REESTATIZAÇÃO DAS ESTATAIS PRIVATIZADAS; FIM DOS LEILÕES DO PETRÓLEO; REVISÃO E REVOGAÇÃO DAS CONCESSÕES DOS PORTOS, AEROPORTOS E ESTRADAS BRASILEIRAS ENTREGUES A EMPRESAS PRIVADAS" (p. 58)
 
 #### Infraestrutura e Investimento
 
@@ -1528,20 +1631,29 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Propostas:**
 - **Programa de empregos públicos em infraestrutura, saneamento e ferrovias** — "queremos um grande programa de empregos públicos que uma reindustrialização, infraestrutura, habitação, saneamento, reprodução social e doméstica, ferrovias, transição energética, agricultura familiar, ciência e tecnologia" (p. 11)
+- **Estatização do transporte coletivo e plano nacional de ferrovias e metrôs** — "Estatização das Empresas de Transporte Coletivo: Fim das concessões e dos cartéis privados de ônibus. Criação de empresas públicas municipais e estaduais para operar frotas estatizadas." (p. 52); "Plano Nacional de Malha Ferroviária e Metroviária: Investimento prioritário em trens, metrôs e VLTs elétricos e de alta capacidade, integrando o país e reduzindo a emissão de poluentes." (p. 52)
 
 ### Educação
 
 **Diagnóstico:**
 - "Para possibilitar que os capitalistas ampliem o controle sobre mais setores da economia, a educação foi transformada numa mercadoria e fundos de investimentos compraram participações em empresas de educação." (p. 21)
+- "Para termos um exemplo, o orçamento público de 2026 para as Universidades Federais e o setor de ciência e tecnologia equivale a 53% do orçamento destinado pelo Governo Federal em 2014 ao mesmo setor. Ou seja, hoje o Estado brasileiro gasta menos com educação, ciência e saúde do que gastava 12 anos atrás!" (p. 12)
+- "A Salta, o maior grupo privado de educação básica do país, possui mais de 200 escolas e 140 mil alunos, e tem faturamento acima de R$ 3 bilhões (Valor Econômico, 16/05/2025)." (p. 22)
+- "Com efeito, hoje, mais da metade dos estudantes que usaram o Fundo de Financiamento Estudantil (Fies) têm parcelas em atraso, podendo chegar a 82% em alguns estados. Ao todo, são mais de R$ 113 bilhões em dívidas." (p. 22)
+- "Na educação, a situação também é marcada pela desigualdade: em 2024, 24,2 milhões de jovens de 15 a 29 anos que não haviam concluído o ensino superior estavam fora da escola, da educação profissional e dos cursos pré-vestibulares. Entre eles, dois terços eram pretos ou pardos." (p. 30)
 
 **Propostas:**
 - **Educação pública e gratuita em todos os níveis, sem vestibular** — "Educação Pública e Gratuita para Todos e em Todos os Níveis; Fim do Lucro na Educação. Garantia de Livre Acesso do Povo à Universidade e/ou Cursos Técnicos Profissionalizantes; Fim do Vestibular ou Qualquer Processo Seletivo" (p. 21)
+- **Fim da privatização do ensino e estatização dos conglomerados educacionais** — "Fim da Privatização do Ensino: Suspensão do envio de verbas públicas para o ensino privado e estatização progressiva dos grandes conglomerados educacionais do capital financeiro. Federalização das universidades endividadas, a estatização das que estão em débito com o Estado e anistia para todos os estudantes que têm dívidas com o FIES." (p. 22)
+- **Destinação de 10% do PIB para a educação pública** — "Destinação de pelo menos 10% do PIB nacional para a educação pública, desde a educação infantil até a pós-graduação." (p. 22)
+- **Educação pública livre de LGBTfobia** — "Garantir uma educação pública livre de LGBTfobia, com protocolos de prevenção e enfrentamento à discriminação e à violência, acolhimento e acompanhamento pedagógico e psicossocial de estudantes LGBT. Formação permanente de professores, gestores e equipes pedagógicas para promoção dos direitos humanos e da permanência estudantil." (p. 33)
 
 ### Segurança Pública
 
 **Diagnóstico:**
 - "a política de segurança implementada há décadas fracassou. Apesar do aumento constante dos investimentos em policiamento ostensivo, armamentos e operações policiais, o crime organizado se fortaleceu, a violência continua atingindo milhares de famílias." (p. 47)
 - "O Brasil está entre os poucos países do mundo que mantêm uma polícia militarizada responsável pelo policiamento ostensivo da população civil." (p. 48)
+- "No sistema prisional, não é diferente: Segundo o Anuário Brasileiro de Segurança Pública 2026, o Brasil chegou a 964.668 pessoas encarceradas em 2025, crescimento de 314,5% desde 2000. Desse enorme contingente, 69,6% dos presos são negros." (p. 31)
 
 **Propostas:**
 - **Segurança pública e desmilitarização das polícias** — "Segurança Pública e Desmilitarização das Polícias" (p. 47)
@@ -1550,9 +1662,13 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Diagnóstico:**
 - "Ainda hoje, mais de 70% dos brasileiros e brasileiras dependem exclusivamente do SUS para ter acesso à saúde, já que a classe trabalhadora em sua maioria não consegue pagar os exorbitantes preços dos planos de saúde." (p. 19)
+- "Ainda assim, os donos dos planos de saúde seguem lucrando enormes quantias: apenas entre janeiro e setembro de 2025, as operadoras de planos de saúde tiveram um lucro líquido de R$ 17,9 bilhões (ANS, 11/12/2025)." (p. 20)
+- "Dessa forma, em nome do arcabouço fiscal (Teto de Gastos), se retira os recursos da saúde e educação para o pagamento da dívida pública: entre os anos de 2013 e 2023, o país investiu 64% menos em saúde, com uma redução de R$ 10 bilhões nos investimentos do SUS, segundo o Instituto de Estudos para Políticas de Saúde (IEPS)." (p. 20)
 
 **Propostas:**
 - **Saúde pública e gratuita para todos, fim da exploração dos planos privados** — "Garantia de Saúde Pública e Gratuita para Todos; Fim da Exploração dos Planos de Saúde Privados" (p. 19)
+- **SUS 100% estatal e fim da gestão por Organizações Sociais** — "Fortalecimento e Unificação do SUS 100% Estatal: Fim da entrega da gestão hospitalar a Organizações Sociais (OSs), fundações privadas e cooperativas empresariais. Toda a rede sanitária deve ser de gestão direta e pública. Fim da exploração dos planos de saúde privados." (p. 20)
+- **Soberania farmacêutica e produção nacional de remédios** — "Soberania Farmacêutica e Produção Nacional de Remédios: Fortalecimento dos laboratórios oficiais do Estado para a fabricação massiva de medicamentos, vacinas, equipamentos e insumos, para serem distribuídos gratuitamente à população." (p. 20)
 
 ### Política Externa
 
@@ -1562,6 +1678,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Contra a entrega das terras raras brasileiras aos EUA** — "É vergonhoso ver outros candidatos à Presidência do Brasil disputarem quem é mais amigo do presidente fascista Donald Trump, quem deles é que vai entregar as terras raras brasileiras aos Estados Unidos, que se apresenta cada vez mais como uma potência em decadência." (p. 5)
 - **Candidatura a serviço da luta anti-imperialista** — "nossa candidatura está a serviço da luta anti-imperialista, na defesa da autodeterminação dos povos e da soberania do nosso país." (p. 4)
+- **Rompimento com Israel e solidariedade internacionalista** — "Solidariedade Internacionalista à Causa Palestina: Rompimento de relações diplomáticas, militares e comerciais com o Estado Sionista de Israel enquanto perdurar o genocídio do povo palestino e o regime de Apartheid em Israel;" (p. 65)
+- **Política Externa Anti-Imperialista e rompimento com tratados de submissão** — "Política Externa Anti-Imperialista: Rompimento de tratados de submissão militar e econômica aos Estados Unidos, OTAN ou China. Defesa intransigente do direito à autodeterminação dos povos." (p. 65)
 
 ### Combate à Corrupção
 
@@ -1571,7 +1689,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Propostas:**
 - **Julgamento, prisão e confisco dos bens de todos os corruptos** — "defendemos o julgamento e a responsabilização de corruptos e corruptores, independentemente de partido, cargo ou poder econômico; prisão nos casos previstos em lei; confisco dos bens e valores provenientes dos crimes; ressarcimento integral dos prejuízos" (p. 25)
-- **Fim dos altos salários e privilégios no setor público** — "Fim dos Altos salários dos altos executivos do Estado, juízes, parlamentares e generais, eliminando penduricalhos, verbas indenizatórias e emendas secretas." (p. 13)
+- **Fim dos altos salários e privilégios no setor público** — "Fim dos Altos salários dos altos executivos do Estado, juízes, parlamentares e generais, eliminando penduricalhos, verbas indenizatórias e emendas secretas." (p. 13); "Obrigatoriedade de uso do SUS e da Educação Pública por Agentes Políticos: Determinação legal para que o Presidente, governadores, prefeitos, deputados, senadores e juízes utilizem exclusivamente o Sistema Único de Saúde (SUS) para seus atendimentos e de seus dependentes." (p. 13)
 
 ---
 
@@ -1602,6 +1720,9 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Imposto Único Federal sobre movimentação financeira** — "Substituir o conjunto de tributos federais que hoje incide sobre folha, faturamento e produção por um único tributo, cobrado automaticamente sobre a movimentação financeira, incidindo em cada lançamento a débito e a crédito em conta." (p. 8)
 - **Isenção de Imposto de Renda até 5 salários mínimos** — "O Democrata fixa o limite de isenção do IRPF em cinco salários mínimos. Com o mínimo de 2026 em R$ 1.621,00... isso corresponde a R$ 8.105,00 por mês." (p. 9)
+- **Alíquota do IUF fixada em 2% no débito e 2% no crédito** — "O parâmetro público do Democrata é de 2% no débito e 2% no crédito de cada lançamento em conta." (p. 10)
+- **Fim da CSLL derruba o Imposto de Renda da pessoa jurídica de 34% para 25%** — "Com a extinção da CSLL, cuja alíquota é de 9%, o Imposto de Renda da Pessoa Jurídica cai dos atuais 34% para 25%. Não se trata de renúncia adicional. Aquela parcela apenas passa a ser arrecadada pelo IUF." (p. 10)
+- **As quatro salvaguardas da reforma: cadeias longas, folha, revisão automática e dinheiro em espécie** — "A emenda trará regime específico para cadeias com número elevado de etapas, com mecanismo de compensação apurado por setor." (p. 14); "A emenda separará as duas coisas: a extinção da contribuição patronal sobre a folha é definitiva e não retorna, ainda que a arrecadação do IUF fique abaixo do projetado." (p. 14); "A emenda incluirá gatilho objetivo: apurada frustração de arrecadação acima do percentual definido em lei complementar por dois exercícios consecutivos, a transição é suspensa automaticamente e o Congresso reavalia os parâmetros." (p. 14); "O conjunto de medidas que impede a migração do dinheiro eletrônico para o papel — alíquota majorada sobre saque, teto para pagamento em espécie, retirada de cédulas de maior valor e rastreabilidade de saques elevados — integra o texto da emenda a ser apresentada ao Congresso Nacional, onde será detalhado com os respectivos limites e prazos." (p. 14)
 
 #### Câmbio e Comércio Exterior
 
@@ -1611,6 +1732,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Diplomacia sanitária ativa em foros e negociações de acesso a mercado** — "Diplomacia sanitária ativa, com presença técnica permanente nos foros internacionais e nas negociações de acesso a mercado." (p. 32)
 - **Antecipar rastreabilidade nos corredores de exportação exigentes** — "Antecipação voluntária e apoiada nos corredores de exportação sujeitos a exigência internacional, com a União bancando parte do custo de brinco e de leitura para quem antecipar." (p. 32)
+- **Devolução do tributo na exportação, para não exportar o imposto junto com a mercadoria** — "A emenda preverá mecanismo de devolução do IUF incidente ao longo da cadeia exportadora, calculado por coeficiente setorial apurado a partir da matriz insumo-produto e liquidado automaticamente no embarque." (p. 13)
 
 #### Mercado de Trabalho e Renda
 
@@ -1650,31 +1772,38 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Diagnóstico:**
 - "O Brasil forma pesquisador com dinheiro público e entrega o resultado de graça para quem paga melhor. Doutor formado aqui, com anos de bolsa bancada pelo contribuinte, recebe proposta lá fora e vai — porque aqui ele vive de bolsa de valor que não sustenta uma família e sem nenhuma perspectiva de carreira." (p. 36)
+- "Educação física é componente curricular obrigatório na educação básica desde a Lei de Diretrizes e Bases. Na prática, em parte relevante da rede, virou aula vaga com bola no pátio." (p. 38)
 
 **Propostas:**
 - **PEC da Pesquisa: pesquisador vira servidor com carreira, não bolsista** — "O governo enviará ao Congresso a Proposta de Emenda à Constituição da Pesquisa... pesquisador que cumprir os requisitos deixa de ser bolsista e passa a ser servidor público, com carreira, com vínculo e com salário compatível com a qualificação que ele tem." (p. 36)
 - **Alfabetização na idade certa com condicionalidade por resultado** — "Continuidade e endurecimento da política federal de alfabetização na idade certa... o que acrescentamos é condicionalidade: apoio técnico e financeiro vinculado a resultado aferido em avaliação externa, e não apenas a adesão formal do ente." (p. 36)
+- **Padrão nacional de educação física nas escolas, com professor formado** — "Padrão nacional mínimo de carga horária, espaço e material para educação física, com cofinanciamento federal condicionado ao cumprimento verificado." (p. 38); "Professor de educação física com formação específica em todas as etapas, inclusive nos anos iniciais, onde hoje a lacuna é maior." (p. 38)
 
 ### Segurança Pública
 
 **Diagnóstico:**
 - "O Brasil gasta muito com segurança e prende muito. O que não consegue é desmontar organização criminosa. Prender o vendedor da esquina enquanto a estrutura que o abastece segue intacta é atividade, e atividade não é resultado." (p. 21)
 - "As facções brasileiras nasceram dentro de presídios e continuam ali. Da cela se define preço, rota, tribunal do crime e ordem de execução." (p. 5)
+- "Aqui é preciso uma honestidade que a maioria dos planos de governo não tem. O Brasil não precisa criar um sistema nacional de informações de segurança pública, porque ele já existe no papel desde 2012." (p. 22)
 
 **Propostas:**
 - **Presídio federal de segurança máxima isolado para lideranças** — "Ampliar a capacidade federal de custódia de lideranças, com padrão construtivo único e regime rigoroso de contato." (p. 21)
 - **Asfixia financeira do crime organizado** — "Integração operacional permanente entre a unidade de inteligência financeira, a Receita Federal, a Polícia Federal e o Ministério Público, com fluxo padronizado e prazo de resposta." (p. 21)
 - **Plebiscito sobre presídio de segurança máxima modelo El Salvador** — "Há uma decisão que não pretendemos tomar sozinhos nem entregar a uma maioria estreita de plenário: se o Brasil quer adotar, para lideranças de facção e presos de altíssima periculosidade, um modelo de confinamento de segurança máxima nos moldes do que El Salvador implantou a partir de 2023. Levamos a pergunta ao eleitor por plebiscito e governamos conforme a resposta." (p. 23)
+- **Aplicar de verdade o Sinesp e o Susp já existentes, cortando repasse a quem não alimenta dados** — "Aplicar de verdade a condicionalidade que já está na lei: estado que não alimentar o Sinesp no padrão e no prazo perde acesso a recurso federal discricionário, com a suspensão publicada e não negociada por telefone." (p. 22)
+- **Forças Armadas permanentes na fronteira contra o tráfico, com salvaguardas de exceção** — "Emprego permanente das Forças Armadas na faixa de fronteira, com o poder de polícia da Lei Complementar nº 97/1999, dirigido ao tráfico de armas, drogas e ao contrabando." (p. 50); "Forças Armadas empregadas contra o crime organizado são instrumento de exceção controlada, não substituto permanente da polícia — e é justamente essa contenção que garante que a medida funcione sem desgastar a instituição." (p. 51)
 
 ### Saúde
 
 **Diagnóstico:**
 - "O SUS não precisa ser reinventado. Precisa funcionar na ponta, onde é barato, em vez de funcionar só no hospital, onde é caro e quase sempre tarde." (p. 34)
 - "A fila brasileira tem um problema anterior ao tamanho: ninguém sabe onde está. Fila invisível se organiza por conhecido." (p. 34)
+- "Saúde humana, saúde animal e saúde ambiental são o mesmo problema visto de ângulos diferentes. A ideia não nasceu em campanha: é a base do trabalho da Organização Mundial da Saúde Animal e da Organização Mundial da Saúde há anos, e organiza a política sanitária de vários países." (p. 26)
 
 **Propostas:**
 - **Fila cirúrgica nacional única e pública, consultável pelo paciente** — "Fila nacional única e pública por procedimento, com critério clínico de prioridade e posição consultável pelo próprio paciente." (p. 34)
 - **Cobertura de saúde da família com cofinanciamento estável** — "Expandir a cobertura de equipes de saúde da família com meta por município e cofinanciamento federal estável, previsível e fora da barganha política." (p. 34)
+- **Saúde Única: vigilância de zoonoses e preparo para emergência sanitária** — "Programa nacional permanente de vigilância de zoonoses, com financiamento federal pactuado e meta de cobertura por município, começando pelas áreas de maior incidência histórica." (p. 26); "Plano nacional de contingência zoossanitária atualizado e testado por simulação, não apenas publicado no Diário Oficial." (p. 28)
 
 ### Política Externa
 

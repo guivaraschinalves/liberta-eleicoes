@@ -48,7 +48,8 @@ window.CANDIDATES_DATA["edmilson-costa"] = {
       ],
       proposals: [
         { title: "Jornada de 30 horas sem redução salarial e fim da escala 6x1", quotes: [{ quote: "Garantiremos o direito ao trabalho para todos, com redução da jornada de trabalho para 30 horas sem redução de salário e o fim da escala 6x1.", page: 5 }] },
-        { title: "Registro em carteira e piso salarial para trabalhadores de aplicativo", quotes: [{ quote: "Garantiremos também o registro em carteira e piso salarial para os trabalhadores e as trabalhadoras de plataformas de aplicativos, garantindo todos os direitos e pondo fim as jornadas exaustivas.", page: 5 }] }
+        { title: "Registro em carteira e piso salarial para trabalhadores de aplicativo", quotes: [{ quote: "Garantiremos também o registro em carteira e piso salarial para os trabalhadores e as trabalhadoras de plataformas de aplicativos, garantindo todos os direitos e pondo fim as jornadas exaustivas.", page: 5 }] },
+        { title: "Recomposição do salário-mínimo e ampliação do seguro-desemprego", quotes: [{ quote: "Recuperação gradual do poder de compra dos salários, especialmente do salário-mínimo, visando alcançar o piso do salário-mínimo do Dieese.", page: 14 }, { quote: "Será reforçado e ampliado o seguro-desemprego e garantido o provimento de auxílios emergenciais e outras formas de cobertura para situações de vulnerabilidade.", page: 14 }] }
       ]
     },
     "inflacao-monetaria": {
@@ -82,21 +83,28 @@ window.CANDIDATES_DATA["edmilson-costa"] = {
       ],
       proposals: [
         { title: "Ensino 100% público e gratuito, com estatização do sistema privado", quotes: [{ quote: "Na educação, implantaremos o ensino 100% público e gratuito, das creches à pós-graduação, com a estatização do sistema privado de ensino.", page: 7 }] },
-        { title: "Piso Salarial Profissional Nacional dos professores", quotes: [{ quote: "É preciso implantar em definitivo o Piso Salarial Profissional Nacional como vencimento básico do primeiro nível da carreira, produzindo reflexos em toda a estrutura remuneratória da categoria.", page: 7 }] }
+        { title: "Piso Salarial Profissional Nacional dos professores", quotes: [{ quote: "É preciso implantar em definitivo o Piso Salarial Profissional Nacional como vencimento básico do primeiro nível da carreira, produzindo reflexos em toda a estrutura remuneratória da categoria.", page: 7 }] },
+        { title: "Fim das escolas cívico-militares e defesa da educação laica", quotes: [{ quote: "Fim das escolas cívico-militares. Defesa de uma educação laica e socialmente referenciada e de políticas de ciência e tecnologia em prol de um projeto popular de soberania nacional.", page: 10 }] },
+        { title: "Reestruturação dos currículos da educação básica contra a divisão sexual do trabalho", quotes: [{ quote: "Reestruturação dos currículos da educação básica para incluir o trabalho de reprodução e as tarefas domésticas, para meninos e meninas aprendam desde cedo as tarefas domésticas, reduzindo o impacto da divisão sexual do trabalho.", page: 11 }] }
       ]
     },
     seguranca: {
       diagnosis: [],
       proposals: [
         { title: "Desmilitarização da segurança pública e unificação das polícias", quotes: [{ quote: "para o que se faz necessária a completa desmilitarização da segurança pública, com unificação das polícias e instituição do ciclo completo junto com a desvinculação das forças de segurança do exército", page: 6 }] },
-        { title: "Descriminalização de drogas e legalização da maconha a curto prazo", quotes: [{ quote: "Descriminalização do uso de drogas, com legalização da maconha a curto prazo.", page: 12 }] }
+        { title: "Descriminalização de drogas e legalização da maconha a curto prazo", quotes: [{ quote: "Descriminalização do uso de drogas, com legalização da maconha a curto prazo.", page: 12 }] },
+        { title: "Priorização do controle de fronteiras pelas Forças Armadas e Polícia Federal", quotes: [{ quote: "As forças armadas priorizarão o cuidado das fronteiras, em conjunto com a polícia federal e demais órgãos de inteligência.", page: 13 }] }
       ]
     },
     saude: {
       diagnosis: [],
       proposals: [
         { title: "Sistema de saúde 100% público, com estatização do setor privado", quotes: [{ quote: "Expansão do sistema público de saúde, com a reversão das privatizações e revogação dos contratos de todas as OSs no setor, bem como estatização de todo o setor privado de saúde.", page: 9 }] },
-        { title: "Investimento de 10% do PIB na saúde pública", quotes: [{ quote: "investimento de 10% do PIB na saúde pública.", page: 9 }] }
+        { title: "Investimento de 10% do PIB na saúde pública", quotes: [{ quote: "investimento de 10% do PIB na saúde pública.", page: 9 }] },
+        { title: "SUS integrado com fortalecimento da atenção básica em todos os bairros", quotes: [{ quote: "Na saúde o governo do poder popular tornará público todo o sistema de saúde, integrado com assistência (hospitais, serviços ambulatoriais, de apoio diagnóstico e terapêutico), pesquisa, produção de medicamentos, vacinas e equipamentos, com fortalecimento da atenção básica em todos os bairros, visando garantir atendimento à saúde a todas as pessoas o mais próximo possível de seus locais de moradia ou trabalho.", page: 6 }] },
+        { title: "Conselhos Populares de Saúde eleitos pelos trabalhadores", quotes: [{ quote: "Criação dos Conselhos Populares de Saúde, eleitos pelos trabalhadores, para o controle do sistema de saúde em todos os níveis.", page: 10 }] },
+        { title: "Fim das comunidades terapêuticas e expansão da Fiocruz e do Instituto Butantã", quotes: [{ quote: "Proibição das comunidades terapêuticas e fortalecimento do SUS na perspectiva da luta antimanicomial; expansão da Fiocruz e do Instituto Butantã para outros estados, com ampliação dos investimentos públicos.", page: 10 }] },
+        { title: "Legalização do aborto com atendimento garantido na rede pública de saúde", quotes: [{ quote: "Legalização do aborto, com garantia de atendimento na rede pública de saúde, bem como políticas públicas que possibilitem a emancipação da mulher dos trabalhos domésticos, zerando as filas de creches, ampliando a educação integral e efetuando a construção massiva de restaurantes e lavanderias populares.", page: 11 }] }
       ]
     },
     "politica-externa": {

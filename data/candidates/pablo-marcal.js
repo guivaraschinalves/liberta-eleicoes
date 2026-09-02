@@ -54,7 +54,8 @@ window.CANDIDATES_DATA["pablo-marcal"] = {
       ],
       proposals: [
         { title: "Ministério da Empresarização", quotes: [{ quote: "Criar o Ministério da Empresarização", page: 19 }] },
-        { title: "Renegocia Brasil: renegociação de dívidas de 70 milhões de negativados", quotes: [{ quote: "Programa de renegociação de dívidas dos quase 70 milhões de brasileiros com nome no SPC e das mais de 30% das empresas que se encontram negativadas", page: 19 }] }
+        { title: "Renegocia Brasil: renegociação de dívidas de 70 milhões de negativados", quotes: [{ quote: "Programa de renegociação de dívidas dos quase 70 milhões de brasileiros com nome no SPC e das mais de 30% das empresas que se encontram negativadas", page: 19 }] },
+        { title: "Salário mínimo como o melhor da América do Sul", quotes: [{ quote: "Valorizamos o trabalhador brasileiro que se empenha em trazer o sustento para sua família através do seu suor, de modo que definiremos e manteremos o valor do salário mínimo como o melhor da América do Sul.", page: 14 }] }
       ]
     },
     "inflacao-monetaria": {
@@ -85,7 +86,9 @@ window.CANDIDATES_DATA["pablo-marcal"] = {
       diagnosis: [],
       proposals: [
         { title: "Alfabetização plena até o 2º ano", quotes: [{ quote: "Garantir a alfabetização plena até o 2º ano", page: 17 }] },
-        { title: "Valorização dos professores: salário, segurança e capacitação", quotes: [{ quote: "Valorização dos professores: salario, segurança e capacitação", page: 17 }] }
+        { title: "Valorização dos professores: salário, segurança e capacitação", quotes: [{ quote: "Valorização dos professores: salario, segurança e capacitação", page: 17 }] },
+        { title: "IA aplicada à educação pública", quotes: [{ quote: "IA aplicada à educação pública", page: 22 }] },
+        { title: "Internet em 100% das escolas públicas", quotes: [{ quote: "Internet em 100% das escolas públicas", page: 22 }] }
       ]
     },
     seguranca: {

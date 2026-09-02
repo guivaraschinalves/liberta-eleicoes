@@ -89,11 +89,16 @@ window.CANDIDATES_DATA["flavio-bolsonaro"] = {
     "infraestrutura-investimento": {
       diagnosis: [
         { quote: "O custo logístico no Brasil é de 15,5% do PIB, quase o dobro dos 8,8% dos Estados Unidos.", page: 31 },
-        { quote: "O país cresceu, em média, 2% ao ano nas últimas duas décadas, menos do que o mundo. Nossa meta é dobrar esse ritmo e alcançar um crescimento sustentado de 4% ao ano ao longo da próxima década.", page: 49 }
+        { quote: "O país cresceu, em média, 2% ao ano nas últimas duas décadas, menos do que o mundo. Nossa meta é dobrar esse ritmo e alcançar um crescimento sustentado de 4% ao ano ao longo da próxima década.", page: 49 },
+        { quote: "O maior avanço do país nessa área tem nome e sobrenome: foi o Marco Legal do Saneamento, sancionado pelo governo Bolsonaro em 2020, que abriu o setor ao investimento privado e fixou a meta de levar água e esgoto a praticamente toda a população até 2033.", page: 47 },
+        { quote: "o Brasil produz cada vez mais gás no pré-sal, mas desperdiça parte dele por falta de escoamento, enquanto importa gás caro do exterior.", page: 53 }
       ],
       proposals: [
         { title: "R$ 900 bi em infraestrutura em 4 anos", quotes: [{ quote: "Vamos investir R$ 900 bilhões em quatro anos em rodovias, hidrovias, portos, aeroportos e ferrovias.", page: 51 }] },
-        { title: "Estabilidade regulatória de até 20 anos", quotes: [{ quote: "Vamos também garantir que a regra combinada no início seja a regra do fim. Para os grandes projetos de longa maturação, criaremos mecanismos de estabilidade das regras de até 20 anos, para que o contrato não seja mudado depois que a obra já estiver de pé.", page: 50 }] }
+        { title: "Estabilidade regulatória de até 20 anos", quotes: [{ quote: "Vamos também garantir que a regra combinada no início seja a regra do fim. Para os grandes projetos de longa maturação, criaremos mecanismos de estabilidade das regras de até 20 anos, para que o contrato não seja mudado depois que a obra já estiver de pé.", page: 50 }] },
+        { title: "Acelerar concessões para universalizar água e esgoto", quotes: [{ quote: "nós vamos garantir sua plena aplicação e acelerar as concessões e parcerias para universalizar o acesso à água tratada e ao esgoto, com atenção especial ao saneamento rural.", page: 47 }] },
+        { title: "Expandir a rede de escoamento e transporte de gás", quotes: [{ quote: "Vamos apoiar a expansão da rede de escoamento e transporte de gás conforme a demanda, com segurança jurídica e regras estáveis que atraiam o investimento privado, para integrar à malha os estados hoje desconectados e baratear a energia da indústria e da família.", page: 53 }] },
+        { title: "Armazenamento de energia e polo global de data centers", quotes: [{ quote: "Vamos regular as diversas fontes buscando o menor preço ao consumidor final, implantar um programa de armazenamento de energia, com baterias de grande porte e outras tecnologias, e transformar o país em polo global de data centers sustentáveis, aproveitando a matriz elétrica renovável.", page: 53 }] }
       ]
     }
   },
@@ -125,11 +130,20 @@ window.CANDIDATES_DATA["flavio-bolsonaro"] = {
     saude: {
       diagnosis: [
         { quote: "A saúde é a base de tudo o que este capítulo promete: criança doente não aprende, adulto doente não trabalha, e uma família com um enfermo grave vê o orçamento e os planos ruírem juntos.", page: 37 },
-        { quote: "A lei de reajuste já existe, mas, presa ao orçamento, não enfrentou a defasagem que asfixia hospitais, santas casas e clínicas, sobretudo no interior.", page: 37 }
+        { quote: "A lei de reajuste já existe, mas, presa ao orçamento, não enfrentou a defasagem que asfixia hospitais, santas casas e clínicas, sobretudo no interior.", page: 37 },
+        { quote: "O médico que atende hoje não sabe o que outro médico já descobriu.", page: 26 },
+        { quote: "A saúde mental é outra face do cuidado, e hoje pesa sobre milhões de famílias, quase sempre em silêncio.", page: 39 }
       ],
       proposals: [
         { title: "Correção efetiva da tabela SUS", quotes: [{ quote: "Vamos garantir as condições para que seja possível a correção efetiva da tabela SUS. [...] Vamos assegurar uma remuneração que cubra o custo real do atendimento.", page: 37 }] },
-        { title: "Programa de Atendimento aos Idosos", quotes: [{ quote: "criar o Programa de Atendimento aos Idosos, com atendimento facilitado e adequado a quem envelhece, para que o idoso não enfrente o mesmo percurso cansativo de sempre para se cuidar.", page: 37 }] }
+        { title: "Programa de Atendimento aos Idosos", quotes: [{ quote: "criar o Programa de Atendimento aos Idosos, com atendimento facilitado e adequado a quem envelhece, para que o idoso não enfrente o mesmo percurso cansativo de sempre para se cuidar.", page: 37 }] },
+        { title: "Prontuário eletrônico único e digitalização do SUS", quotes: [
+          { quote: "Vamos implantar o prontuário eletrônico único, vinculado ao CPF e integrado ao Gov.br, interoperável entre as redes pública e privada, com histórico completo de consultas, exames, vacinas e prescrições, sempre observados o consentimento do paciente, a LGPD, o sigilo médico e os protocolos de segurança", page: 26 },
+          { quote: "vamos completar a digitalização do SUS e usar inteligência artificial para agilizar o agendamento de consultas e exames, ajudando a encaixar o paciente na primeira vaga disponível, para que ninguém mais fique meses aguardando uma marcação que poderia ser resolvida em muito menos tempo.", page: 26 }
+        ] },
+        { title: "Telessaúde e entrega de remédio em domicílio", quotes: [{ quote: "Vamos também levar o atendimento até quem não consegue chegar até ele. Com a telessaúde e o teleatendimento por aplicativo, médicos de regiões com baixa demanda poderão atender pacientes onde as filas são longas, aproximando o cuidado de quem vive longe de um grande centro. E um sistema de entrega de remédio em domicílio vai garantir que o idoso, a pessoa com deficiência e o doente crônico não precisem escolher entre buscar o tratamento e pagar o transporte.", page: 38 }] },
+        { title: "Inteligência artificial de apoio à prevenção", quotes: [{ quote: "A tecnologia também ajuda a cuidar antes de a doença se agravar. Com inteligência artificial de apoio à prevenção, o sistema poderá identificar quem corre maior risco de adoecer e chamar essa pessoa para se cuidar a tempo, em vez de esperar que ela chegue ao pronto-socorro quando já é grave.", page: 38 }] },
+        { title: "Fortalecer a atenção à saúde mental", quotes: [{ quote: "Vamos fortalecer e ampliar a atenção à saúde mental, chegando às famílias que muitas vezes enfrentam tudo sozinhas: o diagnóstico precoce e o apoio às crianças com TDAH; a atenção à depressão e à ansiedade; e o cuidado com os idosos que enfrentam o Alzheimer e outras doenças neurológicas, e com quem cuida deles.", page: 39 }] }
       ]
     },
     "politica-externa": {

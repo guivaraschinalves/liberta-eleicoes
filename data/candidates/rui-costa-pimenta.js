@@ -58,7 +58,8 @@ window.CANDIDATES_DATA["rui-costa-pimenta"] = {
       proposals: [
         { title: "Redução imediata das taxas de juros", quotes: [{ quote: "Imediata redução das taxas de juros;", page: 6 }] },
         { title: "Fim da independência do Banco Central", quotes: [{ quote: "Fim da “independência” do Banco Central", page: 6 }] },
-        { title: "Estatização do sistema financeiro", quotes: [{ quote: "Estatização do sistema financeiro; banco estatal único sob o controle dos trabalhadores", page: 6 }] }
+        { title: "Estatização do sistema financeiro", quotes: [{ quote: "Estatização do sistema financeiro; banco estatal único sob o controle dos trabalhadores", page: 6 }] },
+        { title: "Cancelamento das dívidas externa e interna com bancos e credores", quotes: [{ quote: "Cancelamento das dívidas externa e interna com os bancos e grandes credores", page: 6 }] }
       ]
     },
     "estado-privatizacoes": {

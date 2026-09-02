@@ -70,7 +70,8 @@ window.CANDIDATES_DATA["clariana-barao"] = {
       diagnosis: [],
       proposals: [
         { title: "Alfabetização na idade adequada", quotes: [{ quote: "Alfabetização na idade adequada", page: 7 }] },
-        { title: "Recomposição de aprendizagem com avaliação frequente", quotes: [{ quote: "Recomposição de aprendizagem", page: 7 }, { quote: "Avaliação frequente com intervenção pedagógica", page: 7 }] }
+        { title: "Recomposição de aprendizagem com avaliação frequente", quotes: [{ quote: "Recomposição de aprendizagem", page: 7 }, { quote: "Avaliação frequente com intervenção pedagógica", page: 7 }] },
+        { title: "Busca ativa de crianças fora da escola", quotes: [{ quote: "Busca ativa de crianças fora da escola", page: 3 }] }
       ]
     },
     seguranca: {

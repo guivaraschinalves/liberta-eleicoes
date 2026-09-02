@@ -82,8 +82,10 @@ scripts/
   export_plans_md.py     → gera PLANOS-DE-GOVERNO.md (texto bruto dos PDFs, um arquivo só)
   extract_plan_texts.py  → extrai .sources-cache/texts/<id>.txt de sources/<id>.pdf (PyMuPDF)
   build_plan_texts.py    → gera data/plan-texts.js a partir de .sources-cache/texts/
-CONTEUDO-DO-SITE.md  → leitura de apoio: tudo que está em data/*.js, formatado (não é lido pelo site)
-PLANOS-DE-GOVERNO.md → leitura de apoio: os planos de governo completos, um atrás do outro
+  audit_coverage.py      → gera AUDITORIA-COBERTURA.md (páginas com possível conteúdo ainda não citado)
+CONTEUDO-DO-SITE.md      → leitura de apoio: tudo que está em data/*.js, formatado (não é lido pelo site)
+PLANOS-DE-GOVERNO.md     → leitura de apoio: os planos de governo completos, um atrás do outro
+AUDITORIA-COBERTURA.md   → leitura de apoio: páginas sinalizadas por audit_coverage.py, pra revisar
 ```
 
 ## Como atualizar um candidato
@@ -121,6 +123,11 @@ seguida `python3 scripts/build_plan_texts.py` (regenera `data/plan-texts.js`
 a partir do cache) — sem isso o candidato aparece em Visão Geral/Temas mas
 fica de fora da Contagem de Palavras.
 
+Depois de escrever as citações (ou sempre que atualizar as de um candidato
+já existente), rode `python3 scripts/audit_coverage.py <id>` — ver
+"## Auditoria de cobertura" abaixo — pra conferir que nenhum trecho
+relevante ficou de fora antes de publicar.
+
 Se o candidato registrou candidatura **sem** entregar Proposta de Governo ao
 TSE, marque `planFiled: false` na entrada dele em `data/sources.js` (com
 `officialPdfUrl`/`localPdfPath`/`pageCount` como `null` **literal**, não
@@ -133,6 +140,43 @@ daquele tema.
 Para adicionar/renomear um tema: edite `window.THEMES` em `data/taxonomy.js`
 (só o tema `economia` leva `subthemes`) e replique a chave em
 `themes.<id>` de cada `data/candidates/*.js`.
+
+## Auditoria de cobertura
+
+A seleção de citações é leitura manual, tema por tema — não é uma busca
+automática/exaustiva, então não garante sozinha que nada relevante ficou de
+fora (o risco cresce com o tamanho do plano). `scripts/audit_coverage.py`
+existe pra reduzir esse risco: varre o texto integral de cada plano
+(`.sources-cache/texts/<id>.txt`) por palavras-chave de cada um dos 12
+temas/subtemas e sinaliza **páginas que mencionam o assunto mas ainda não
+têm nenhuma citação lá** (mesma granularidade de página que `quote.page` já
+usa, sem depender de detectar quebra de parágrafo — a extração de PDF não
+garante isso). Roda assim:
+
+```
+python3 scripts/audit_coverage.py              # todos os candidatos com plano
+python3 scripts/audit_coverage.py caiado zema  # só os ids passados
+```
+
+Gera/atualiza `AUDITORIA-COBERTURA.md` (leitura de apoio, como
+`CONTEUDO-DO-SITE.md`/`PLANOS-DE-GOVERNO.md` — não é lido pelo site). A
+ferramenta **não decide sozinha** o que falta: cada página sinalizada
+precisa ser lida (no `.txt` ou no PDF, pra ter o contexto completo) e
+julgada — já coberta em espírito por uma citação existente, tangencial/menção
+de passagem, ou genuinamente um ponto novo, caso em que vira uma citação
+literal nova em `data/candidates/<id>.js` (nunca alterando as que já
+existem). Rodar de novo depois: a página some da lista assim que ganha uma
+citação naquele tema, então o relatório sempre mostra só o que ainda não
+foi decidido.
+
+As listas de palavras-chave (`KEYWORDS` no script) são um ponto de partida
+editorial, não uma lista fechada — ajustar é esperado conforme aparecerem
+falsos negativos (tema relevante que nenhuma palavra-chave pegou) ou falsos
+positivos (muito ruído numa categoria específica). O filtro já exige pelo
+menos 3 palavras-chave distintas na mesma página e ignora páginas de
+sumário/índice — sem isso, um plano de governo holístico (que menciona
+saúde/educação/segurança de passagem o tempo todo, só conectando políticas)
+sinaliza quase toda página do documento.
 
 ## Seletor de candidatos
 

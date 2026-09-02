@@ -63,7 +63,8 @@ window.CANDIDATES_DATA["lula"] = {
     "trabalho-renda": {
       diagnosis: [
         { quote: "O Brasil chegou às mais baixas taxas de desemprego da história e gerou 8,0 milhões de empregos entre 2023 e junho de 2026.", page: 73 },
-        { quote: "Com a retomada da política de valorização do salário-mínimo, asseguramos aumento real para o piso de remuneração todos os anos, permitindo a recuperação de seu poder de compra e impulsionando os rendimentos do trabalho, que chegaram aos maiores patamares reais da história.", page: 73 }
+        { quote: "Com a retomada da política de valorização do salário-mínimo, asseguramos aumento real para o piso de remuneração todos os anos, permitindo a recuperação de seu poder de compra e impulsionando os rendimentos do trabalho, que chegaram aos maiores patamares reais da história.", page: 73 },
+        { quote: "No mercado de trabalho e na previdência, observamos a precarização das relações laborais, a expansão da informalidade e o desamparo de trabalhadores de plataforma, reduzindo o rendimento médio real das famílias.", page: 9 }
       ],
       proposals: [
         { title: "Fim da escala 6x1 e jornada de 40h", quotes: [{ quote: "Manteremos nossa ação junto ao Senado Federal para assegurar o fim da escala 6x1 e a redução da jornada de trabalho para 40 horas, sem redução salarial, nos termos aprovados na Câmara dos Deputados.", page: 75 }] },
@@ -85,7 +86,8 @@ window.CANDIDATES_DATA["lula"] = {
     "estado-privatizacoes": {
       diagnosis: [
         { quote: "A retomada do crescimento industrial nesse mandato é resultado do enfrentamento do processo de desindustrialização por meio dos investimentos coordenados por uma nova, legítima e indispensável política industrial, a Nova Indústria Brasil (NIB).", page: 50 },
-        { quote: "O governo Lula III retomou os investimentos em petróleo e gás. A Petrobras tem batido sucessivos recordes de produção de petróleo e voltou a investir em refino e derivados, em gás e fertilizantes, ampliando suas encomendas às indústrias naval e petroquímica.", page: 66 }
+        { quote: "O governo Lula III retomou os investimentos em petróleo e gás. A Petrobras tem batido sucessivos recordes de produção de petróleo e voltou a investir em refino e derivados, em gás e fertilizantes, ampliando suas encomendas às indústrias naval e petroquímica.", page: 66 },
+        { quote: "O governo avançou na modernização do setor elétrico, conciliando expansão da infraestrutura, segurança energética, competitividade e modicidade tarifária. Houve forte expansão das fontes solar e eólica na geração elétrica.", page: 63 }
       ],
       proposals: [
         { title: "Ampliar investimento da Petrobras", quotes: [{ quote: "Entendemos que a Petrobras continuará ampliando investimentos em exploração onshore e offshore, para recuperar participação no controle de reservas nacionais", page: 67 }] },
@@ -107,7 +109,8 @@ window.CANDIDATES_DATA["lula"] = {
         { title: "Universalizar saneamento e ampliar transporte de alta capacidade", quotes: [
           { quote: "O governo Lula investiu de forma consistente em saneamento. A partir de 2023, foram R$ 23,3 bilhões para novas obras de abastecimento de água, esgotamento sanitário e gestão de resíduos sólidos [...] Continuaremos, no próximo mandato, a perseguir o objetivo de apoiar estados e municípios a universalizar acesso à água tratada e ao esgotamento sanitário.", page: 46 },
           { quote: "A atual carteira, entre retomada de obras e novos investimentos, resultará em mais 233 km de metrôs, trens e VLTs e outros 296 km de corredores exclusivos de ônibus no padrão BRT.", page: 46 }
-        ] }
+        ] },
+        { title: "Novos arrendamentos portuários", quotes: [{ quote: "Além disso, daremos prosseguimento à política de novos arrendamentos nos portos organizados, bem como aos processos de concessão da manutenção dos canais de acesso e outros serviços portuários.", page: 54 }] }
       ]
     }
   },
@@ -115,7 +118,8 @@ window.CANDIDATES_DATA["lula"] = {
     educacao: {
       diagnosis: [
         { quote: "O Compromisso Nacional Criança Alfabetizada instituiu uma estratégia nacional de cooperação federativa, cujos resultados – 66% das crianças alfabetizadas na idade certa em 2025 - superaram a meta prevista de 64%.", page: 31 },
-        { quote: "Vale lembrar que o governo Lula também retomou obras que estavam paralisadas em governos anteriores – no caso da educação, são 5.967 creches, escolas, quadras esportivas e outros equipamentos que tiveram seus contratos repactuados e voltaram a receber recursos para conclusão.", page: 32 }
+        { quote: "Vale lembrar que o governo Lula também retomou obras que estavam paralisadas em governos anteriores – no caso da educação, são 5.967 creches, escolas, quadras esportivas e outros equipamentos que tiveram seus contratos repactuados e voltaram a receber recursos para conclusão.", page: 32 },
+        { quote: "Na educação, a ausência de uma coordenação federativa integrada, a redução dos recursos e a paralisia de milhares de obras de creches e escolas que abandonaram os municípios à própria sorte, deprimindo a qualidade pedagógica e estimulando o aumento da evasão escolar.", page: 9 }
       ],
       proposals: [
         { title: "Meta de 80% de alfabetização na idade certa", quotes: [{ quote: "Seguiremos com as ações e políticas já pactuadas com os estados e municípios brasileiros para chegarmos à meta de 80% das nossas crianças alfabetizadas na idade certa.", page: 31 }] },
@@ -127,23 +131,28 @@ window.CANDIDATES_DATA["lula"] = {
     seguranca: {
       diagnosis: [
         { quote: "É nesse contexto que deve avançar a construção de um Sistema Nacional de Segurança Pública mais articulado, capaz de combinar medidas imediatas com as reformas constitucionais e legais necessárias para superar o atual modelo fragmentado.", page: 27 },
-        { quote: "A revogação dos decretos editados no governo anterior, que facilitavam o acesso a armas de fogo, foi uma medida acertada.", page: 28 }
+        { quote: "A revogação dos decretos editados no governo anterior, que facilitavam o acesso a armas de fogo, foi uma medida acertada.", page: 28 },
+        { quote: "A segurança pública, sob o pretexto da desregulamentação, facilitou a proliferação descontrolada de armas de fogo, o que fortaleceu estruturas de milícias e facções criminosas nos territórios vulneráveis e ampliou a letalidade das violências domésticas, em especial contra mulheres, crianças e adolescentes.", page: 9 }
       ],
       proposals: [
         { title: "Criação do Ministério da Segurança Pública", quotes: [{ quote: "Uma vez aprovada a PEC da Segurança Pública proposta pelo Executivo, criaremos o Ministério da Segurança Pública para coordenar, em articulação com estados e municípios, a execução das políticas nacionais de segurança pública no âmbito do Sistema Único de Segurança Pública (SUSP).", page: 30 }] },
         { title: "Programa Brasil Contra o Crime Organizado", quotes: [{ quote: "Fortaleceremos o Programa Brasil Contra o Crime Organizado, lançado em maio de 2026 [...] O programa prevê R$ 10 bilhões do Fundo Nacional de Investimento em Infraestrutura Social para estados e municípios realizarem investimentos em equipamentos e infraestrutura.", page: 27 }] },
-        { title: "Plano Pena Justa", quotes: [{ quote: "Cumpriremos as metas do Plano Pena Justa e instituiremos o Pacto Nacional de Execução Penal para o Enfrentamento ao Crime Organizado, fortalecendo a governança do sistema prisional e a cooperação entre União, estados e sistema de justiça.", page: 28 }] }
+        { title: "Plano Pena Justa", quotes: [{ quote: "Cumpriremos as metas do Plano Pena Justa e instituiremos o Pacto Nacional de Execução Penal para o Enfrentamento ao Crime Organizado, fortalecendo a governança do sistema prisional e a cooperação entre União, estados e sistema de justiça.", page: 28 }] },
+        { title: "Programa Celular Seguro", quotes: [{ quote: "Continuaremos expandindo e aprimorando o Programa Celular Seguro, que já conta com mais de 4 milhões de usuários cadastrados. Com a criação da Base Nacional de Celulares com Restrição, o programa passou a oferecer ao cidadão possibilidade de verificar, antes da compra, se o aparelho possui restrição.", page: 29 }] },
+        { title: "Prevenção à violência e proteção da juventude negra", quotes: [{ quote: "Fortaleceremos as políticas de prevenção à violência com foco na proteção da juventude negra e da expansão de programas de mediação comunitária e justiça restaurativa em parceria com estados e municípios.", page: 29 }] }
       ]
     },
     saude: {
       diagnosis: [
         { quote: "Avançamos muito, mas o SUS é um sistema que requer contínua evolução para assegurar, de fato, o direito universal à saúde.", page: 34 },
-        { quote: "Começamos a enfrentar, no atual mandato, com o Agora tem Especialistas, um dos maiores desafios da saúde pública brasileira – garantir o acesso à atenção especializada, com qualidade e agilidade.", page: 37 }
+        { quote: "Começamos a enfrentar, no atual mandato, com o Agora tem Especialistas, um dos maiores desafios da saúde pública brasileira – garantir o acesso à atenção especializada, com qualidade e agilidade.", page: 37 },
+        { quote: "O Novo PAC apoiou a estruturação de 336 novos Centros de Atenção Psicossocial - CAPS.", page: 39 }
       ],
       proposals: [
         { title: "Prontuário único do cidadão", quotes: [{ quote: "Vamos acelerar os esforços na consolidação do prontuário único do cidadão, que já avança por meio da Rede Nacional de Dados em Saúde (RNDS).", page: 35 }] },
         { title: "IA para triagem e diagnóstico", quotes: [{ quote: "Vamos acelerar a utilização de inteligência artificial para a triagem, a priorização de casos graves, a regulação por risco clínico e o diagnóstico em áreas com escassez de especialistas.", page: 35 }] },
-        { title: "Farmácia Popular 100% gratuito", quotes: [{ quote: "Retomamos o Farmácia Popular, ampliando para 41 o número de medicamentos gratuitos distribuídos. Chegamos, em 2025, a 27,3 milhões de pessoas atendidas [...] O programa será mantido, 100% gratuito.", page: 36 }] }
+        { title: "Farmácia Popular 100% gratuito", quotes: [{ quote: "Retomamos o Farmácia Popular, ampliando para 41 o número de medicamentos gratuitos distribuídos. Chegamos, em 2025, a 27,3 milhões de pessoas atendidas [...] O programa será mantido, 100% gratuito.", page: 36 }] },
+        { title: "Ampliar Rede de Atenção Psicossocial e CAPS", quotes: [{ quote: "Na saúde mental, ampliaremos os investimentos na Rede de Atenção Psicossocial e nos CAPS, ampliando a atenção a crianças, adolescentes e jovens.", page: 39 }] }
       ]
     },
     "politica-externa": {
