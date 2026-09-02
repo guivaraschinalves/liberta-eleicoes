@@ -19,9 +19,19 @@
 <div class="app">
   <header class="topbar">
     <div class="brand">
-      <svg class="brand-logo" viewBox="0 0 240 48" role="img" aria-label="Poder &amp; Mercado" xmlns="http://www.w3.org/2000/svg">
+      <!-- Duas variantes do lockup horizontal oficial "Poder & Mercado" (chip
+           claro/texto escuro e chip escuro/texto claro, como no manual da
+           marca) — o CSS mostra uma ou outra conforme o tema, pra sempre
+           bater com o fundo do topbar em vez de forçar sempre a versão
+           escura. O "&" leva itálico serifado, mais próximo do traço do
+           logotipo original que o resto da palavra (caixa alta, sem serifa). -->
+      <svg class="brand-logo brand-logo-light" viewBox="0 0 240 48" role="img" aria-label="Poder &amp; Mercado" xmlns="http://www.w3.org/2000/svg">
+        <rect width="240" height="48" rx="8" style="fill: var(--brand-white); stroke: var(--border);"/>
+        <text x="120" y="31" text-anchor="middle" style="font-family: var(--font-display); font-weight: 800; letter-spacing: 0.3px;" font-size="19" fill="#000000">PODER <tspan fill="#FEE801" font-size="24" style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400;">&amp;</tspan> MERCADO</text>
+      </svg>
+      <svg class="brand-logo brand-logo-dark" viewBox="0 0 240 48" role="img" aria-label="Poder &amp; Mercado" xmlns="http://www.w3.org/2000/svg">
         <rect width="240" height="48" rx="8" fill="#000000"/>
-        <text x="120" y="31" text-anchor="middle" style="font-family: var(--font-display); font-weight: 800; letter-spacing: 0.3px;" font-size="20" fill="#ffffff">PODER <tspan fill="#FEE801">&amp;</tspan> MERCADO</text>
+        <text x="120" y="31" text-anchor="middle" style="font-family: var(--font-display); font-weight: 800; letter-spacing: 0.3px;" font-size="19" fill="#ffffff">PODER <tspan fill="#FEE801" font-size="24" style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400;">&amp;</tspan> MERCADO</text>
       </svg>
       <div class="brand-tag">Presidenciáveis 2026</div>
     </div>

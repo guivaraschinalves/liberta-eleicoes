@@ -123,7 +123,16 @@
       var a = document.createElement("a");
       a.className = "cite-link";
       a.textContent = "p. " + q.page;
-      a.href = src ? src.officialPdfUrl : "#";
+      // Prioriza o PDF local com âncora de página (#page=N, suportado pelo
+      // visualizador de PDF nativo do navegador) — leva direto ao trecho
+      // citado, igual ao link "PDF (cópia local)" de Fontes. Sem cópia local
+      // (build do Artifact, que zera `localPdfPath`), cai para a página do
+      // dataset no TSE, sem âncora de página (não é um PDF direto).
+      if (src && src.localPdfPath) {
+        a.href = src.localPdfPath + "#page=" + q.page;
+      } else {
+        a.href = src ? src.officialPdfUrl : "#";
+      }
       a.target = "_blank";
       a.rel = "noopener";
       wrap.appendChild(a);

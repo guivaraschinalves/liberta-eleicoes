@@ -116,10 +116,20 @@ body { background: var(--page-bg); }
   z-index: 10;
 }
 .brand { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; color: var(--brand); flex: none; }
-/* Logotipo "Poder & Mercado" (SVG inline em index.html, chip preto com o "&"
-   dourado), com "Presidenciáveis 2026" embaixo — o nome "Liberta Eleições"
-   saiu do topbar (o logo já identifica o site). */
+/* Logotipo "Poder & Mercado" (SVG inline em index.html), com "Presidenciáveis
+   2026" embaixo — o nome "Liberta Eleições" saiu do topbar (o logo já
+   identifica o site). O manual da marca tem um lockup pra fundo claro (chip
+   branco/texto preto) e outro pra fundo escuro (chip preto/texto branco);
+   mostramos o que bate com o tema atual do site em vez de forçar sempre o
+   escuro — os dois SVGs ficam os dois no HTML, só a visibilidade muda. */
 .brand-logo { flex-shrink: 0; height: 34px; width: auto; border-radius: 8px; }
+.brand-logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand-logo-light { display: none; }
+  :root:not([data-theme="light"]) .brand-logo-dark { display: block; }
+}
+:root[data-theme="dark"] .brand-logo-light { display: none; }
+:root[data-theme="dark"] .brand-logo-dark { display: block; }
 .brand-tag { font-family: var(--font-label); font-size: 0.64rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-muted); }
 
 .nav { display: flex; flex-direction: row; flex-wrap: wrap; gap: 2px; }
