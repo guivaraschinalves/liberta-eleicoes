@@ -145,6 +145,11 @@ window.CANDIDATES_DATA["renan-santos"] = {
         { title: "Financiamento partidário atrelado à qualidade gerencial", quotes: [{ quote: "O repasse do Fundo Partidário e do Fundo Eleitoral passará a ser calculado com base na qualidade gerencial dos mandatários. Partidos que selecionarem e mantiverem gestores competentes serão premiados; legendas que sustentarem prefeitos cassados ou com indicadores \"vermelhos\" sofrerão retenção de recursos.", page: 18 }] }
       ]
     },
-    "direitos-bem-estar": { diagnosis: [], proposals: [] }
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "Em enquetes sobre os principais problemas do país, saúde é um dos problemas campeões, especialmente entre as mulheres.", page: 25 }
+      ],
+      proposals: []
+    }
   }
 };

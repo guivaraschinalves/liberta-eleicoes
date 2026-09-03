@@ -1207,7 +1207,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 ### Direitos e Bem-Estar
 
 **Diagnóstico:**
-- _Não abordado explicitamente no plano de governo._
+- "Em enquetes sobre os principais problemas do país, saúde é um dos problemas campeões, especialmente entre as mulheres." (p. 25)
 
 **Propostas:**
 - _Não abordado explicitamente no plano de governo._
