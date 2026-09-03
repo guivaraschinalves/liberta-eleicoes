@@ -100,6 +100,13 @@ window.CANDIDATES_DATA["clariana-barao"] = {
         { title: "Compras públicas rastreáveis", quotes: [{ quote: "Compras públicas rastreáveis", page: 13 }] },
         { title: "Gestão de riscos e prevenção de fraude", quotes: [{ quote: "Gestão de riscos e prevenção de fraude", page: 13 }] }
       ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [],
+      proposals: [
+        { title: "Autonomia econômica das mulheres", quotes: [{ quote: "Qualificação e reinserção profissional", page: 3 }, { quote: "Empreendedorismo e acesso a crédito responsável", page: 3 }, { quote: "Rede de cuidado para ampliar participação no trabalho", page: 3 }] },
+        { title: "Proteção de crianças e adolescentes contra abuso e exploração", quotes: [{ quote: "Prevenção de abuso e exploração", page: 3 }, { quote: "Ambiente digital seguro e educação para riscos", page: 3 }] }
+      ]
     }
   }
 };

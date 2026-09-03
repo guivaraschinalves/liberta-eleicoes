@@ -1,6 +1,6 @@
 # Conteúdo do site — Liberta Eleições
 
-Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações de Diagnóstico + Propostas dos 6 Temas (Economia, dividida em 7 subtemas, e Educação, Segurança Pública, Saúde, Política Externa, Combate à Corrupção). Gerado por `scripts/export_content_md.py` — reflete o estado atual dos dados, não é lido pelo site (a fonte real continua sendo `data/*.js` + `app.js`). Toda citação (`quote`) é transcrição literal do plano de governo oficial; só o título de cada proposta é redigido por nós. Idade calculada em 2026-09-02.
+Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações de Diagnóstico + Propostas dos 6 Temas (Economia, dividida em 7 subtemas, e Educação, Segurança Pública, Saúde, Política Externa, Combate à Corrupção). Gerado por `scripts/export_content_md.py` — reflete o estado atual dos dados, não é lido pelo site (a fonte real continua sendo `data/*.js` + `app.js`). Toda citação (`quote`) é transcrição literal do plano de governo oficial; só o título de cada proposta é redigido por nós. Idade calculada em 2026-09-03.
 
 ## Sumário de candidatos
 
@@ -136,6 +136,15 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Compras públicas rastreáveis** — "Compras públicas rastreáveis" (p. 13)
 - **Gestão de riscos e prevenção de fraude** — "Gestão de riscos e prevenção de fraude" (p. 13)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- _Não abordado explicitamente no plano de governo._
+
+**Propostas:**
+- **Autonomia econômica das mulheres** — "Qualificação e reinserção profissional" (p. 3); "Empreendedorismo e acesso a crédito responsável" (p. 3); "Rede de cuidado para ampliar participação no trabalho" (p. 3)
+- **Proteção de crianças e adolescentes contra abuso e exploração** — "Prevenção de abuso e exploração" (p. 3); "Ambiente digital seguro e educação para riscos" (p. 3)
+
 ---
 
 ## Edmilson Costa (PCB)
@@ -264,6 +273,20 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Mandato fixo e revogável para juízes de tribunais superiores** — "que os juízes nomeados para os tribunais regionais e superiores tenham mandato fixo sob controle social: mandatos de 10 anos elegíveis e revogáveis pelo Poder Popular em sua respectiva jurisdição." (p. 12)
 - **Fim de verbas e penduricalhos acima do teto constitucional** — "Fim de todas as verbas e penduricalhos que ultrapassarem o teto constitucional." (p. 12)
+
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "O combate permanente a todas as formas de opressão (como o machismo, o racismo, a LGBTfobia) deve realizar-se não apenas em uma dimensão cultural e de valores, mas por meio da efetiva garantia dos direitos e condições dignas de vida desses grupos oprimidos." (p. 11)
+
+**Propostas:**
+- **Políticas públicas de combate ao machismo, racismo, LGBTfobia e capacitismo** — "Serão adotadas políticas públicas de combate radical ao machismo, à misoginia, ao racismo, à lgbtfobia, ao capacitismo, em defesa dos direitos das mulheres, da juventude, do povo negro, dos povos originários, quilombolas e das pessoas com deficiência." (p. 6)
+- **Ampliação de direitos das mulheres e prioridade à população trans e travesti** — "Ampliação da licença-maternidade e paternidade para um ano." (p. 11); "Direito à estabilidade para as pessoas responsáveis legais dos recém-nascidos." (p. 11); "Será uma prioridade do governo do Poder Popular acabar com baixíssima expectativa de vida da população Trans e Travesti, através de políticas de garantia de emprego, acesso a saúde pública, moradia e educação." (p. 11)
+- **Defesa da liberdade de culto e fim do genocídio dos povos indígenas e do povo negro** — "Defesa da liberdade de culto religioso, com o combate ao preconceito e aos ataques às religiões de matriz africana e o fim do genocídio dos povos indígenas e do povo negro." (p. 12)
+- **Proteção e titulação de terras indígenas e quilombolas, com criação do Ministério dos Povos Indígenas** — "Proteção, titulação, demarcação e expansão das terras indígenas, quilombolas e populações tradicionais, dotando esses segmentos de efetiva tutela e condições de permanência e vivência em seus territórios." (p. 11); "Titulação imediata dos territórios quilombolas." (p. 12); "Demarcação e proteção integral de todos os territórios indígenas, que serão geridos por conselhos populares dos povos originários. Fim do Marco Temporal. No governo do Poder Popular, o Ministério dos Povos Indígenas terá orçamento robusto e poder decisório sobre a demarcação das terras indígenas. O Ministério por sua vez responderá a um conselho popular nacional dos povos indígenas, fruto de Encontros Nacionais dos Povos Indígenas." (p. 12)
+- **Garantia plena dos direitos das pessoas com deficiência** — "Campanhas amplas contra o capacitismo, acessíveis e com forte divulgação nos meios de comunicação de massa." (p. 12); "Acessibilidade arquitetônica e comunicacional em escolas, universidades, hospitais, centros de lazer e cultura, segundo os princípios do desenho universal." (p. 12); "Construção de uma política pública do cuidado, com a garantia de profissionais de apoio para acompanhamento diário, no próprio domicílio, de idosos e pessoas com deficiência com alto nível de dependência." (p. 12); "Fornecimento, de forma gratuita, de equipamentos de tecnologia assistiva para todas as pessoas com deficiência." (p. 12)
+- **Programa Nacional do Cão-Guia e bem-estar animal** — "Criação do Programa Nacional do cão-guia, com a construção de centros de treinamento e garantia ao usuário da manutenção da saúde e bem-estar destes animais." (p. 12)
+- **Ampliação da assistência social para infância, mulheres em situação de violência, pessoas em situação de rua e idosos** — "Ampliação dos serviços de assistência para a infância, com o fortalecimento e a expansão dos conselhos tutelares, creches e orfanatos, o incentivo à adoção e o combate à exploração do trabalho infantil." (p. 14); "Maior atenção aos adolescentes e adultos, com o fortalecimento e a expansão dos Caps e dos abrigos para pessoas em condição de rua, para mulheres vítimas de violência, além de abrigos e de serviço de acompanhamento para idosos e idosas." (p. 14)
 
 ---
 
@@ -400,6 +423,19 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Fortalecimento dos órgãos de controle** — "Tribunais de Contas, Controladorias, Ministério Público, Polícia Federal e demais instituições de fiscalização receberão investimentos em tecnologia, integração de dados e capacitação técnica. O combate à corrupção depende de instituições fortes, independentes e tecnicamente preparadas." (p. 52)
 - **Cultura nacional de integridade e compliance no setor público** — "Implantaremos programas permanentes de ética pública, integridade administrativa e educação cidadã, fortalecendo valores republicanos desde a escola até a alta administração pública. Promoveremos a adoção de programas de Compliance e governança corporativa no setor público, modernizando legislações burocráticas que geram brechas para desvios." (p. 53)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "No mercado de trabalho, levantamentos oficiais recentes mostram que a remuneração média das mulheres permanece aproximadamente 21% inferior à dos homens nas empresas com 100 ou mais empregados." (p. 86)
+- "Dados divulgados pelo Sebrae indicam que negócios liderados por mulheres enfrentam taxas de juros, em média, cerca de 4 pontos percentuais superiores às aplicadas a negócios liderados por homens." (p. 86)
+- "Estamos diante de uma verdadeira tirania da beleza, que pode produzir um processo de deterioração coletiva da autoimagem e da autoestima feminina." (p. 87)
+
+**Propostas:**
+- **Transparência salarial e mais mulheres em posições de liderança** — "Fortaleceremos os mecanismos de transparência salarial, fiscalização e cumprimento da legislação que determina igualdade remuneratória para trabalho de igual valor." (p. 89); "Também promoveremos políticas que ampliem a presença feminina em posições de liderança e decisão nos setores público e privado." (p. 89)
+- **Mecanismos de transparência contra distorções no crédito para mulheres** — "Em articulação com o Banco Central, instituições financeiras, Sebrae, universidades e entidades especializadas, promoveremos estudos e mecanismos de transparência capazes de identificar possíveis distorções nos modelos de concessão de crédito." (p. 89); "O sistema financeiro precisa avaliar pessoas pelo risco que efetivamente representam, e não reproduzir automaticamente desigualdades históricas. Crédito justo significa oportunidade para empreender, produzir renda, construir patrimônio e conquistar autonomia." (p. 90)
+- **Prioridade a mulheres qualificadas nas indicações ao STF** — "No âmbito das competências constitucionais da Presidência da República, assumimos o compromisso de priorizar mulheres altamente qualificadas nas indicações para vagas que venham a surgir no Supremo Tribunal Federal, sempre observados os requisitos constitucionais para o exercício do cargo." (p. 93); "A presença feminina nos mais elevados espaços institucionais também transmite uma mensagem poderosa às novas gerações: não existem lugares que uma menina brasileira não possa sonhar em ocupar." (p. 93)
+- **Campanhas nacionais contra a "tirania da beleza" e valorização da diversidade** — "Desenvolveremos campanhas nacionais de valorização da diversidade humana e programas de educação emocional e uso saudável das redes sociais." (p. 91)
+
 ---
 
 ## Flávio Bolsonaro (PL)
@@ -503,6 +539,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Programa Acolher (reforço entre alunos)** — "vamos criar o Programa Acolher: um aluno com bom desempenho é remunerado para dar reforço aos colegas que precisam, de forma remota ou presencial." (p. 35)
 - **Voucher educacional onde faltar vaga** — "onde faltar vaga na rede pública, a família receberá um voucher educacional para matricular o filho em outra escola, porque a prioridade é a criança aprender." (p. 36)
 - **Empréstimo Contingente à Renda (substitui o FIES)** — "vamos adotar o Empréstimo Contingente à Renda: o estudante só começa a pagar quando estiver empregado e ganhando, o valor da parcela é proporcional ao que ele recebe e o prazo é bem mais longo." (p. 37)
+- **Programa Escola de Campeões** — "Vamos criar o Programa Escola de Campeões, com parcerias público-privadas para levar o esporte competitivo às escolas, muito além da aula de educação física: times escolares, treinos no contraturno e competições municipais e estaduais. O programa é também uma arma contra a evasão escolar e a repetência: o aluno que treina, que joga pelo time da escola e que sonha com a próxima competição é o aluno que continua estudando." (p. 40)
 
 ### Segurança Pública
 
@@ -554,6 +591,18 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Combate aos penduricalhos e supersalários** — "Isso inclui o corte de no mínimo 10 ministérios, a redução de cargos comissionados e de despesas administrativas e o combate aos penduricalhos e supersalários que corroem o orçamento." (p. 69)
 - **Agenda permanente de transparência e avaliação de políticas públicas** — "um choque de gestão vai colocar o patrimônio público a serviço da sociedade, com reforma do processo orçamentário e uma agenda permanente de transparência e avaliação de políticas públicas, identificando quem são os beneficiários de cada programa e medindo o impacto real de cada gasto." (p. 71)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "O mesmo cuidado vale para as pessoas com deficiência e com doenças raras, que enfrentam barreiras todos os dias e muitas vezes contam apenas com a própria família para tudo." (p. 39)
+- "O esporte feminino foi criado justamente para dar às mulheres um espaço de competição justo. Vamos protegê-lo. Nos últimos anos, confederações internacionais reviram suas regras ao reconhecer que atletas que não nasceram do sexo feminino mantêm, mesmo após tratamento hormonal, vantagens de envergadura, densidade óssea e musculatura que a mulher não tem como equiparar. Permitir essa desigualdade é punir justamente a atleta que treina a vida inteira, abre mão da família e se dedica ao alto rendimento." (p. 40)
+
+**Propostas:**
+- **Políticas transversais de garantia de direitos e inclusão para pessoas com deficiência** — "Nossas políticas serão transversais, atravessando todas as áreas do governo, voltadas a ações concretas de garantia de direitos, inclusão e integração social, entre elas a implantação de Centros de Referência em Transtorno do Espectro Autista." (p. 39)
+- **Inclusão de pessoas com deficiência pelo esporte** — "Vamos fomentar a inclusão de pessoas com deficiência pelo esporte, com detecção de talentos paralímpicos desde a base e mais autonomia para as entidades paralímpicas, tratando o paradesporto como via de reabilitação, inserção profissional e superação." (p. 40)
+- **Categoria esportiva feminina restrita a atletas do sexo feminino** — "Vamos assegurar que a categoria feminina, da base ao alto rendimento, seja disputada por atletas do sexo feminino, protegendo a mulher e a lisura da competição de agendas ideológicas." (p. 41)
+- **Autonomia de povos indígenas e quilombolas sobre atividades em suas terras** — "Essa mesma clareza de regras vale para quem vive nas terras tradicionais. Será conferida autonomia aos povos indígenas e quilombolas para decidir sobre atividades produtivas em suas terras, com respeito ao desenvolvimento sustentável e às regras ambientais, e com indenização de eventuais restrições ao usufruto e mecanismos de compensação, para que quem vive na terra possa dela tirar o próprio sustento." (p. 50); "Esse desenvolvimento respeita quem vive na região: os povos indígenas e as comunidades quilombolas terão autonomia para decidir sobre as atividades produtivas em suas terras, e o morador da floresta, o ribeirinho e o extrativista serão tratados como parceiros do desenvolvimento, não como obstáculo." (p. 61)
+
 ---
 
 ## Hertz Dias (PSTU)
@@ -573,7 +622,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - "Mantém o arcabouço fiscal e a agiotagem escandalosa do pagamento da dívida, preserva os lucros dos bilionários, concede subsídios às multinacionais e submete o país às exigências do imperialismo." (p. 4)
 
 **Propostas:**
-- **Cobrança da dívida ativa das grandes empresas com a União** — "Cobrança da dívida ativa das grandes empresas com a União (entre elas, Vale, JBS, Coca-Cola, Raízen, Gerdau e tantas outras), sob pena de expropriação. A soma da dívida das grandes empresas ultrapassa R$ 1 trilhão, grande parte com INSS e FGTS." (p. 26)
+- **Cobrança da dívida ativa das grandes empresas com a União** — "Cobrança da dívida ativa das grandes empresas com a União (entre elas, Vale, JBS, Coca-Cola, Raízen, Gerdau e tantas outras), sob pena de expropriação. A soma da dívida das grandes empresas ultrapassa R$ 1 trilhão, grande parte com INSS e FGTS." (p. 27)
 
 #### Tributação
 
@@ -581,8 +630,8 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - _Não abordado explicitamente no plano de governo._
 
 **Propostas:**
-- **Tributação progressiva sobre lucros e remessas ao exterior** — "Tributação fortemente progressiva sobre lucros empresariais e taxação ampliada sobre remessas de capital ao exterior, impedindo a evasão do excedente produzido pelos trabalhadores brasileiros." (p. 26)
-- **Isenção de Imposto de Renda até 10 salários mínimos** — "Isenção de ir até dez salários mínimos, atualizando a tabela à 1996, a partir de quando deixou de ser corrigida pela inflação, fazendo cada vez mais pobres pagarem ir. A partir daí, alíquotas progressivas." (p. 26)
+- **Tributação progressiva sobre lucros e remessas ao exterior** — "Tributação fortemente progressiva sobre lucros empresariais e taxação ampliada sobre remessas de capital ao exterior, impedindo a evasão do excedente produzido pelos trabalhadores brasileiros." (p. 27)
+- **Isenção de Imposto de Renda até 10 salários mínimos** — "Isenção de ir até dez salários mínimos, atualizando a tabela à 1996, a partir de quando deixou de ser corrigida pela inflação, fazendo cada vez mais pobres pagarem ir. A partir daí, alíquotas progressivas." (p. 27)
 
 #### Câmbio e Comércio Exterior
 
@@ -590,7 +639,7 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - "decadente imperialismo europeu, como vimos recentemente com o acordo Mercosul e União Europeia, em que o país acessa o mercado europeu com produtos primários, e se abre aos automóveis e demais produtos de alto valor agregado de países como Alemanha e França." (p. 5)
 
 **Propostas:**
-- **Reservas cambiais lastreadas em ouro, reduzindo dependência do dólar** — "Expropriação integral da produção nacional de ouro e metais preciosos estratégicos, com incorporação automática às reservas cambiais públicas com vistas à redução da dependência das reservas em dólar e títulos estrangeiros, sejam eles originários, sejam de que país for." (p. 26)
+- **Reservas cambiais lastreadas em ouro, reduzindo dependência do dólar** — "Expropriação integral da produção nacional de ouro e metais preciosos estratégicos, com incorporação automática às reservas cambiais públicas com vistas à redução da dependência das reservas em dólar e títulos estrangeiros, sejam eles originários, sejam de que país for." (p. 27)
 
 #### Mercado de Trabalho e Renda
 
@@ -627,18 +676,18 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Propostas:**
 - **Plano nacional de obras públicas para saneamento, escolas e hospitais** — "Plano nacional de obras públicas voltado à geração de empregos, universalização do saneamento básico, construção de escolas, hospitais, creches, infraestrutura ambiental, entre outras obras necessárias e respeitadoras do meio ambiente." (p. 8)
-- **Estatização dos sistemas de transporte urbano** — "Estatização dos sistemas de transporte urbano e reversão das concessões privadas" (p. 13)
+- **Estatização dos sistemas de transporte urbano** — "Estatização dos sistemas de transporte urbano e reversão das concessões privadas" (p. 14)
 - **Fundo público de investimento produtivo financiado por excedentes de empresas expropriadas** — "Criação de fundos públicos de investimento produtivo, abastecidos pelos excedentes das empresas expropriadas, e não por impostos, voltados à industrialização, inovação tecnológica e expansão da infraestrutura nacional organicamente associados a todas as universidades e institutos públicos de pesquisa e desenvolvimento." (p. 27)
 
 ### Educação
 
 **Diagnóstico:**
-- "Cada vez mais se aprofunda a desigualdade educacional no país: enquanto os filhos dos ricos têm acesso a escolas equipadas e a um ensino completo para aprender a mandar, os filhos da classe trabalhadora estudam em escolas sem estrutura, com um currículo cada vez mais simplificado." (p. 11)
+- "Cada vez mais se aprofunda a desigualdade educacional no país: enquanto os filhos dos ricos têm acesso a escolas equipadas e a um ensino completo para aprender a mandar, os filhos da classe trabalhadora estudam em escolas sem estrutura, com um currículo cada vez mais simplificado." (p. 12)
 - "Os grandes grupos empresariais da educação avançam hoje sobre a educação básica. Por intermédio de institutos, fundações e movimentos como o Todos Pela Educação, definem as políticas públicas e influenciam legislações que abrem espaço para diversos mecanismos de apropriação das verbas públicas." (p. 12)
 
 **Propostas:**
-- **Revogação das propostas curriculares de empresários da educação (BNCC)** — "Revogação das propostas curriculares elaboradas pelos grandes empresários da educação e fundações privadas (BNCC e Novo Ensino Médio). Por propostas curriculares elaboradas pelos trabalhadores da educação." (p. 11)
-- **Valorização dos profissionais da educação** — "Valorização dos profissionais da educação, com carreira e salários dignos" (p. 11)
+- **Revogação das propostas curriculares de empresários da educação (BNCC)** — "Revogação das propostas curriculares elaboradas pelos grandes empresários da educação e fundações privadas (BNCC e Novo Ensino Médio). Por propostas curriculares elaboradas pelos trabalhadores da educação." (p. 12)
+- **Valorização dos profissionais da educação** — "Valorização dos profissionais da educação, com carreira e salários dignos" (p. 12)
 - **Educação no campo e combate ao analfabetismo** — "Educação no campo, combate ao analfabetismo e valorização dos saberes locais." (p. 17)
 
 ### Segurança Pública
@@ -649,18 +698,18 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - "Não é por menos que, nos governos  estaduais, sejam governadas pelo PT ou a extrema direita, o que chamam de "segurança pública", na verdade, aparatos de repressão policial, sejam priorizados como política pública. Porque isso não tem nada a ver com garantir a segurança do trabalhador e das famílias brasileiras. Isso tem a ver com conter e disciplinar, seja pelo encarceramento em massa, seja pelo genocídio da juventude, principalmente negra e periférica, qualquer expressão de revolta ou descontentamento social." (p. 3)
 
 **Propostas:**
-- **Combate ao crime organizado pelo patrimônio e financiamento** — "Combater o crime organizado, as máfias, as milícias, as facções e demais organizações criminosas por meio da investigação, inteligência e desarticulação de seus negócios, atingindo seu patrimônio, suas fontes de financiamento e suas relações com agentes públicos, políticos, empresários." (p. 18)
+- **Combate ao crime organizado pelo patrimônio e financiamento** — "Combater o crime organizado, as máfias, as milícias, as facções e demais organizações criminosas por meio da investigação, inteligência e desarticulação de seus negócios, atingindo seu patrimônio, suas fontes de financiamento e suas relações com agentes públicos, políticos, empresários." (p. 19)
 - **Desmilitarização da Polícia Militar** — "Desmilitarização da Polícia Militar e reversão da dinâmica de militarização das demais polÍcias e guardas municipais." (p. 19)
 - **Unificação das polícias em instituição civil única, com comandantes eleitos** — "Unificação das polícias em uma única instituição de caráter civil, com eleição de comandantes e delegados pela população e mandatos revogáveis" (p. 20)
 
 ### Saúde
 
 **Diagnóstico:**
-- "A crise do SUS expressa diretamente esse conflito: garantir saúde pública universal implica enfrentar os mecanismos que drenam recursos e subordinam o sistema à lógica privada." (p. 10)
+- "A crise do SUS expressa diretamente esse conflito: garantir saúde pública universal implica enfrentar os mecanismos que drenam recursos e subordinam o sistema à lógica privada." (p. 11)
 
 **Propostas:**
-- **SUS público, universal, gratuito e 100% estatal** — "Defesa do sus público, universal, gratuito e 100% estatal" (p. 10)
-- **Fim da privatização e da gestão privada da saúde** — "Fim da privatização e da gestão privada da saúde (OS, Fundações e PPP)" (p. 10)
+- **SUS público, universal, gratuito e 100% estatal** — "Defesa do sus público, universal, gratuito e 100% estatal" (p. 11)
+- **Fim da privatização e da gestão privada da saúde** — "Fim da privatização e da gestão privada da saúde (OS, Fundações e PPP)" (p. 11)
 - **Integração entre saúde e saneamento** — "Integração entre saúde e saneamento, enfrentando doenças relacionadas à falta de infraestrutura." (p. 11)
 
 ### Política Externa
@@ -679,6 +728,27 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Investigação e punição de corruptos e corruptores** — "Investigação e punição de corruptos e corruptores, com confisco dos bens obtidos por meio da corrupção." (p. 19)
 - **Confisco de bens de agentes públicos ligados ao crime organizado** — "Confisco dos bens obtidos por atividades criminosas, punição dos agentes públicos envolvidos com organizações criminosas e dissolução dos grupos e estruturas milicianizadas existentes no aparelho de Estado." (p. 19)
+
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "O Brasil de hoje não é mais o da década de 1980, quando a Política de Reparação ganhou visibilidade com as mobilizações contra a comemoração dos 100 anos da abolição, em 1988, e com a disputa da Constituição. O mundo mudou, a localização do Brasil na ordem mundial mudou, a classe trabalhadora mudou. E a situação da população negra, maioria absoluta do proletariado brasileiro, não ficou imune. Pelo contrário: o trabalhador negro foi o setor mais atingido pela reestruturação capitalista dos últimos trinta anos." (p. 21)
+- "A extrema direita nega os impactos da escravidão porque é contra qualquer política pública. Já a esquerda lulista e institucional se apega à reparação de forma esvaziada: joga todos os problemas do povo negro para o passado, isentando seus próprios governos que aprofundaram a desigualdade racial, e reduz reparação a ações afirmativas ou assistencialismo, sem tocar na grande propriedade privada." (p. 21)
+- "As mulheres compõem uma parte decisiva da classe trabalhadora brasileira e estão entre as mais atingidas pela decadência econômica e social do país. São maioria nos trabalhos mais precarizados, informais e mal remunerados, concentradas nos setores de serviços, cuidado e reprodução social, recebendo salários inferiores mesmo quando exercem as mesmas funções." (p. 22)
+- "No capitalismo, a sexualidade é moldada pela necessidade da reprodução da força de trabalho e da família tradicional. O gênero é aprisionado nesse modelo heteronormativo, em que a disforia entre o sexo/fenótipo biológico e o gênero social é taxado como doença, e pessoas trans e não binárias são tratadas como pessoas de segunda categoria, desumanizadas." (p. 24)
+- "Ao lado da escravidão, houve no Brasil um genocídio indígena. A luta que derrubou a ditadura conquistou a reserva das terras indígenas para impedir o seu extermínio e inscreveu esse direito na Constituição de 1988, mas, como tantos outros, ele nunca foi regulamentado. E mineradoras, madeireiras, agronegócio, fazendeiros e seus jagunços e o próprio Estado promovem uma violência enorme para expulsá-los das suas terras, privatizando e contaminando seus rios e o solo, promovendo chacinas, tentativas de genocídio e instituição do Marco Temporal, que na prática impede a demarcação da maioria das terras indígenas" (p. 25)
+- "No Brasil, segundo o IBGE, são mais de 18 milhões de pessoas com deficiência, e elas terminam sendo discriminadas e oprimidas por uma forma de sociedade que se recusa a se adaptar às diferentes formas de existência humana, porque está voltada para a acumulação de capital." (p. 25)
+
+**Propostas:**
+- **Cotas raciais, combate ao racismo religioso e institucional e reparação histórica** — "Manutenção e ampliação de cotas para negros nas universidades e serviços públicos" (p. 21); "Combate à intolerância às religiões de matriz africana, como expressão do racismo religioso no Brasil" (p. 21); "Contra a criminalização das culturas periféricas: funk e batalhas de rima não são casos de polícia." (p. 21); "Punição severa (multas de caráter confiscatório ou mesmo expropriação) dos empregadores que estimulam ou toleram racismo nos locais de trabalho." (p. 22); "Expropriação de todos os bilionários herdeiros de famílias escravocratas" (p. 22)
+- **Titulação de terras quilombolas e destinação de recursos à agricultura familiar, quilombola e indígena** — "Expropriação imediata, sem indenização, de todas as fazendas do agronegócio que atuam sobre territórios indígenas e quilombolas." (p. 21); "Titulação já dos territórios quilombolas!" (p. 21); "Que o Banco do Brasil destine suas verbas para a agricultura familiar, quilombola e indígena, e não para o agronegócio escravista." (p. 22)
+- **Demarcação de terras indígenas e reparação histórica** — "Demarcação e regulamentação já de todas terras indígenas é uma medida democrática mínima." (p. 25); "Direito a reparações aos povos indígenas" (p. 25)
+- **Fim da desigualdade salarial de gênero e raça e direitos trabalhistas/previdenciários para mulheres** — "Salário igual para trabalho igual" (p. 23); "Combate à desigualdade salarial e à superexploração das mulheres, em especial das mulheres negras" (p. 23); "Garantia de direitos para todas as trabalhadoras (aposentadoria, licença maternidade, auxílio-doença etc.), independentemente do vínculo empregatício" (p. 23); "Proteção social (aposentadoria, licença maternidade, auxílio-doença etc.) para todas: formais, informais e desempregadas" (p. 23); "Prioridade de acesso ao emprego e às políticas públicas para mulheres trabalhadoras, em especial as mais precarizadas" (p. 23); "Prioridade de acesso ao emprego, renda e políticas públicas para mulheres negras" (p. 24); "Combate à superexploração das trabalhadoras negras" (p. 24); "Garantia de direitos às trabalhadoras domésticas" (p. 24)
+- **Socialização do trabalho doméstico e dos serviços de cuidado** — "Creches e escolas públicas, gratuitas e em tempo integral para todas as crianças, como condição para a independência das mulheres" (p. 23); "Restaurantes populares e lavanderias públicas em todos os bairros" (p. 23); "Ampliação dos serviços públicos de cuidado (idosos, pessoas com necessidades especiais) retirando das mulheres essa sobrecarga." (p. 23)
+- **Combate à violência contra as mulheres por meios sociais e organizativos** — "Campanhas massivas de combate à violência nas escolas, locais de trabalho e meios de comunicação" (p. 22); "Organização de comissões de mulheres nos locais de trabalho, estudo e moradia para prevenir e enfrentar a violência." (p. 22); "Emprego, renda e moradia como condição concreta para romper ciclos de violência." (p. 23); "Combate às ideologias misóginas e responsabilização das plataformas que lucram com a disseminação do ódio contra as mulheres." (p. 23)
+- **Direito ao corpo e à maternidade livre** — "Educação sexual para decidir, contraceptivo para não engravidar, aborto legal e seguro para não morrer." (p. 23); "Aborto legal, seguro e gratuito pelo sus, contra qualquer interferência de igrejas e setores reacionários" (p. 23); "Licença parental de um ano, compartilhada entre responsáveis." (p. 23); "Maternidade como direito, e não como obrigação" (p. 23); "Garantia de condições materiais para quem deseja maternar." (p. 23); "Fim de toda forma de controle sobre o corpo das mulheres." (p. 23)
+- **Direitos e dignidade da população LGBTQIAPN+** — "Direito ao nome social, sem burocracia e sem taxas!" (p. 24); "Contra a patologização das identidades LGBTQIAPN+: não à “cura gay”!" (p. 25); "Pelo direito de existir, contra o apartheid trans! Trabalho, direitos, renda e dignidade! Cotas trans nas universidades e concursos públicos, rumo ao pleno emprego!" (p. 25); "Por banheiros multigênero em órgãos públicos e o direito de pessoas trans e não binárias de usarem o banheiro no qual se sintam seguras." (p. 25); "Emprego, qualificação profissional e políticas públicas para travestis e transexuais que queiram sair da prostituição." (p. 25)
+- **Acessibilidade e inclusão para pessoas com deficiência** — "Mais oportunidades de emprego e condições de trabalho e de estudo. Mais cotas" (p. 26); "Garantia de intérprete de libras nas universidades e meios de comunicação" (p. 26); "Acessibilidade: rampas e elevadores para cadeirantes nos serviços públicos, bancos, supermercados" (p. 26); "Espaços que abafem ruídos para autistas com sensibilidade auditiva, em especial nas escolas." (p. 26)
 
 ---
 
@@ -840,6 +910,22 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Fortalecer a Ouvidoria-Geral da União e a participação social** — "Fortaleceremos ainda mais organismos como a Ouvidoria-Geral da União e as consultas públicas, em laboratórios de inovação cívica, consultas digitais, uso de inteligência artificial, observatórios temáticos, fortalecendo uma nova cultura democrática baseada na participação da sociedade no combate à corrupção." (p. 18)
 - **Debater o sistema de emendas parlamentares com a sociedade** — "É preciso que o tema das emendas parlamentares seja debatido com a sociedade." (p. 16)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "Um país em que todas as pessoas, independentemente de origem, raça, etnia, gênero, orientação sexual, idade, crença ou condição social, possam desenvolver plenamente seu potencial e viver com dignidade. Um Brasil comprometido com a dignidade humana, democrático e inclusivo, que combata todas as formas de discriminação e assegure os direitos das mulheres, da população negra, dos povos indígenas e quilombolas, da população LGBTQIAP+, das pessoas com deficiência, dos povos do campo, das águas e das florestas, com amplo respeito às liberdades e aos direitos humanos." (p. 26)
+- "Voltamos a assegurar aos povos e comunidades tradicionais – indígenas, quilombolas e ribeirinhos – seus direitos, inclusive em relação a seus territórios." (p. 19)
+- "A criação do inédito Ministério dos Povos Indígenas retomou o compromisso do Estado com os povos indígenas. Homologamos 20 novas terras indígenas, somando cerca de 3,2 milhões de hectares de terras protegidas em 11 estados." (p. 20)
+- "Construímos o portfólio mais robusto de políticas de proteção animal da história recente do Brasil. Criamos, em 2023, o inédito Departamento de Proteção, Defesa e Direitos Animais, hoje vinculado à Secretaria Nacional de Biodiversidade, Florestas e Direitos Animais." (p. 69)
+
+**Propostas:**
+- **Combate ao racismo e Estatuto da Igualdade Racial** — "Manteremos o combate ao racismo no centro de nossa estratégia de desenvolvimento, pois não é possível compreender nem superar as desigualdades brasileiras sem enfrentar a questão racial como dimensão estruturante da sociedade." (p. 19); "Vamos continuar engajados na implementação das deliberações da 5ª Conferência Nacional de Promoção da Igualdade Racial (V CONAPIR), realizada em 2025, após um intervalo de sete anos. Avançaremos ainda mais na regulamentação do Estatuto da Igualdade Racial para a consolidação da equidade como política de Estado." (p. 19)
+- **Proteção territorial de povos indígenas e quilombolas** — "Reafirmamos igualmente o compromisso com a proteção dos povos indígenas, de seus territórios, culturas e modos de vida. Persistiremos, garantindo proteção a seus territórios, com ações para demarcação e desintrusão de terras sempre que necessárias." (p. 20); "Temos orgulho da retomada do processo de titulação de territórios quilombolas, que permitiu, desde 2023, a expedição de 65 titulações e assinatura de 72 decretos de desapropriação por interesse social, recorde histórico. Vamos dar continuidade a este processo de reconhecimento do direito ao território, buscando acelerar os procedimentos e garantir que sejam acompanhados de políticas de desenvolvimento territorial." (p. 20)
+- **Inclusão e acessibilidade para pessoas com deficiência** — "Continuaremos promovendo ambientes inclusivos, com a aplicação rigorosa da legislação de acessibilidade. A fiscalização do cumprimento das cotas de contratação de pessoas com deficiência no mercado de trabalho será fortalecida, ampliando a política de inclusão econômica." (p. 23)
+- **Políticas de Estado para diversidade de gênero e população LGBTQIAP+** — "Continuaremos a planejar e construir políticas e ações levando em conta as dimensões de gênero, identidade, orientação sexual, étnico-raciais e classe social assim como as demais desigualdades sociais, de modo a garantir capacidade de o Estado atender, de forma adequada, justa e inclusiva, às pessoas LGBTQIAP+ e todas as suas especificidades." (p. 23)
+- **Proteção da infância e combate à pobreza infantil** — "Continuaremos buscando ampliar e fortalecer as políticas para nossas crianças, por meio do enfrentamento da pobreza infantil, da garantia de acesso às políticas públicas e do direito ao brincar." (p. 24)
+- **Ampliação da proteção e do bem-estar animal** — "A proteção ambiental continuará caminhando ao lado da defesa dos direitos animais. Vamos ampliar o ProPatinhas, fortalecendo as caravanas de castração, e dar continuidade ao SinPatinhas, cadastro nacional de cães e gatos." (p. 71); "Seguiremos fortalecendo o combate aos maus-tratos, com penas que assegurem que essas práticas não se repitam, avançando nesta agenda com prioridade e participação social." (p. 72)
+
 ---
 
 ## Pablo Marçal (PRTB)
@@ -966,6 +1052,19 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Confisco ampliado de patrimônio criminoso** — "Confisco ampliado de patrimônio criminoso" (p. 25)
 - **Fim do compadrio nas indicações para estatais** — "Contração de executivos do mercado com comprovada experiência corporativa – fim do compadrio nas indicações" (p. 20)
 - **IA para combate a fraudes em licitações** — "IA para combate a fraudes em licitações" (p. 20)
+
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "O desenvolvimento econômico somente é legítimo quando alcança todos os brasileiros." (p. 12)
+- "O Governo terá como princípio inegociável a proteção dos direitos e garantias fundamentais previstos na Constituição Federal, assegurando igualdade perante a lei, respeito à dignidade humana e ampliação das oportunidades para todos os cidadãos." (p. 12)
+- "O Brasil é uma nação diversa, formada por diferentes povos, culturas, tradições e realidades regionais. Essa diversidade constitui uma riqueza nacional e deve ser protegida e valorizada." (p. 12)
+
+**Propostas:**
+- **Respeito aos direitos constitucionais de povos indígenas, quilombolas e tradicionais** — "Respeito aos direitos constitucionais dos povos indígenas, comunidades quilombolas e povos tradicionais;" (p. 12)
+- **Acessibilidade e inclusão das pessoas com deficiência** — "Promoção da acessibilidade e inclusão das pessoas com deficiência;" (p. 12)
+- **Programa de integração e regularização fundiária de comunidades tradicionais** — "Preservar a cultura de comunidades tradicionais" (p. 18); "Lançar programa de integração das comunidades tradicionais" (p. 18); "Regularização fundiária de territórios reconhecidos" (p. 18); "Programa de bioeconomia para comunidades tradicionais" (p. 18)
+- **Combate ao comércio ilegal e proteção ao direito dos animais** — "Implementar políticas de combate ao comércio ilegal e proteção ao direito dos animais" (p. 21)
 
 ---
 
@@ -1104,6 +1203,14 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Cassação por Improbidade Gerencial** — "A LRG substituirá a atual anistia de fato por punições proporcionais e imediatas. Municípios com desempenho crítico entrarão em Tutela Gerencial, exigindo dupla assinatura (Prefeito e Comissário) para gastos. Gestores que falharem reiteradamente nas metas de longo prazo estarão sujeitos à Inelegibilidade Superveniente e ao processo de Cassação por Improbidade Gerencial perante os Tribunais de Justiça." (p. 18)
 - **Cláusula Antimáfia contra prefeituras capturadas pelo crime organizado** — "Cláusula Antimáfia: Inspirada na legislação italiana, a lei permitirá ao STJ decretar a dissolução imediata de administrações capturadas pelo crime organizado ou milícias. Nesses casos, o mandato eletivo é extinto e o município passa a ser gerido por uma comissão extraordinária federal por até 24 meses, quebrando o nexo entre o poder político local e as facções criminosas." (p. 18)
 - **Financiamento partidário atrelado à qualidade gerencial** — "O repasse do Fundo Partidário e do Fundo Eleitoral passará a ser calculado com base na qualidade gerencial dos mandatários. Partidos que selecionarem e mantiverem gestores competentes serão premiados; legendas que sustentarem prefeitos cassados ou com indicadores "vermelhos" sofrerão retenção de recursos." (p. 18)
+
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- _Não abordado explicitamente no plano de governo._
+
+**Propostas:**
+- _Não abordado explicitamente no plano de governo._
 
 ---
 
@@ -1271,6 +1378,15 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Fim de supersalários, férias de 60 dias e regalias da elite do funcionalismo** — "Regulamentar as verbas indenizatórias que podem ser pagas acima do limite remuneratório previsto na Constituição Federal, aplicar esse limite a todos os profissionais do setor público, reduzir férias e licenças especiais, limitando as férias a 30 dias anuais, extinguir auxílios e licenças não previstos no setor privado e acabar com a possibilidade de aposentadoria compulsória como punição." (p. 9)
 - **Fim do sigilo de 100 anos e mais transparência pública** — "Tornar a transparência a regra na gestão pública, avançando com a digitalização do governo e a divulgação dos dados em formato aberto, acabando com a possibilidade de sigilos de 100 anos e ampliando as informações divulgadas sobre as despesas públicas, incluindo notas fiscais, uso de imóveis e repasses a organizações da sociedade civil conveniadas." (p. 10)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "Por fim, o Brasil ainda falha em proteger quem está mais exposto ao risco. Crianças, idosos e pessoas com deficiência dependem de uma rede de amparo que, na prática, muitas vezes não garante segurança e dignidade." (p. 62)
+
+**Propostas:**
+- **Garantir aos povos indígenas o direito de exploração econômica de suas terras** — "Garantir às comunidades indígenas o pleno direito de exploração econômica de suas terras, permitindo e regulamentando o exercício de atividades como agricultura, pecuária, extrativismo e turismo." (p. 25)
+- **Fortalecer a rede de proteção à primeira infância vulnerável (Criança Feliz)** — "Fortalecer o Programa Criança Feliz com foco em resultados mensuráveis de desenvolvimento infantil, condicionando os repasses de outros programas de transferência de renda às famílias ao cumprimento das visitas domiciliares e integrando o programa aos serviços de saúde e educação infantil para garantir uma rede coordenada de proteção nos primeiros anos de vida." (p. 65)
+
 ---
 
 ## Ronaldo Caiado (PSD)
@@ -1433,6 +1549,37 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Lei do Enriquecimento Ilícito** — "Propor LEI DO ENRIQUECIMENTO ILÍCITO, para patrimônio incompatível de agentes públicos, pessoas politicamente expostas, operadores financeiros, laranjas e empresas vinculadas. A Lei permitirá a emissão de ordens judiciais para que esses agentes expliquem a origem de bens incompatíveis com sua renda declarada, permitindo bloqueio cautelar e posterior perda civil dos ativos quando não houver comprovação lícita da origem." (p. 20)
 - **Transparência total de obras públicas e Lei do Gestor Público de Boa-Fé** — "Ampliar a transparência das obras públicas, com seguro-garantia, modelagem digital, informações georreferenciadas, identificação dos beneficiários finais e acompanhamento público dos cronogramas e aditivos. Ao mesmo tempo, aprovar uma Lei Nacional do Gestor Público de Boa-Fé, protegendo decisões técnicas regularmente fundamentadas e mantendo a responsabilização por dolo, fraude, corrupção, desvio de finalidade ou erro grosseiro." (p. 20)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "No trabalho, mulheres têm escolaridade elevada, mas assumem parcela desproporcional do cuidado não remunerado, enfrentam interrupções de carreira e menor presença em liderança, tecnologia e áreas de maior salário. Empreendedoras encontram dificuldade de crédito, garantias, redes e mercado. A expansão de creches e serviços de cuidado é política social e econômica." (p. 58)
+- "Crianças e adolescentes representam parcela expressiva da população e sofrem de forma desproporcional com pobreza, violência sexual, homicídio, evasão e insegurança alimentar. O artigo 227 da Constituição determina prioridade absoluta, mas orçamento, coordenação e execução ainda não refletem plenamente esse comando." (p. 61)
+- "Pessoas com deficiência ainda enfrentam barreiras de acessibilidade, educação, transporte e trabalho." (p. 61)
+- "Pretos e pardos constituem a maior parte da população, mas permanecem sobre-representados entre pobres, vítimas de homicídio, presos, trabalhadores informais e estudantes com menor aprendizagem. Essas diferenças não decorrem de uma única causa: combinam legado histórico, desigualdade territorial, discriminação, escola de qualidade desigual, violência, baixa acumulação patrimonial e redes de oportunidade limitadas." (p. 67)
+- "Mulheres negras enfrentam sobreposição de desigualdades de renda, cuidado, saúde materna e violência. Comunidades quilombolas e povos indígenas lidam com acesso insuficiente a serviços, regularização territorial, segurança e oportunidades econômicas compatíveis com seus modos de vida." (p. 67)
+
+**Propostas:**
+- **Creche e infraestrutura do cuidado como base da autonomia feminina** — "Acelerar oferta de creche em áreas de maior demanda, ampliar horários compatíveis com trabalho e apoiar serviços de cuidado a idosos e pessoas com deficiência. Assegurar busca ativa e flexibilidade acadêmica para a permanência de gestantes, puérperas e estudantes com filhos na educação básica, na Educação de Jovens e Adultos. Reconhecer o cuidado como infraestrutura que libera tempo e renda." (p. 59)
+- **Igualdade salarial e Selo 'Empresa pela Igualdade'** — "Aplicar a legislação de igualdade remuneratória com critérios objetivos, proteção de dados e correção de discriminação comprovada. Estimular avaliação de funções, retorno após maternidade, desenvolvimento de liderança e ambientes sem assédio. Criar o Selo "Empresa pela Igualdade", com critérios públicos, para reconhecer empresas que promovam equidade de gênero e condições dignas, inclusive na contratação e permanência de mulheres periféricas, mães atípicas e mulheres acima de 50 anos." (p. 59)
+- **Empreendedorismo e crédito para mulheres** — "Criar garantias, educação financeira, mentoria, compras e redes para empreendedoras, especialmente em periferias e áreas rurais. Medir sobrevivência, faturamento e empregos, evitando programas limitados à abertura formal do negócio." (p. 59)
+- **Mulheres no agro, ciência, tecnologia e indústria** — "Ampliar formação, bolsas, extensão, sucessão rural e acesso a ativos produtivos. Incentivar participação em STEM, inovação e liderança por meio de orientação, redes, ambientes seguros e critérios transparentes de seleção." (p. 59)
+- **Combate ao assédio no trabalho e proteção à maternidade** — "Fortalecer canais, inspeção, protocolos e responsabilização por assédio e violência, incluindo trabalho doméstico, rural e plataformas." (p. 59); "Estender igualdade de acesso, prevenção ao assédio e proteção à maternidade às carreiras públicas civis e militares, respeitadas suas exigências funcionais." (p. 60)
+- **Participação política das mulheres sem violência** — "Combater violência política de gênero e ataques coordenados, garantir investigação e segurança e fortalecer formação de candidatas e lideranças. Partidos deverão cumprir regras de financiamento e transparência, sem candidaturas fictícias." (p. 60)
+- **Dados e orçamento com recorte de gênero** — "Identificar impacto de políticas e gastos sobre mulheres e publicar indicadores de segurança, saúde, trabalho e cuidado. Programas serão revisados por resultado, e recursos seguirão diagnóstico territorial, não apenas distribuição histórica." (p. 60)
+- **Prioridade absoluta para crianças e adolescentes** — "Identificar orçamento federal da infância, publicar metas e criar instância de coordenação na Presidência. Políticas de saúde, educação, assistência, segurança, cultura, esporte, cidades e internet deverão demonstrar impacto sobre crianças e adolescentes." (p. 62)
+- **Proteção da infância contra violência, exploração e tráfico** — "Integrar Disque 100, conselhos tutelares, escola, saúde, polícia, perícia e justiça em protocolo nacional. Ampliar escuta especializada, atendimento sem revitimização, proteção a testemunhas, investigação digital e resposta a exploração sexual, trabalho infantil e tráfico." (p. 62)
+- **Convivência familiar, acolhimento e adoção** — "Priorizar apoio à família de origem quando seguro, famílias acolhedoras e acolhimento de pequeno porte. Reduzir tempo de decisão judicial, apoiar egressos, irmãos e crianças com deficiência e organizar resposta a orfandade por violência, epidemias e desastres." (p. 62)
+- **Juventude vulnerável: aprendizagem e primeiro trabalho** — "Expandir aprendizagem profissional no setor público e privado, formação digital, orientação e serviço civil voluntário em atividades comunitárias. Priorizar jovens fora da escola e do trabalho, egressos do acolhimento e do sistema socioeducativo e territórios de violência." (p. 62)
+- **Sistema socioeducativo que interrompa carreiras criminais** — "Garantir escolarização, formação, saúde mental, esporte, cultura e acompanhamento familiar, com segurança e separação por perfil. Medir reincidência e inserção após a medida e impedir recrutamento de adolescentes por facções dentro das unidades." (p. 62)
+- **Inclusão das pessoas com deficiência** — "Assegurar acessibilidade universal, tecnologia assistiva, educação inclusiva com apoio especializado, reabilitação, transporte e trabalho. Simplificar avaliação biopsicossocial, reduzir espera e apoiar famílias cuidadoras, preservando autonomia e escolha." (p. 62)
+- **Habitação social com prioridade a pessoas com deficiência e famílias vulneráveis** — "Integrar produção habitacional, urbanização, regularização fundiária, locação social e melhoria de moradias. Priorizar famílias com crianças, mulheres vítimas de violência, pessoas com deficiência e idosos, com localização próxima a emprego, transporte e serviços." (p. 62)
+- **Metas de equidade racial em todas as políticas públicas** — "Exigir que programas relevantes de educação, saúde, segurança, trabalho, habitação e crédito publiquem resultados por raça, território e gênero, observada a proteção de dados. Diferenças persistentes gerarão planos de correção, recursos e assistência técnica." (p. 67)
+- **Aprendizagem com equidade racial** — "Direcionar tutoria, alfabetização, escola integral e professores adequados aos estudantes com maiores defasagens. Monitorar diferenças de aprendizagem e conclusão e apoiar escolas para corrigi-las, evitando baixar expectativas ou substituir conteúdo por retórica." (p. 68)
+- **Trabalho, empreendedorismo e patrimônio para territórios vulneráveis** — "Ampliar qualificação, intermediação, crédito, garantias e compras públicas para empreendedores de territórios vulneráveis, com critérios econômicos e assistência. Apoiar formalização, cooperativismo, propriedade e educação financeira, medindo renda, sobrevivência de negócios e empregos." (p. 68)
+- **Igualdade racial de oportunidades no serviço público e nas empresas** — "Aprimorar políticas de inclusão em concursos e formação, respeitando decisões judiciais e mérito. Estimular programas empresariais de diversidade com metas voluntárias, transparência e foco em recrutamento, desenvolvimento e liderança, sem burocracia simbólica." (p. 68)
+- **Regularização territorial de comunidades quilombolas** — "Acelerar regularização territorial com segurança jurídica, saneamento, energia, conectividade, saúde, educação, assistência técnica e apoio a cadeias produtivas e turismo. Projetos serão construídos com participação das comunidades e respeito a patrimônio cultural." (p. 68)
+- **Povos indígenas: direitos, proteção territorial e autonomia** — "Proteger territórios contra invasão, garimpo, madeira e crime organizado; fortalecer saúde e educação intercultural; e apoiar atividades sustentáveis escolhidas pelas comunidades. Consultas seguirão a Constituição e normas aplicáveis, sem tutela que impeça autonomia." (p. 68)
+
 ---
 
 ## Rui Costa Pimenta (PCO)
@@ -1554,6 +1701,14 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 
 **Propostas:**
 - _Não abordado explicitamente no plano de governo._
+
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "O latifúndio mata de fome e de bala milhares de brasileiros. É urgente a luta pelo fim dos latifúndios e o direito à terra para todos que nela trabalham; o fim da perseguição e a garantia das terras e condições dignas de vida para os índios" (p. 4)
+
+**Propostas:**
+- **Demarcação de terras indígenas e expulsão dos latifundiários invasores** — "Demarcação e posse da terra para todos os índios das retomadas; expulsão dos latifundiários que invadiram as terras dos índios" (p. 4)
 
 ---
 
@@ -1691,6 +1846,37 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 - **Julgamento, prisão e confisco dos bens de todos os corruptos** — "defendemos o julgamento e a responsabilização de corruptos e corruptores, independentemente de partido, cargo ou poder econômico; prisão nos casos previstos em lei; confisco dos bens e valores provenientes dos crimes; ressarcimento integral dos prejuízos" (p. 25)
 - **Fim dos altos salários e privilégios no setor público** — "Fim dos Altos salários dos altos executivos do Estado, juízes, parlamentares e generais, eliminando penduricalhos, verbas indenizatórias e emendas secretas." (p. 13); "Obrigatoriedade de uso do SUS e da Educação Pública por Agentes Políticos: Determinação legal para que o Presidente, governadores, prefeitos, deputados, senadores e juízes utilizem exclusivamente o Sistema Único de Saúde (SUS) para seus atendimentos e de seus dependentes." (p. 13)
 
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "As mulheres empregadas no Brasil ganham em média 21,3% a menos que os homens e dedicam cerca de 10 horas a mais por semana ao trabalho doméstico e de cuidado não remunerado." (p. 27)
+- "A população negra no país é de 56%. No entanto, mesmo sendo a maioria da população brasileira, está entre as principais vítimas do capitalismo: são 73% entre os desempregados, 43% da população que não tem acesso a esgotamento sanitário e constituem quase 90% dos mortos pela violência policial." (p. 31)
+- "A população de pessoas com deficiência é de 14,4 milhões (IBGE, 2022). Somam-se a esses dados pessoas com dificuldade, permanente ou não, na visão, audição, coordenação motora (equilíbrio e força nas mãos, braços ou pernas, por exemplo), déficits sensoriais e na interação social, entre outros." (p. 34)
+- "Essa população não somente é vista como descartável pelo capitalismo, como também enfrenta barreiras no acesso à educação e no ingresso e permanência no mercado de trabalho." (p. 34)
+- "Ao longo dos séculos, milhões de indígenas foram mortos, suas terras foram roubadas e seus costumes e cultura foram impiedosamente destruídos. Antes da invasão de Portugal, em 1500, a população brasileira era integralmente composta pelos povos indígenas, cerca de oito milhões de pessoas." (p. 35)
+- "Hoje, resultado de um genocídio que se perpetua até os dias atuais, são pouco mais de 1,6 milhão. De acordo com o Cimi, mais de 1.200 casos de violações patrimoniais cometidos contra a população indígena foram registrados em 2023, além de 404 ocorrências de ataques contra pessoas indígenas, incluindo tentativas de assassinato, estupros, atentados e agressões." (p. 35)
+- "das 1.391 terras reivindicadas pelos povos indígenas no Brasil, 867 (62% do total) apresentam alguma pendência para a finalização do processo demarcatório." (p. 35)
+
+**Propostas:**
+- **Igualdade salarial e fim da discriminação de gênero no trabalho** — "Igualdade salarial rígida: Aplicação severa de punição às empresas que pagarem salários inferiores às mulheres no desempenho das mesmas funções exercidas por homens." (p. 28); "Combater discriminação e assédio no trabalho e priorizar mulheres em programas de emprego, crédito público, habitação e economia solidária;" (p. 28)
+- **Rede pública de cuidados para aliviar o trabalho doméstico das mulheres** — "Rede pública de cuidados: Universalização do acesso a creches e pré-escolas públicas e em tempo integral, lavanderias comunitárias e restaurantes populares para retirar das costas das mulheres o fardo do trabalho doméstico não pago." (p. 28)
+- **Direitos reprodutivos e legalização do aborto** — "Direitos reprodutivos e saúde da mulher: Garantia de atenção integral à saúde sexual e reprodutiva. Descriminalização e legalização do aborto, primando pela vida das mulheres, tratando a saúde da mulher como questão de saúde pública." (p. 28)
+- **Campanhas permanentes de formação antimachista** — "Campanhas nacionais permanentes de conscientização e formação anti-machista nas escolas, bairros e locais de trabalho;" (p. 28)
+- **Políticas de reparação histórica e cultural antirracista** — "Estabelecer políticas de reparação histórica e cultural, alterando nome de ruas e monumentos que cultuam figuras de escravistas, ditadores e genocidas. No seu lugar devemos levantar nomes de heróis explorados e oprimidos." (p. 32)
+- **Ampliação de vagas da população negra no setor público** — "Ampliar vagas nos setores públicos reservadas para a população negra." (p. 32)
+- **Liberdade religiosa e combate à intolerância contra religiões de matriz africana** — "Assegurar a liberdade religiosa, especialmente a promoção do respeito às religiões de matriz afro-brasileira (candomblé e umbanda). Ter como prioridade o enfrentamento por parte do governo dos crimes de intolerância religiosa contra essas religiões." (p. 32)
+- **Titulação de terras quilombolas e fortalecimento da Fundação Palmares** — "Garantir o reconhecimento e a titulação de terras quilombolas no Brasil. Garantir tudo que for necessário para o pleno funcionamento da Fundação Cultural Palmares e do INCRA para acelerar os processos de emissão de certidão e para os estudos técnicos, delimitação e emissão do título de propriedade coletivo e definitivo à comunidade." (p. 32)
+- **Enfrentamento institucional à LGBTfobia com canais de denúncia e responsabilização** — "Firme combate a todas as manifestações LGBTfóbicas. Fortalecer o enfrentamento institucional à LGBTfobia, com acompanhamento regular dos dados sobre a violência LGBTfóbica, além de canais seguros de denúncia e mecanismos de apuração e responsabilização de servidores que pratiquem LGBTfobia." (p. 33)
+- **Casas de acolhimento para jovens LGBTI+ expulsos de casa** — "Casas de acolhimento LGBTI+: criação de casas e centros de acolhimento para jovens LGBTIA+ expulsos de casa, garantindo moradia, alimentação, acompanhamento psicológico e reinserção escolar ou profissional." (p. 33)
+- **Ampliação e fortalecimento do BPC para pessoas com deficiência** — "Fortalecer e ampliar o Benefício de Prestação Continuada (BPC). Ampliar critério de renda para acesso ao benefício, considerando efetivamente os gastos da família com medicamentos, alimentação especial, transporte, cuidadores e tecnologias assistivas; combater cortes arbitrários e burocracias que excluam quem necessita do benefício;" (p. 34)
+- **Produção nacional de materiais em braile** — "Ampliar a produção nacional de materiais em braile para baratear seu acesso à população cega;" (p. 34)
+- **Programa Nacional de Acessibilidade Universal** — "Programa Nacional de Acessibilidade Universal, com as frentes emergenciais de trabalho, para eliminar barreiras arquitetônicas, em escolas, universidades, hospitais, postos de saúde, transportes, moradias e demais equipamentos públicos e todo o espaço urbano;" (p. 34)
+- **Cotas de trabalho para pessoas com deficiência e combate ao capacitismo salarial** — "Defesa e ampliação das cotas para pessoas com deficiência no trabalho, com fiscalização rigorosa das empresas, punição às que fraudarem ou descumprirem a legislação e fortalecimento da inclusão no serviço público. Combater a utilização da deficiência como justificativa para salários inferiores, terceirização, precarização ou discriminação profissional;" (p. 34)
+- **Demarcação imediata das terras indígenas e retirada de invasores** — "Demarcação imediata de todas as terras indígenas e conclusão dos processos administrativos paralisados, garantindo proteção territorial efetiva e orçamento público suficiente para execução das demarcações. Retirada de grileiros, garimpeiros, madeireiros e demais invasores." (p. 35)
+- **Fim do marco temporal** — "Fim do marco temporal e de qualquer medida que restrinja o direito originário dos povos indígenas às suas terras." (p. 35)
+- **Fortalecimento da Funai e da política indigenista** — "Fortalecimento da Funai e demais órgãos públicos responsáveis pela política indigenista, com concursos públicos, orçamento adequado e fim da terceirização de funções estratégicas." (p. 35)
+- **Defesa da cultura e dos direitos dos povos originários e tradicionais** — "Demarcação e posse imediata de todas as terras indígenas e quilombolas; garantir aos indígenas escolas diferenciadas, incentivar e apoiar às línguas indígenas; defender a cultura e os direitos dos povos originários e tradicionais." (p. 63)
+
 ---
 
 ## Veterinário Wilson Grassi (Democrata)
@@ -1821,5 +2007,19 @@ Dump em Markdown de tudo que está em `data/*.js`: dados básicos e citações d
 **Propostas:**
 - **Auditoria pública do cumprimento da lei de integração de dados, órgão a órgão** — "Auditoria e publicação, no primeiro ano, do grau de cumprimento da Lei nº 14.534/2023 órgão por órgão, com prazo de regularização e responsável nomeado." (p. 44)
 - **Transparência ativa da execução orçamentária e dos contratos** — "Publicação em formato aberto, e em tempo real quando possível, da execução orçamentária, dos contratos e das metas deste plano." (p. 45)
+
+### Direitos e Bem-Estar
+
+**Diagnóstico:**
+- "É uma bandeira pessoal do candidato e uma pauta com base legal sólida, que a maioria dos planos de governo despacha em uma linha protocolar. Aqui ela tem eixo próprio." (p. 29)
+- "Com uma advertência de método, dita logo: proteção animal não substitui política econômica, de segurança ou de saúde. Ela se conecta às três, e é assim que aparece neste documento." (p. 29)
+- "A lei existe e não chega ao território. Multa alta em decreto não vira punição sem fiscal, sem perícia, sem delegacia que registre e sem laudo capaz de sustentar a denúncia. O problema brasileiro em maus-tratos deixou de ser legislativo há algum tempo. É de capacidade operacional." (p. 29)
+
+**Propostas:**
+- **Sistema nacional de proteção animal, com cadastro de infratores e fundo próprio** — "Apoiar a aprovação e o aperfeiçoamento do projeto em tramitação que cria um sistema nacional de proteção animal, com cadastro nacional de animais, cadastro nacional de infratores e fundo próprio." (p. 30)
+- **Fiscalização federal com poder de sanção efetiva contra maus-tratos** — "Estruturar a fiscalização federal para dar efetividade ao Decreto nº 12.877/2026 significa três coisas concretas: pessoal e equipamento para que a fiscalização chegue ao local do fato, integração entre órgão ambiental, polícias e serviço veterinário oficial para que a autuação se sustente juridicamente, e inscrição em dívida ativa com cobrança executada de quem não paga." (p. 30); "Multa lançada e nunca cobrada ensina ao infrator que não há consequência." (p. 30)
+- **Delegacias e núcleos especializados em crimes contra animais** — "Induzir por cofinanciamento a criação de delegacias e núcleos especializados em crimes contra animais nas capitais e regiões metropolitanas, com protocolo veterinário-forense padronizado." (p. 30)
+- **Implementação real da Amar: resgate e acolhimento de animais em desastres** — "A Lei nº 15.355/2026 distribui competências entre União, estados e municípios e manda incorporar a proteção animal aos planos de contingência. Implementar significa treinar equipe de resgate, credenciar profissional habilitado, prever centro de triagem e pagar por tudo isso antes do desastre." (p. 30)
+- **Fortalecer a estrutura federal de proteção animal, com orçamento próprio** — "Consolidar e ampliar a estrutura federal de proteção e direitos animais, com orçamento próprio e transparente. Órgão sem verba executada é organograma." (p. 30)
 
 ---

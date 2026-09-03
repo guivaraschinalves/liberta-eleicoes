@@ -136,6 +136,19 @@ window.CANDIDATES_DATA["augusto-cury"] = {
         { title: "Fortalecimento dos órgãos de controle", quotes: [{ quote: "Tribunais de Contas, Controladorias, Ministério Público, Polícia Federal e demais instituições de fiscalização receberão investimentos em tecnologia, integração de dados e capacitação técnica. O combate à corrupção depende de instituições fortes, independentes e tecnicamente preparadas.", page: 52 }] },
         { title: "Cultura nacional de integridade e compliance no setor público", quotes: [{ quote: "Implantaremos programas permanentes de ética pública, integridade administrativa e educação cidadã, fortalecendo valores republicanos desde a escola até a alta administração pública. Promoveremos a adoção de programas de Compliance e governança corporativa no setor público, modernizando legislações burocráticas que geram brechas para desvios.", page: 53 }] }
       ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "No mercado de trabalho, levantamentos oficiais recentes mostram que a remuneração média das mulheres permanece aproximadamente 21% inferior à dos homens nas empresas com 100 ou mais empregados.", page: 86 },
+        { quote: "Dados divulgados pelo Sebrae indicam que negócios liderados por mulheres enfrentam taxas de juros, em média, cerca de 4 pontos percentuais superiores às aplicadas a negócios liderados por homens.", page: 86 },
+        { quote: "Estamos diante de uma verdadeira tirania da beleza, que pode produzir um processo de deterioração coletiva da autoimagem e da autoestima feminina.", page: 87 }
+      ],
+      proposals: [
+        { title: "Transparência salarial e mais mulheres em posições de liderança", quotes: [{ quote: "Fortaleceremos os mecanismos de transparência salarial, fiscalização e cumprimento da legislação que determina igualdade remuneratória para trabalho de igual valor.", page: 89 }, { quote: "Também promoveremos políticas que ampliem a presença feminina em posições de liderança e decisão nos setores público e privado.", page: 89 }] },
+        { title: "Mecanismos de transparência contra distorções no crédito para mulheres", quotes: [{ quote: "Em articulação com o Banco Central, instituições financeiras, Sebrae, universidades e entidades especializadas, promoveremos estudos e mecanismos de transparência capazes de identificar possíveis distorções nos modelos de concessão de crédito.", page: 89 }, { quote: "O sistema financeiro precisa avaliar pessoas pelo risco que efetivamente representam, e não reproduzir automaticamente desigualdades históricas. Crédito justo significa oportunidade para empreender, produzir renda, construir patrimônio e conquistar autonomia.", page: 90 }] },
+        { title: "Prioridade a mulheres qualificadas nas indicações ao STF", quotes: [{ quote: "No âmbito das competências constitucionais da Presidência da República, assumimos o compromisso de priorizar mulheres altamente qualificadas nas indicações para vagas que venham a surgir no Supremo Tribunal Federal, sempre observados os requisitos constitucionais para o exercício do cargo.", page: 93 }, { quote: "A presença feminina nos mais elevados espaços institucionais também transmite uma mensagem poderosa às novas gerações: não existem lugares que uma menina brasileira não possa sonhar em ocupar.", page: 93 }] },
+        { title: "Campanhas nacionais contra a \"tirania da beleza\" e valorização da diversidade", quotes: [{ quote: "Desenvolveremos campanhas nacionais de valorização da diversidade humana e programas de educação emocional e uso saudável das redes sociais.", page: 91 }] }
+      ]
     }
   }
 };

@@ -3,12 +3,12 @@
 // Editar aqui para adicionar/renomear temas. Cada candidato (data/candidates/*.js)
 // deve preencher uma entrada para cada id abaixo.
 //
-// window.THEMES é a lista dos 6 temas mostrados na seção "Temas". Economia é o
+// window.THEMES é a lista dos 7 temas mostrados na seção "Temas". Economia é o
 // único com `subthemes` (mantém os 7 subtemas herdados do ftm-eleicoes, cada
-// um com Diagnóstico/Propostas); os outros 5 são "chatos" (flat): uma aba de
+// um com Diagnóstico/Propostas); os outros 6 são "chatos" (flat): uma aba de
 // Diagnóstico e uma de Propostas direto, sem nível de subtema. Candidatos leem
 // esses dados de `c.economy.<subthemeId>` (Economia) ou `c.themes.<themeId>`
-// (os outros 5) — ver app.js (buildTemasSection).
+// (os outros 6) — ver app.js (buildTemasSection).
 // ============================================================================
 
 window.ECONOMY_SUBTHEMES = [
@@ -27,7 +27,8 @@ window.THEMES = [
   { id: "seguranca", label: "Segurança Pública" },
   { id: "saude", label: "Saúde" },
   { id: "politica-externa", label: "Política Externa" },
-  { id: "corrupcao", label: "Combate à Corrupção" }
+  { id: "corrupcao", label: "Combate à Corrupção" },
+  { id: "direitos-bem-estar", label: "Direitos e Bem-Estar" }
 ];
 
 // Ordem de exibição dos candidatos: alfabética pelo nome de urna — não pela

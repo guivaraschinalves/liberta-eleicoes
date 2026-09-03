@@ -120,6 +120,14 @@ window.CANDIDATES_DATA["rui-costa-pimenta"] = {
     corrupcao: {
       diagnosis: [],
       proposals: []
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "O latifúndio mata de fome e de bala milhares de brasileiros. É urgente a luta pelo fim dos latifúndios e o direito à terra para todos que nela trabalham; o fim da perseguição e a garantia das terras e condições dignas de vida para os índios", page: 4 }
+      ],
+      proposals: [
+        { title: "Demarcação de terras indígenas e expulsão dos latifundiários invasores", quotes: [{ quote: "Demarcação e posse da terra para todos os índios das retomadas; expulsão dos latifundiários que invadiram as terras dos índios", page: 4 }] }
+      ]
     }
   }
 };

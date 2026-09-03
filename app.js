@@ -247,9 +247,10 @@
     return card;
   }
 
-  // Card dos outros 5 temas (Educação, Segurança, Saúde, Política Externa,
-  // Combate à Corrupção): lê de `c.themes[themeId]` — mesmo formato de
-  // Economia (Diagnóstico + Propostas), só que sem nível de subtema.
+  // Card dos outros 6 temas (Educação, Segurança, Saúde, Política Externa,
+  // Combate à Corrupção, Direitos e Bem-Estar): lê de `c.themes[themeId]` —
+  // mesmo formato de Economia (Diagnóstico + Propostas), só que sem nível
+  // de subtema.
   function buildThemeCard(id, themeId, kind) {
     var c = window.CANDIDATES_DATA[id];
     var src = (window.SOURCES_DATA || {})[id];
@@ -303,7 +304,7 @@
 
   // Seção "Temas": abas de nível 1 para cada tema de window.THEMES. Economia
   // é o único com `subthemes` — ganha um segundo nível de abas (um por
-  // subtema) antes do par Diagnóstico/Propostas; os outros 5 temas vão direto
+  // subtema) antes do par Diagnóstico/Propostas; os outros 6 temas vão direto
   // para o par Diagnóstico/Propostas. `ids` e `idPrefix` são parametrizados
   // porque a aba Comparar 1×1 reusa esta mesma função para só 2 candidatos,
   // num host e prefixo de id diferentes (evita ids de DOM duplicados entre a

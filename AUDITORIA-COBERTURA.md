@@ -88,23 +88,18 @@ Gerado por `scripts/audit_coverage.py`. Cada item abaixo é uma página do plano
 - **p.57** (palavras-chave: infraestrutura, investimento, saneamento) — "…a defesa cibernética do país, protegendo serviços públicos, infraestrutura crítica e cidadãos contra ataques e fraudes, e garantir que a inteligência artificial seja usada a serviço das pessoas, não contra elas. Meio ambiente: o at…"
 - **p.59** (palavras-chave: infraestrutura, rodovia, ferrovia, porto, aeroporto) — "…im, aproveitamos apenas uma fração desse potencial. Toda a infraestrutura que este plano já prevê, dos aeroportos e rodovias às ferrovias, como o Trem do Nordeste, trabalha a favor do turismo: são as vias que levam o visitante mais…"
 
-### Educação — 1 página(s) não citada(s) com possível conteúdo
-- **p.40** (palavras-chave: educacao, escola, universidade) — "…ar o esporte competitivo às escolas, muito além da aula de educação física: times escolares, treinos no contraturno e competições municipais e estaduais. O programa é também uma arma contra a evasão escolar e a repetência: o…"
-
 ---
 
 ## Hertz da Conceição Dias (hertz-dias)
-
-### Tributação — 1 página(s) não citada(s) com possível conteúdo
-- **p.27** (palavras-chave: imposto, tributacao, aliquota) — "…os pelos excedentes das empresas expropriadas, e não por impostos, voltados à industrialização, inovação tecnológica e expansão da infraestrutura nacional organicamente associados a todas as universidades e institutos…"
 
 ### Mercado de Trabalho e Renda — 3 página(s) não citada(s) com possível conteúdo
 - **p.22** (palavras-chave: emprego, desemprego, trabalhador) — "…uz custos e amplia seus lucros. Em um cenário de crise, desemprego e cortes sociais, essa sobrecarga aumenta, ampliando a dependência econômica e aprisionando muitas mulheres em relações de violência. A violência contra as m…"
 - **p.23** (palavras-chave: emprego, desemprego, trabalhador) — "…ELEIÇÕES 2026 | COM OS TRABALHADORES CONTRA O SISTEMA 22 Emprego, renda e moradia como condição concreta para romper ciclos de violência. Combate às ideologias misóginas e responsabilização das plataformas que lucram…"
 - **p.25** (palavras-chave: emprego, trabalhador, qualificacao profissional) — "…ns nas universidades e concursos públicos, rumo ao pleno emprego! Por banheiros multigênero em órgãos públicos e o direito de pessoas trans e não binárias de usarem o banheiro no qual se sintam seguras. Emprego, quali…"
 
-### Infraestrutura e Investimento — 1 página(s) não citada(s) com possível conteúdo
+### Infraestrutura e Investimento — 2 página(s) não citada(s) com possível conteúdo
 - **p.11** (palavras-chave: infraestrutura, investimento, saneamento, ppp) — "…saneamento, enfrentando doenças relacionadas à falta de infraestrutura. EDUCAÇÃO Da mesma forma, garantir educação pública de qualidade exige romper com a lógica que subordina a formação e o conhecimento às necessidades do mercad…"
+- **p.13** (palavras-chave: infraestrutura, ferrovia, saneamento) — "…a habitacional Construção massiva de moradias populares e infraestrutura por empresa pública de obras Urbanização das periferias e comunidades populares Universalização do saneamento básico Garantia de infraestrutura, trans…"
 
 ### Educação — 3 página(s) não citada(s) com possível conteúdo
 - **p.2** (palavras-chave: educacao, ensino, universidade, educacao basica) — "…a população. O ensino público segue pelo mesmo caminho, da educação básica às universidades públicas. Como se não bastasse, a violência urbana vem se transformando num dos principais problemas das famílias. Nas periferias e n…"
@@ -120,6 +115,9 @@ Gerado por `scripts/audit_coverage.py`. Cada item abaixo é uma página do plano
 
 ### Combate à Corrupção — 1 página(s) não citada(s) com possível conteúdo
 - **p.9** (palavras-chave: transparencia, fiscalizacao, controle) — "…os riscos da atividade econômica aos trabalhadores, não há transparência em seus algoritmos e não há nenhum controle público. Defendemos aqui as reivindicações atuais dos trabalhadores de aplicativos, surgidas em suas lutas e no t…"
+
+### Direitos e Bem-Estar — 1 página(s) não citada(s) com possível conteúdo
+- **p.18** (palavras-chave: mulher, feminicidio, juventude) — "…al até assaltos, roubos, feminicídios, violência contra as mulheres, atuação de organizações criminosas – tráfico, milícias, facções ou outras organizações –, além da violência praticada pelo próprio Estado contra as perife…"
 
 ---
 
@@ -145,6 +143,10 @@ Gerado por `scripts/audit_coverage.py`. Cada item abaixo é uma página do plano
 
 ### Saúde — 1 página(s) não citada(s) com possível conteúdo
 - **p.25** (palavras-chave: saude, sus, saude mental) — "…ações específicas para seu perfil. Aprimorar a política de saúde mental para a juventude é um de nossos compromissos, com foco na Política Nacional de Atenção Psicossocial, na redução de danos e na desconstrução de preconc…"
+
+### Direitos e Bem-Estar — 2 página(s) não citada(s) com possível conteúdo
+- **p.29** (palavras-chave: mulher, racismo, lgbt, lgbtqia, juventude) — "…ação sexual de crianças e adolescentes, à violência contra mulheres e pessoas LGBTQIAP+, ao racismo, às fraudes bancárias eletrônicas, aos crimes de alta tecnologia, aos crimes de ódio e aos delitos cibernéticos praticados…"
+- **p.75** (palavras-chave: mulher, lgbt, lgbtqia) — "…Vamos avançar na efetiva equivalência remuneratória entre mulheres e homens, fortalecendo a implementação da Lei de Igualdade Salarial, sancionada no atual mandato do Presidente Lula. A execução dos Planos de Ação nas empr…"
 
 ---
 
@@ -277,6 +279,9 @@ Gerado por `scripts/audit_coverage.py`. Cada item abaixo é uma página do plano
 - **p.40** (palavras-chave: transparencia, fiscalizacao, controle) — "…polícia, Ministério Público e entidades esportivas. Exigir transparência de beneficiário final, conflito de interesse e contas auditadas de organizações que recebem recursos públicos.…"
 - **p.41** (palavras-chave: transparencia, fiscalizacao, controle) — "…lver futebol feminino, profissionalizar gestão, aperfeiçoar transparência de clubes e SAFs e combater violência de torcidas e racismo. Modernizar estádios e operação de jogos com responsabilidade fiscal, acessibilidade, segurança e…"
 
+### Direitos e Bem-Estar — 1 página(s) não citada(s) com possível conteúdo
+- **p.19** (palavras-chave: mulher, feminicidio, violencia domestica, infancia, juventude) — "…bancos, fintechs, operadoras e plataformas. 11. Proteger mulheres, crianças e adolescentes contra todas as formas de violência • Criar a Secretaria Nacional da Segurança da Mulher, da Criança e Minorias, vinculada ao Minis…"
+
 ---
 
 ## Rui Costa Pimenta (rui-costa-pimenta)
@@ -323,6 +328,9 @@ Gerado por `scripts/audit_coverage.py`. Cada item abaixo é uma página do plano
 ### Combate à Corrupção — 1 página(s) não citada(s) com possível conteúdo
 - **p.11** (palavras-chave: transparencia, fiscalizacao, controle) — "…proteção remuneração mínima, proteção previdenciária, transparência algorítmica, previdenciária, transparência algorítmica, direito de organização e negociação direito de organização e negociação coletiva. Fim da proprie…"
 
+### Direitos e Bem-Estar — 1 página(s) não citada(s) com possível conteúdo
+- **p.48** (palavras-chave: racismo, direitos humanos, juventude) — "…, enfoque nos direitos humanos, não letalidade, antirracismo e não letalidade, antirracismo e feminismo. Adoção de mecanismos feminismo. Adoção de mecanismos transparentes de promoção. transparentes de promo…"
+
 ---
 
 ## Wilson Grassi Junior (wilson-grassi)
@@ -351,6 +359,9 @@ Gerado por `scripts/audit_coverage.py`. Cada item abaixo é uma página do plano
 
 ### Combate à Corrupção — 1 página(s) não citada(s) com possível conteúdo
 - **p.46** (palavras-chave: transparencia, fiscalizacao, controle) — "…20, acompanhada indicador a indicador e por prestador, com transparência sobre quem vai descumprir antes de o prazo vencer. Esgoto tratado é a política de saúde com melhor relação custo-benefício disponível.…"
+
+### Direitos e Bem-Estar — 1 página(s) não citada(s) com possível conteúdo
+- **p.23** (palavras-chave: violencia domestica, juventude, protecao animal, maus-tratos) — "…praticar depois violência contra pessoas, com destaque para violência doméstica e crimes graves. O achado não é consenso fechado, e não o apresentamos como tal. Mas é sólido o bastante para justificar uma providência barata: registrar qu…"
 
 ---
 

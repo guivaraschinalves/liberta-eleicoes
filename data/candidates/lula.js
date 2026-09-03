@@ -176,6 +176,31 @@ window.CANDIDATES_DATA["lula"] = {
         { title: "Fortalecer a Ouvidoria-Geral da União e a participação social", quotes: [{ quote: "Fortaleceremos ainda mais organismos como a Ouvidoria-Geral da União e as consultas públicas, em laboratórios de inovação cívica, consultas digitais, uso de inteligência artificial, observatórios temáticos, fortalecendo uma nova cultura democrática baseada na participação da sociedade no combate à corrupção.", page: 18 }] },
         { title: "Debater o sistema de emendas parlamentares com a sociedade", quotes: [{ quote: "É preciso que o tema das emendas parlamentares seja debatido com a sociedade.", page: 16 }] }
       ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "Um país em que todas as pessoas, independentemente de origem, raça, etnia, gênero, orientação sexual, idade, crença ou condição social, possam desenvolver plenamente seu potencial e viver com dignidade. Um Brasil comprometido com a dignidade humana, democrático e inclusivo, que combata todas as formas de discriminação e assegure os direitos das mulheres, da população negra, dos povos indígenas e quilombolas, da população LGBTQIAP+, das pessoas com deficiência, dos povos do campo, das águas e das florestas, com amplo respeito às liberdades e aos direitos humanos.", page: 26 },
+        { quote: "Voltamos a assegurar aos povos e comunidades tradicionais – indígenas, quilombolas e ribeirinhos – seus direitos, inclusive em relação a seus territórios.", page: 19 },
+        { quote: "A criação do inédito Ministério dos Povos Indígenas retomou o compromisso do Estado com os povos indígenas. Homologamos 20 novas terras indígenas, somando cerca de 3,2 milhões de hectares de terras protegidas em 11 estados.", page: 20 },
+        { quote: "Construímos o portfólio mais robusto de políticas de proteção animal da história recente do Brasil. Criamos, em 2023, o inédito Departamento de Proteção, Defesa e Direitos Animais, hoje vinculado à Secretaria Nacional de Biodiversidade, Florestas e Direitos Animais.", page: 69 }
+      ],
+      proposals: [
+        { title: "Combate ao racismo e Estatuto da Igualdade Racial", quotes: [
+          { quote: "Manteremos o combate ao racismo no centro de nossa estratégia de desenvolvimento, pois não é possível compreender nem superar as desigualdades brasileiras sem enfrentar a questão racial como dimensão estruturante da sociedade.", page: 19 },
+          { quote: "Vamos continuar engajados na implementação das deliberações da 5ª Conferência Nacional de Promoção da Igualdade Racial (V CONAPIR), realizada em 2025, após um intervalo de sete anos. Avançaremos ainda mais na regulamentação do Estatuto da Igualdade Racial para a consolidação da equidade como política de Estado.", page: 19 }
+        ] },
+        { title: "Proteção territorial de povos indígenas e quilombolas", quotes: [
+          { quote: "Reafirmamos igualmente o compromisso com a proteção dos povos indígenas, de seus territórios, culturas e modos de vida. Persistiremos, garantindo proteção a seus territórios, com ações para demarcação e desintrusão de terras sempre que necessárias.", page: 20 },
+          { quote: "Temos orgulho da retomada do processo de titulação de territórios quilombolas, que permitiu, desde 2023, a expedição de 65 titulações e assinatura de 72 decretos de desapropriação por interesse social, recorde histórico. Vamos dar continuidade a este processo de reconhecimento do direito ao território, buscando acelerar os procedimentos e garantir que sejam acompanhados de políticas de desenvolvimento territorial.", page: 20 }
+        ] },
+        { title: "Inclusão e acessibilidade para pessoas com deficiência", quotes: [{ quote: "Continuaremos promovendo ambientes inclusivos, com a aplicação rigorosa da legislação de acessibilidade. A fiscalização do cumprimento das cotas de contratação de pessoas com deficiência no mercado de trabalho será fortalecida, ampliando a política de inclusão econômica.", page: 23 }] },
+        { title: "Políticas de Estado para diversidade de gênero e população LGBTQIAP+", quotes: [{ quote: "Continuaremos a planejar e construir políticas e ações levando em conta as dimensões de gênero, identidade, orientação sexual, étnico-raciais e classe social assim como as demais desigualdades sociais, de modo a garantir capacidade de o Estado atender, de forma adequada, justa e inclusiva, às pessoas LGBTQIAP+ e todas as suas especificidades.", page: 23 }] },
+        { title: "Proteção da infância e combate à pobreza infantil", quotes: [{ quote: "Continuaremos buscando ampliar e fortalecer as políticas para nossas crianças, por meio do enfrentamento da pobreza infantil, da garantia de acesso às políticas públicas e do direito ao brincar.", page: 24 }] },
+        { title: "Ampliação da proteção e do bem-estar animal", quotes: [
+          { quote: "A proteção ambiental continuará caminhando ao lado da defesa dos direitos animais. Vamos ampliar o ProPatinhas, fortalecendo as caravanas de castração, e dar continuidade ao SinPatinhas, cadastro nacional de cães e gatos.", page: 71 },
+          { quote: "Seguiremos fortalecendo o combate aos maus-tratos, com penas que assegurem que essas práticas não se repitam, avançando nesta agenda com prioridade e participação social.", page: 72 }
+        ] }
+      ]
     }
   }
 };

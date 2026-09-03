@@ -7,11 +7,11 @@ Renan Santos (Missão), Romeu Zema (Novo), Augusto Cury (Avante), Pablo
 Marçal (PRTB), Rui Costa Pimenta (PCO), Hertz Dias (PSTU), Edmilson Costa
 (PCB), Clariana Barão (DC), Wilson Grassi (Democrata) e Samara Martins (UP).
 
-Cobertura em **6 temas** — Economia, Educação, Segurança Pública, Saúde,
-Política Externa e Combate à Corrupção — cada um com aba de **Diagnóstico**
-e aba de **Propostas**. Economia é o único tema dividido em 7 subtemas
-(cada um com o mesmo par Diagnóstico/Propostas); os outros 5 vão direto ao
-par. Todo trecho de posicionamento é **citação literal** dos **planos de
+Cobertura em **7 temas** — Economia, Educação, Segurança Pública, Saúde,
+Política Externa, Combate à Corrupção e Direitos e Bem-Estar — cada um com
+aba de **Diagnóstico** e aba de **Propostas**. Economia é o único tema
+dividido em 7 subtemas (cada um com o mesmo par Diagnóstico/Propostas); os
+outros 6 vão direto ao par. Todo trecho de posicionamento é **citação literal** dos **planos de
 governo oficiais registrados no TSE** (nunca resumo nosso), com a página do
 PDF referenciada.
 
@@ -32,7 +32,7 @@ em tela cheia, escondendo o cardzinho e as demais — é sempre uma coisa de
 cada vez, nunca duas seções juntas nem seção e cardzinho ao mesmo tempo.
 Clicar no logo "Poder & Mercado" no canto esquerdo do topbar volta pro
 cardzinho inicial (é a única forma de voltar — não tem item "Início" na
-navegação). Dentro de Temas, os 6 temas ficam em abas (clique para
+navegação). Dentro de Temas, os 7 temas ficam em abas (clique para
 trocar), e Economia tem um segundo nível de abas para os subtemas.
 
 Este repositório é uma bifurcação de
@@ -70,7 +70,7 @@ index.html          → casca da página (sidebar, diálogo de seleção, seçõ
 styles.css           → visual (tokens de cor/tipografia/candidato, cards, tabs, diálogo)
 app.js               → lê os dados, monta as seções e o diálogo de seleção (DOM puro, sem framework)
 data/
-  taxonomy.js         → os 6 temas (window.THEMES), subtemas de Economia, ordem dos 13 candidatos
+  taxonomy.js         → os 7 temas (window.THEMES), subtemas de Economia, ordem dos 13 candidatos
   sources.js           → URL oficial de cada plano no TSE + caminho do PDF local (+ planFiled)
   plan-texts.js         → texto INTEGRAL de cada plano (window.PLAN_TEXTS) — gerado, não editar à mão; só a Contagem de Palavras usa
   poll.js               → pesquisa Atlas/Bloomberg: só alimenta o preset "Top 5" e os badges do diálogo
@@ -91,7 +91,7 @@ AUDITORIA-COBERTURA.md   → leitura de apoio: páginas sinalizadas por audit_co
 ## Como atualizar um candidato
 
 Edite o arquivo dele em `data/candidates/<id>.js`. Cada tema (`economy.<subtema>`
-para Economia, `themes.<tema>` para os outros 5) tem:
+para Economia, `themes.<tema>` para os outros 6) tem:
 - `diagnosis`: array de `{ quote, page }` — trecho **literal** do plano sobre
   o cenário atual, sem título nosso.
 - `proposals`: array de `{ title, quotes: [{ quote, page }] }` — `title` é

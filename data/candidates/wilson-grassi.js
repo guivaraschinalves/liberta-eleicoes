@@ -140,6 +140,23 @@ window.CANDIDATES_DATA["wilson-grassi"] = {
         { title: "Auditoria pública do cumprimento da lei de integração de dados, órgão a órgão", quotes: [{ quote: "Auditoria e publicação, no primeiro ano, do grau de cumprimento da Lei nº 14.534/2023 órgão por órgão, com prazo de regularização e responsável nomeado.", page: 44 }] },
         { title: "Transparência ativa da execução orçamentária e dos contratos", quotes: [{ quote: "Publicação em formato aberto, e em tempo real quando possível, da execução orçamentária, dos contratos e das metas deste plano.", page: 45 }] }
       ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "É uma bandeira pessoal do candidato e uma pauta com base legal sólida, que a maioria dos planos de governo despacha em uma linha protocolar. Aqui ela tem eixo próprio.", page: 29 },
+        { quote: "Com uma advertência de método, dita logo: proteção animal não substitui política econômica, de segurança ou de saúde. Ela se conecta às três, e é assim que aparece neste documento.", page: 29 },
+        { quote: "A lei existe e não chega ao território. Multa alta em decreto não vira punição sem fiscal, sem perícia, sem delegacia que registre e sem laudo capaz de sustentar a denúncia. O problema brasileiro em maus-tratos deixou de ser legislativo há algum tempo. É de capacidade operacional.", page: 29 }
+      ],
+      proposals: [
+        { title: "Sistema nacional de proteção animal, com cadastro de infratores e fundo próprio", quotes: [{ quote: "Apoiar a aprovação e o aperfeiçoamento do projeto em tramitação que cria um sistema nacional de proteção animal, com cadastro nacional de animais, cadastro nacional de infratores e fundo próprio.", page: 30 }] },
+        { title: "Fiscalização federal com poder de sanção efetiva contra maus-tratos", quotes: [
+          { quote: "Estruturar a fiscalização federal para dar efetividade ao Decreto nº 12.877/2026 significa três coisas concretas: pessoal e equipamento para que a fiscalização chegue ao local do fato, integração entre órgão ambiental, polícias e serviço veterinário oficial para que a autuação se sustente juridicamente, e inscrição em dívida ativa com cobrança executada de quem não paga.", page: 30 },
+          { quote: "Multa lançada e nunca cobrada ensina ao infrator que não há consequência.", page: 30 }
+        ] },
+        { title: "Delegacias e núcleos especializados em crimes contra animais", quotes: [{ quote: "Induzir por cofinanciamento a criação de delegacias e núcleos especializados em crimes contra animais nas capitais e regiões metropolitanas, com protocolo veterinário-forense padronizado.", page: 30 }] },
+        { title: "Implementação real da Amar: resgate e acolhimento de animais em desastres", quotes: [{ quote: "A Lei nº 15.355/2026 distribui competências entre União, estados e municípios e manda incorporar a proteção animal aos planos de contingência. Implementar significa treinar equipe de resgate, credenciar profissional habilitado, prever centro de triagem e pagar por tudo isso antes do desastre.", page: 30 }] },
+        { title: "Fortalecer a estrutura federal de proteção animal, com orçamento próprio", quotes: [{ quote: "Consolidar e ampliar a estrutura federal de proteção e direitos animais, com orçamento próprio e transparente. Órgão sem verba executada é organograma.", page: 30 }] }
+      ]
     }
   }
 };

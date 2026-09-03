@@ -144,6 +144,7 @@ window.CANDIDATES_DATA["renan-santos"] = {
         { title: "Cláusula Antimáfia contra prefeituras capturadas pelo crime organizado", quotes: [{ quote: "Cláusula Antimáfia: Inspirada na legislação italiana, a lei permitirá ao STJ decretar a dissolução imediata de administrações capturadas pelo crime organizado ou milícias. Nesses casos, o mandato eletivo é extinto e o município passa a ser gerido por uma comissão extraordinária federal por até 24 meses, quebrando o nexo entre o poder político local e as facções criminosas.", page: 18 }] },
         { title: "Financiamento partidário atrelado à qualidade gerencial", quotes: [{ quote: "O repasse do Fundo Partidário e do Fundo Eleitoral passará a ser calculado com base na qualidade gerencial dos mandatários. Partidos que selecionarem e mantiverem gestores competentes serão premiados; legendas que sustentarem prefeitos cassados ou com indicadores \"vermelhos\" sofrerão retenção de recursos.", page: 18 }] }
       ]
-    }
+    },
+    "direitos-bem-estar": { diagnosis: [], proposals: [] }
   }
 };

@@ -196,6 +196,15 @@ window.CANDIDATES_DATA["zema"] = {
         { title: "Fim de supersalários, férias de 60 dias e regalias da elite do funcionalismo", quotes: [{ quote: "Regulamentar as verbas indenizatórias que podem ser pagas acima do limite remuneratório previsto na Constituição Federal, aplicar esse limite a todos os profissionais do setor público, reduzir férias e licenças especiais, limitando as férias a 30 dias anuais, extinguir auxílios e licenças não previstos no setor privado e acabar com a possibilidade de aposentadoria compulsória como punição.", page: 9 }] },
         { title: "Fim do sigilo de 100 anos e mais transparência pública", quotes: [{ quote: "Tornar a transparência a regra na gestão pública, avançando com a digitalização do governo e a divulgação dos dados em formato aberto, acabando com a possibilidade de sigilos de 100 anos e ampliando as informações divulgadas sobre as despesas públicas, incluindo notas fiscais, uso de imóveis e repasses a organizações da sociedade civil conveniadas.", page: 10 }] }
       ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "Por fim, o Brasil ainda falha em proteger quem está mais exposto ao risco. Crianças, idosos e pessoas com deficiência dependem de uma rede de amparo que, na prática, muitas vezes não garante segurança e dignidade.", page: 62 }
+      ],
+      proposals: [
+        { title: "Garantir aos povos indígenas o direito de exploração econômica de suas terras", quotes: [{ quote: "Garantir às comunidades indígenas o pleno direito de exploração econômica de suas terras, permitindo e regulamentando o exercício de atividades como agricultura, pecuária, extrativismo e turismo.", page: 25 }] },
+        { title: "Fortalecer a rede de proteção à primeira infância vulnerável (Criança Feliz)", quotes: [{ quote: "Fortalecer o Programa Criança Feliz com foco em resultados mensuráveis de desenvolvimento infantil, condicionando os repasses de outros programas de transferência de renda às famílias ao cumprimento das visitas domiciliares e integrando o programa aos serviços de saúde e educação infantil para garantir uma rede coordenada de proteção nos primeiros anos de vida.", page: 65 }] }
+      ]
     }
   }
 };

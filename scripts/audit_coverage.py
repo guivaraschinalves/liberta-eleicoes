@@ -51,6 +51,7 @@ CATEGORIES = [
     ("themes", "saude", "Saúde"),
     ("themes", "politica-externa", "Política Externa"),
     ("themes", "corrupcao", "Combate à Corrupção"),
+    ("themes", "direitos-bem-estar", "Direitos e Bem-Estar"),
 ]
 
 KEYWORDS = {
@@ -114,6 +115,13 @@ KEYWORDS = {
         "corrupcao", "transparencia", "fiscalizacao", "controle",
         "lavagem de dinheiro", "improbidade", "acesso a informacao",
         "compliance", "integridade publica", "anticorrupcao",
+    ],
+    "direitos-bem-estar": [
+        "mulher", "feminicidio", "violencia domestica", "racismo",
+        "igualdade racial", "lgbt", "lgbtqia", "pessoa com deficiencia",
+        "pcd", "povos indigenas", "comunidades tradicionais",
+        "direitos humanos", "infancia", "juventude", "bem-estar animal",
+        "protecao animal", "maus-tratos", "fauna",
     ],
 }
 

@@ -122,6 +122,19 @@ window.CANDIDATES_DATA["pablo-marcal"] = {
         { title: "Fim do compadrio nas indicações para estatais", quotes: [{ quote: "Contração de executivos do mercado com comprovada experiência corporativa – fim do compadrio nas indicações", page: 20 }] },
         { title: "IA para combate a fraudes em licitações", quotes: [{ quote: "IA para combate a fraudes em licitações", page: 20 }] }
       ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "O desenvolvimento econômico somente é legítimo quando alcança todos os brasileiros.", page: 12 },
+        { quote: "O Governo terá como princípio inegociável a proteção dos direitos e garantias fundamentais previstos na Constituição Federal, assegurando igualdade perante a lei, respeito à dignidade humana e ampliação das oportunidades para todos os cidadãos.", page: 12 },
+        { quote: "O Brasil é uma nação diversa, formada por diferentes povos, culturas, tradições e realidades regionais. Essa diversidade constitui uma riqueza nacional e deve ser protegida e valorizada.", page: 12 }
+      ],
+      proposals: [
+        { title: "Respeito aos direitos constitucionais de povos indígenas, quilombolas e tradicionais", quotes: [{ quote: "Respeito aos direitos constitucionais dos povos indígenas, comunidades quilombolas e povos tradicionais;", page: 12 }] },
+        { title: "Acessibilidade e inclusão das pessoas com deficiência", quotes: [{ quote: "Promoção da acessibilidade e inclusão das pessoas com deficiência;", page: 12 }] },
+        { title: "Programa de integração e regularização fundiária de comunidades tradicionais", quotes: [{ quote: "Preservar a cultura de comunidades tradicionais", page: 18 }, { quote: "Lançar programa de integração das comunidades tradicionais", page: 18 }, { quote: "Regularização fundiária de territórios reconhecidos", page: 18 }, { quote: "Programa de bioeconomia para comunidades tradicionais", page: 18 }] },
+        { title: "Combate ao comércio ilegal e proteção ao direito dos animais", quotes: [{ quote: "Implementar políticas de combate ao comércio ilegal e proteção ao direito dos animais", page: 21 }] }
+      ]
     }
   }
 };

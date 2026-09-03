@@ -112,7 +112,8 @@ window.CANDIDATES_DATA["flavio-bolsonaro"] = {
         { title: "Método fônico de alfabetização", quotes: [{ quote: "Vamos priorizar o método fônico, que é o de melhor resultado comprovado pela ciência, ensinando a criança a ligar cada som à sua letra, em vez das abordagens que fracassaram por décadas.", page: 35 }] },
         { title: "Programa Acolher (reforço entre alunos)", quotes: [{ quote: "vamos criar o Programa Acolher: um aluno com bom desempenho é remunerado para dar reforço aos colegas que precisam, de forma remota ou presencial.", page: 35 }] },
         { title: "Voucher educacional onde faltar vaga", quotes: [{ quote: "onde faltar vaga na rede pública, a família receberá um voucher educacional para matricular o filho em outra escola, porque a prioridade é a criança aprender.", page: 36 }] },
-        { title: "Empréstimo Contingente à Renda (substitui o FIES)", quotes: [{ quote: "vamos adotar o Empréstimo Contingente à Renda: o estudante só começa a pagar quando estiver empregado e ganhando, o valor da parcela é proporcional ao que ele recebe e o prazo é bem mais longo.", page: 37 }] }
+        { title: "Empréstimo Contingente à Renda (substitui o FIES)", quotes: [{ quote: "vamos adotar o Empréstimo Contingente à Renda: o estudante só começa a pagar quando estiver empregado e ganhando, o valor da parcela é proporcional ao que ele recebe e o prazo é bem mais longo.", page: 37 }] },
+        { title: "Programa Escola de Campeões", quotes: [{ quote: "Vamos criar o Programa Escola de Campeões, com parcerias público-privadas para levar o esporte competitivo às escolas, muito além da aula de educação física: times escolares, treinos no contraturno e competições municipais e estaduais. O programa é também uma arma contra a evasão escolar e a repetência: o aluno que treina, que joga pelo time da escola e que sonha com a próxima competição é o aluno que continua estudando.", page: 40 }] }
       ]
     },
     seguranca: {
@@ -166,6 +167,21 @@ window.CANDIDATES_DATA["flavio-bolsonaro"] = {
         { title: "Comando das estatais por recrutamento técnico, sem apadrinhamento", quotes: [{ quote: "sempre que possível, o comando das estatais e dos cargos de direção será preenchido por recrutamento com regras de mercado, com busca ativa de profissionais qualificados, como fazem as empresas privadas quando procuram seus executivos, escolhendo pela competência comprovada, e não pela conveniência política.", page: 70 }] },
         { title: "Combate aos penduricalhos e supersalários", quotes: [{ quote: "Isso inclui o corte de no mínimo 10 ministérios, a redução de cargos comissionados e de despesas administrativas e o combate aos penduricalhos e supersalários que corroem o orçamento.", page: 69 }] },
         { title: "Agenda permanente de transparência e avaliação de políticas públicas", quotes: [{ quote: "um choque de gestão vai colocar o patrimônio público a serviço da sociedade, com reforma do processo orçamentário e uma agenda permanente de transparência e avaliação de políticas públicas, identificando quem são os beneficiários de cada programa e medindo o impacto real de cada gasto.", page: 71 }] }
+      ]
+    },
+    "direitos-bem-estar": {
+      diagnosis: [
+        { quote: "O mesmo cuidado vale para as pessoas com deficiência e com doenças raras, que enfrentam barreiras todos os dias e muitas vezes contam apenas com a própria família para tudo.", page: 39 },
+        { quote: "O esporte feminino foi criado justamente para dar às mulheres um espaço de competição justo. Vamos protegê-lo. Nos últimos anos, confederações internacionais reviram suas regras ao reconhecer que atletas que não nasceram do sexo feminino mantêm, mesmo após tratamento hormonal, vantagens de envergadura, densidade óssea e musculatura que a mulher não tem como equiparar. Permitir essa desigualdade é punir justamente a atleta que treina a vida inteira, abre mão da família e se dedica ao alto rendimento.", page: 40 }
+      ],
+      proposals: [
+        { title: "Políticas transversais de garantia de direitos e inclusão para pessoas com deficiência", quotes: [{ quote: "Nossas políticas serão transversais, atravessando todas as áreas do governo, voltadas a ações concretas de garantia de direitos, inclusão e integração social, entre elas a implantação de Centros de Referência em Transtorno do Espectro Autista.", page: 39 }] },
+        { title: "Inclusão de pessoas com deficiência pelo esporte", quotes: [{ quote: "Vamos fomentar a inclusão de pessoas com deficiência pelo esporte, com detecção de talentos paralímpicos desde a base e mais autonomia para as entidades paralímpicas, tratando o paradesporto como via de reabilitação, inserção profissional e superação.", page: 40 }] },
+        { title: "Categoria esportiva feminina restrita a atletas do sexo feminino", quotes: [{ quote: "Vamos assegurar que a categoria feminina, da base ao alto rendimento, seja disputada por atletas do sexo feminino, protegendo a mulher e a lisura da competição de agendas ideológicas.", page: 41 }] },
+        { title: "Autonomia de povos indígenas e quilombolas sobre atividades em suas terras", quotes: [
+          { quote: "Essa mesma clareza de regras vale para quem vive nas terras tradicionais. Será conferida autonomia aos povos indígenas e quilombolas para decidir sobre atividades produtivas em suas terras, com respeito ao desenvolvimento sustentável e às regras ambientais, e com indenização de eventuais restrições ao usufruto e mecanismos de compensação, para que quem vive na terra possa dela tirar o próprio sustento.", page: 50 },
+          { quote: "Esse desenvolvimento respeita quem vive na região: os povos indígenas e as comunidades quilombolas terão autonomia para decidir sobre as atividades produtivas em suas terras, e o morador da floresta, o ribeirinho e o extrativista serão tratados como parceiros do desenvolvimento, não como obstáculo.", page: 61 }
+        ] }
       ]
     }
   }
